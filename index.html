@@ -4,165 +4,103 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Werde Sie · 30 Tage Transformation</title>
-
-<!-- PWA Meta Tags -->
 <meta name="application-name" content="Werde Sie">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Werde Sie">
-<meta name="description" content="30 Tage EMDR Manifestation – Werde die Frau, die du sein möchtest.">
+<meta name="description" content="30 Tage EMDR Manifestation">
 <meta name="theme-color" content="#8b3a2a">
-<meta name="mobile-web-app-capable" content="yes">
-
-<!-- PWA Icons (inline SVG als Data URL) -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='80' fill='%238b3a2a'/%3E%3Ccircle cx='256' cy='200' r='80' fill='none' stroke='%23e8c06a' stroke-width='18'/%3E%3Cellipse cx='256' cy='370' rx='110' ry='60' fill='none' stroke='%23e8c06a' stroke-width='18'/%3E%3Cline x1='256' y1='280' x2='256' y2='310' stroke='%23e8c06a' stroke-width='18' stroke-linecap='round'/%3E%3C/svg%3E">
-<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='80' fill='%238b3a2a'/%3E%3Ccircle cx='256' cy='200' r='80' fill='none' stroke='%23e8c06a' stroke-width='18'/%3E%3Cellipse cx='256' cy='370' rx='110' ry='60' fill='none' stroke='%23e8c06a' stroke-width='18'/%3E%3Cline x1='256' y1='280' x2='256' y2='310' stroke='%23e8c06a' stroke-width='18' stroke-linecap='round'/%3E%3C/svg%3E">
-
-<!-- PWA Manifest inline -->
-<script>
-const manifest = {
-  name: "Werde Sie · 30 Tage Transformation",
-  short_name: "Werde Sie",
-  description: "30 Tage EMDR Manifestation – Werde die Frau, die du sein möchtest.",
-  start_url: "./",
-  display: "standalone",
-  background_color: "#f5efe6",
-  theme_color: "#8b3a2a",
-  orientation: "portrait",
-  icons: [
-    {
-      src: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='80' fill='%238b3a2a'/%3E%3Ccircle cx='256' cy='200' r='80' fill='none' stroke='%23e8c06a' stroke-width='18'/%3E%3Cellipse cx='256' cy='370' rx='110' ry='60' fill='none' stroke='%23e8c06a' stroke-width='18'/%3E%3Cline x1='256' y1='280' x2='256' y2='310' stroke='%23e8c06a' stroke-width='18' stroke-linecap='round'/%3E%3C/svg%3E",
-      sizes: "512x512",
-      type: "image/svg+xml",
-      purpose: "any maskable"
-    }
-  ]
-};
-const blob = new Blob([JSON.stringify(manifest)], {type: 'application/json'});
-const manifestURL = URL.createObjectURL(blob);
-document.write('<link rel="manifest" href="' + manifestURL + '">');
-</script>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='80' fill='%238b3a2a'/%3E%3Ccircle cx='256' cy='200' r='80' fill='none' stroke='%23e8c06a' stroke-width='18'/%3E%3Cellipse cx='256' cy='370' rx='110' ry='60' fill='none' stroke='%23e8c06a' stroke-width='18'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg:       #2a1f18;   /* dark brown – nur für EMDR panel */
-  --cream:    #f5efe6;
-  --cream2:   #f0e8db;
-  --warm:     #ede3d6;
-  --warm2:    #e4d8c8;
-  --sand:     #d4c4ae;
-  --sand2:    #c8b49a;
-  --sienna:   #8b3a2a;
-  --sienna-l: #b85a42;
-  --sienna-d: #6a2a1a;
-  --gold:     #c4963a;
-  --gold-l:   #e8c06a;
-  --gold-d:   #9a7020;
-  --text:     #2a1f18;
-  --text2:    #4a3428;
-  --mid:      #7a5e4e;
-  --lt:       #a8907e;
-  --white:    #fdfaf6;
-  --sh:       rgba(42,31,24,0.1);
-  --w1: #8b3a2a;   /* sienna – Erkennen   */
-  --w2: #9a5a3a;   /* sienna-brown – Loslassen */
-  --w3: #c4963a;   /* gold – Werden       */
-  --w4: #7a6a4a;   /* warm brown – Verkörpern */
+:root{
+  --bg:#2a1f18;
+  --cream:#f5efe6;--warm:#ede3d6;--sand:#d4c4ae;
+  --sienna:#8b3a2a;--sienna-l:#b85a42;--sienna-d:#6a2a1a;
+  --gold:#c4963a;--gold-l:#e8c06a;
+  --text:#2a1f18;--text2:#4a3428;--mid:#7a5e4e;--lt:#a8907e;
+  --white:#fdfaf6;--sh:rgba(42,31,24,0.1);
+  --w1:#8b3a2a;--w2:#9a5a3a;--w3:#c4963a;--w4:#7a6a4a;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
+html,body{height:100%;}
 body{background:var(--cream);color:var(--text);font-family:'Outfit',sans-serif;font-weight:300;min-height:100dvh;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(ellipse 80% 60% at 15% 15%,rgba(139,58,42,.14) 0%,transparent 65%),
+  radial-gradient(ellipse 60% 70% at 85% 85%,rgba(196,150,58,.1) 0%,transparent 65%),
+  radial-gradient(ellipse 40% 40% at 50% 50%,rgba(212,196,174,.2) 0%,transparent 80%);
+  background-color:var(--cream);}
 
-/* Verschwommenes Hintergrundbild */
-body::before{
-  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
-  background:
-    radial-gradient(ellipse 80% 60% at 20% 20%, rgba(139,58,42,.18) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 80% at 80% 80%, rgba(196,150,58,.12) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 50% at 50% 50%, rgba(212,196,174,.3) 0%, transparent 80%);
-  background-color: var(--cream);
-}
-body::after{content:'';position:fixed;inset:0;z-index:999;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");opacity:.35;}
-
-/* Volle Breite auf allen Geräten */
-.screen{display:none;animation:fu .4s ease;position:relative;z-index:1;}
+.screen{display:none;position:relative;z-index:1;animation:fu .35s ease;}
 .screen.active{display:block;}
-@keyframes fu{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fu{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
-/* ONBOARDING — warm sienna-red base */
-#ob{min-height:100dvh;background:linear-gradient(160deg,var(--sienna-d) 0%,var(--sienna) 55%,#a04830 100%);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:3rem 1.8rem;position:relative;overflow:hidden;}
-#ob::before{content:'';position:absolute;top:-20%;right:-15%;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(245,225,180,.12),transparent 70%);pointer-events:none;}
-#ob::after{content:'';position:absolute;bottom:-25%;left:-10%;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(42,31,24,.2),transparent 70%);pointer-events:none;z-index:0;}
-.ob-inner{width:100%;max-width:560px;position:relative;z-index:1;}
-.ob-inner{width:100%;max-width:780px;position:relative;z-index:1;}
-.ob-ey{font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(245,239,230,.45);margin-bottom:1.2rem;}
-#ob h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,8vw,4rem);font-weight:300;line-height:1.1;color:var(--cream);margin-bottom:.5rem;}
-#ob h1 em{color:var(--gold-l);font-style:italic;}
-#ob .osub{font-size:.85rem;line-height:1.8;color:rgba(245,239,230,.7);margin-bottom:2rem;}
-.ocard{background:rgba(245,239,230,.1);border:1px solid rgba(245,239,230,.18);border-radius:6px;padding:1.3rem;margin-bottom:.9rem;}
-.ocard label{display:block;font-size:.85rem;font-weight:500;color:rgba(245,239,230,.9);margin-bottom:.55rem;}
-.ocard input,.ocard textarea{width:100%;background:rgba(245,239,230,.12);border:1px solid rgba(245,239,230,.2);border-radius:4px;color:var(--cream);font-family:'Outfit',sans-serif;font-size:.85rem;font-weight:300;padding:.8rem 1rem;outline:none;transition:border-color .2s;}
-.ocard input:focus,.ocard textarea:focus{border-color:var(--gold-l);background:rgba(245,239,230,.18);}
+/* ── ONBOARDING ── */
+#ob{min-height:100dvh;background:linear-gradient(150deg,var(--sienna-d) 0%,var(--sienna) 50%,#a04830 100%);
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  padding:2.5rem 1.5rem;position:relative;overflow:hidden;}
+#ob::before{content:'';position:absolute;top:-15%;right:-10%;width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(245,220,160,.1),transparent 70%);pointer-events:none;}
+.ob-in{width:100%;max-width:760px;position:relative;z-index:1;}
+.ob-ey{font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(245,239,230,.4);margin-bottom:1rem;}
+.ob-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,7vw,4.2rem);font-weight:300;line-height:1.08;color:var(--cream);margin-bottom:.4rem;}
+.ob-h1 em{color:var(--gold-l);font-style:italic;}
+.ob-sub{font-size:.88rem;line-height:1.85;color:rgba(245,239,230,.65);margin-bottom:2rem;max-width:52ch;}
+.ocard{background:rgba(245,239,230,.1);border:1px solid rgba(245,239,230,.18);border-radius:8px;padding:1.3rem;margin-bottom:.9rem;}
+.ocard label{display:block;font-size:.88rem;font-weight:500;color:rgba(245,239,230,.9);margin-bottom:.5rem;}
+.ocard input,.ocard textarea{width:100%;background:rgba(245,239,230,.12);border:1px solid rgba(245,239,230,.2);
+  border-radius:4px;color:var(--cream);font-family:'Outfit',sans-serif;font-size:.88rem;font-weight:300;
+  padding:.8rem 1rem;outline:none;transition:border-color .2s;}
+.ocard input:focus,.ocard textarea:focus{border-color:var(--gold-l);}
 .ocard textarea{min-height:80px;resize:vertical;line-height:1.65;}
-.ocard .oh{font-size:.72rem;color:rgba(245,239,230,.5);margin-top:.4rem;font-style:italic;}
-.apills{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.2rem;}
-.ap{border:1px solid rgba(245,239,230,.25);border-radius:20px;color:rgba(245,239,230,.6);cursor:pointer;font-size:.7rem;padding:.3rem .85rem;transition:all .2s;user-select:none;}
-.ap.on{border-color:var(--gold-l);color:var(--gold-l);background:rgba(232,192,106,.15);}
-.btnbeg{background:var(--cream);border:none;border-radius:3px;color:var(--sienna);cursor:pointer;font-family:'Outfit',sans-serif;font-size:.75rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;padding:1rem 2.4rem;margin-top:1.2rem;transition:all .25s;display:inline-block;position:relative;z-index:1;}
-.btnbeg:hover{background:var(--white);transform:translateY(-1px);box-shadow:0 6px 20px rgba(42,31,24,.25);}
+.ocard input::placeholder,.ocard textarea::placeholder{color:rgba(245,239,230,.45);}
+.ocard .oh{font-size:.72rem;color:rgba(245,239,230,.45);margin-top:.35rem;font-style:italic;}
+.apills{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.3rem;}
+.ap{border:1px solid rgba(245,239,230,.22);border-radius:20px;color:rgba(245,239,230,.55);cursor:pointer;font-size:.72rem;padding:.32rem .88rem;transition:all .2s;user-select:none;}
+.ap.on{border-color:var(--gold-l);color:var(--gold-l);background:rgba(232,192,106,.12);}
+.btn-start{background:var(--cream);border:none;border-radius:4px;color:var(--sienna);cursor:pointer;
+  font-family:'Outfit',sans-serif;font-size:.78rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
+  padding:1rem 2.6rem;margin-top:1.2rem;transition:all .25s;}
+.btn-start:hover{background:var(--white);transform:translateY(-1px);box-shadow:0 6px 20px rgba(42,31,24,.25);}
 
-/* APP BAR */
-.abar{background:var(--white);border-bottom:1px solid rgba(212,196,174,.55);padding:.85rem 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50;}
-.alogo{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:400;color:var(--sienna);}
+/* ── APP BAR ── */
+.abar{background:var(--white);border-bottom:1px solid rgba(212,196,174,.5);
+  padding:.85rem 2.5rem;display:flex;align-items:center;justify-content:space-between;
+  position:sticky;top:0;z-index:50;}
+.alogo{font-family:'Cormorant Garamond',serif;font-size:1.08rem;font-weight:400;color:var(--sienna);}
 .alogo span{display:block;font-family:'Outfit',sans-serif;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--lt);font-weight:300;}
-.adayb{background:var(--sienna);color:var(--white);border-radius:20px;font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;padding:.28rem .8rem;}
+.adayb{background:var(--sienna);color:var(--white);border-radius:20px;font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;padding:.28rem .85rem;}
 
-/* DASHBOARD */
-.dash{padding:1.4rem 2rem;max-width:860px;margin:0 auto;}
-.hero{background:linear-gradient(135deg,var(--sienna-d) 0%,var(--sienna) 100%);border-radius:10px;padding:1.5rem;margin-bottom:1.2rem;display:flex;align-items:center;gap:1.4rem;position:relative;overflow:hidden;}
-.hero::before{content:'';position:absolute;top:-40%;right:-10%;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(245,220,160,.15),transparent 70%);pointer-events:none;}
-.rw{position:relative;width:72px;height:72px;flex-shrink:0;}
+/* ── DASHBOARD ── */
+.dash{padding:1.6rem 2.5rem;max-width:960px;margin:0 auto;}
+.hero{background:linear-gradient(135deg,var(--sienna-d) 0%,var(--sienna) 100%);border-radius:12px;
+  padding:1.6rem;margin-bottom:1.2rem;display:flex;align-items:center;gap:1.5rem;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-40%;right:-5%;width:200px;height:200px;border-radius:50%;
+  background:radial-gradient(circle,rgba(245,215,150,.14),transparent 70%);pointer-events:none;}
+.rw{position:relative;width:76px;height:76px;flex-shrink:0;}
 .rw svg{transform:rotate(-90deg);}
-.rt{fill:none;stroke:rgba(245,239,230,.18);stroke-width:5;}
-.rp{fill:none;stroke:var(--gold-l);stroke-width:5;stroke-linecap:round;stroke-dasharray:201;stroke-dashoffset:201;transition:stroke-dashoffset 1s ease;}
-.rn{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold-l);}
-.htxt h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;color:var(--cream);margin-bottom:.3rem;}
-.htxt p{font-size:.74rem;color:rgba(245,239,230,.6);line-height:1.55;}
-.wstrip{border-left:2px solid var(--sienna);padding:.9rem 1rem;background:var(--white);border-radius:0 6px 6px 0;margin-bottom:1.2rem;box-shadow:0 2px 12px var(--sh);}
+.rt{fill:none;stroke:rgba(245,239,230,.15);stroke-width:5;}
+.rp{fill:none;stroke:var(--gold-l);stroke-width:5;stroke-linecap:round;stroke-dasharray:213;stroke-dashoffset:213;transition:stroke-dashoffset 1s ease;}
+.rn{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--gold-l);}
+.htxt h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:400;color:var(--cream);margin-bottom:.25rem;}
+.htxt p{font-size:.76rem;color:rgba(245,239,230,.55);line-height:1.5;}
+.wstrip{border-left:2px solid var(--sienna);padding:.9rem 1.1rem;background:var(--white);border-radius:0 8px 8px 0;margin-bottom:1.2rem;box-shadow:0 2px 14px var(--sh);}
 .we{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sienna);margin-bottom:.3rem;}
-.ww{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--text2);line-height:1.5;}
-.wa{font-size:.72rem;color:var(--mid);margin-top:.25rem;}
-.wnav{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-bottom:1rem;}
-.wn{border-radius:5px;border:1px solid var(--sand);background:var(--white);cursor:pointer;padding:.6rem .3rem;text-align:center;transition:all .2s;}
-.wn .wnn{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--lt);display:block;}
-.wn .wnl{font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;color:var(--lt);display:block;margin-top:.1rem;line-height:1.3;}
+.ww{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--text2);line-height:1.5;}
+.wa{font-size:.74rem;color:var(--mid);margin-top:.25rem;}
+.wnav{display:grid;grid-template-columns:repeat(4,1fr);gap:.55rem;margin-bottom:1rem;}
+.wn{border-radius:6px;border:1px solid var(--sand);background:var(--white);cursor:pointer;padding:.65rem .3rem;text-align:center;transition:all .2s;}
+.wn .wnn{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--lt);display:block;}
+.wn .wnl{font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:var(--lt);display:block;margin-top:.12rem;}
 .wn.active{border-color:transparent;}
 .wn[data-w="1"].active{background:var(--w1);}.wn[data-w="1"].active .wnn,.wn[data-w="1"].active .wnl{color:var(--white);}
 .wn[data-w="2"].active{background:var(--w2);}.wn[data-w="2"].active .wnn,.wn[data-w="2"].active .wnl{color:var(--white);}
 .wn[data-w="3"].active{background:var(--w3);}.wn[data-w="3"].active .wnn,.wn[data-w="3"].active .wnl{color:var(--white);}
 .wn[data-w="4"].active{background:var(--w4);}.wn[data-w="4"].active .wnn,.wn[data-w="4"].active .wnl{color:var(--white);}
-/* Day dots — horizontal scrollable row */
-.ddots{
-  display:flex;
-  flex-direction:row;
-  gap:.5rem;
-  margin-bottom:1.3rem;
-  overflow-x:auto;
-  padding:.4rem .2rem;
-  scrollbar-width:none;
-  -webkit-overflow-scrolling:touch;
-}
+.ddots{display:flex;gap:.5rem;overflow-x:auto;padding:.4rem .1rem;margin-bottom:1.3rem;scrollbar-width:none;}
 .ddots::-webkit-scrollbar{display:none;}
-.dd{
-  width:36px;height:36px;
-  border-radius:50%;
-  border:1.5px solid var(--sand);background:var(--white);
-  display:flex;align-items:center;justify-content:center;
-  font-size:.66rem;color:var(--mid);
-  cursor:pointer;transition:all .2s;position:relative;
-  flex-shrink:0;
-}
+.dd{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--sand);background:var(--white);
+  display:flex;align-items:center;justify-content:center;font-size:.68rem;color:var(--mid);
+  cursor:pointer;transition:all .2s;position:relative;flex-shrink:0;}
 .dd.td{border-width:2px;}
 .dd[data-w="1"].td{border-color:var(--w1);color:var(--w1);}
 .dd[data-w="2"].td{border-color:var(--w2);color:var(--w2);}
@@ -174,73 +112,105 @@ body::after{content:'';position:fixed;inset:0;z-index:999;pointer-events:none;ba
 .dd[data-w="3"].done{background:var(--w3);}
 .dd[data-w="4"].done{background:var(--w4);}
 .dd.fut{opacity:.28;cursor:default;pointer-events:none;}
-.dd:hover:not(.fut){transform:scale(1.12);}
-.dd.done::after{content:'✓';position:absolute;top:-3px;right:-3px;width:11px;height:11px;background:var(--sienna);border-radius:50%;font-size:6px;display:flex;align-items:center;justify-content:center;color:white;}
-.tcta{background:var(--white);border-radius:8px;padding:1.4rem;margin-bottom:1rem;box-shadow:0 2px 16px var(--sh);cursor:pointer;transition:all .22s;border-left:3px solid var(--sienna);}
+.dd:hover:not(.fut){transform:scale(1.1);}
+.dd.done::after{content:'✓';position:absolute;top:-3px;right:-3px;width:12px;height:12px;background:var(--sienna);border-radius:50%;font-size:7px;display:flex;align-items:center;justify-content:center;color:white;}
+.tcta{background:var(--white);border-radius:10px;padding:1.4rem 1.6rem;margin-bottom:1rem;box-shadow:0 2px 16px var(--sh);cursor:pointer;transition:all .22s;border-left:3px solid var(--sienna);}
 .tcta:hover{transform:translateY(-2px);box-shadow:0 8px 24px var(--sh);}
-.tce{font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sienna);margin-bottom:.4rem;}
-.tct{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:400;color:var(--text);margin-bottom:.3rem;}
-.tcd{font-size:.78rem;color:var(--mid);line-height:1.65;}
-.tcg{display:inline-block;margin-top:.9rem;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sienna);border-bottom:1px solid var(--sienna);padding-bottom:1px;}
-.qcard{border:1px solid var(--sand);border-radius:6px;padding:1.2rem 1.4rem;background:var(--white);text-align:center;margin-bottom:1.4rem;}
-.qcard p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--sienna);line-height:1.65;}
+.tce{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sienna);margin-bottom:.4rem;}
+.tct{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;color:var(--text);margin-bottom:.3rem;}
+.tcd{font-size:.8rem;color:var(--mid);line-height:1.65;}
+.tcg{display:inline-block;margin-top:.9rem;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sienna);border-bottom:1px solid var(--sienna);padding-bottom:1px;}
+.qcard{border:1px solid var(--sand);border-radius:8px;padding:1.2rem 1.4rem;background:var(--white);text-align:center;margin-bottom:1.4rem;}
+.qcard p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--sienna);line-height:1.65;}
 .qcard cite{display:block;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--lt);margin-top:.5rem;font-style:normal;}
 
-/* DAY VIEW */
+/* ── DAY VIEW ── */
 #ds{min-height:100dvh;background:var(--cream);}
-.dbar{background:var(--white);border-bottom:1px solid rgba(212,196,174,.55);padding:.85rem 2rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:50;}
-.back{background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--mid);padding:0;line-height:1;}
-.dbt{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:400;color:var(--text2);}
-.wbg{margin-left:auto;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;padding:.22rem .7rem;border-radius:20px;color:var(--white);}
-.dbody{padding:1.4rem 2rem;max-width:860px;margin:0 auto;}
+.dbar{background:var(--white);border-bottom:1px solid rgba(212,196,174,.5);padding:.85rem 2.5rem;display:flex;align-items:center;gap:1rem;position:sticky;top:0;z-index:50;}
+.back{background:none;border:none;cursor:pointer;font-size:1.2rem;color:var(--mid);padding:0;line-height:1;}
+.dbt{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:400;color:var(--text2);}
+.wbg{margin-left:auto;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;padding:.24rem .75rem;border-radius:20px;color:var(--white);}
+.dbody{padding:1.6rem 2.5rem;max-width:860px;margin:0 auto;}
 
-/* day intro — warm sienna instead of black */
-.dint{background:linear-gradient(135deg,var(--sienna-d) 0%,var(--sienna) 60%,#a04830 100%);border-radius:8px;padding:1.6rem;margin-bottom:1.2rem;position:relative;overflow:hidden;}
-.dint::before{content:'';position:absolute;top:-50%;right:-20%;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(245,220,160,.14),transparent 70%);pointer-events:none;}
-.ditag{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(245,239,230,.5);margin-bottom:.55rem;}
-.ditl{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--cream);margin-bottom:.5rem;line-height:1.2;}
-.ditx{font-size:.8rem;line-height:1.8;color:rgba(245,239,230,.7);position:relative;z-index:1;}
+/* Day intro block */
+.dint{background:linear-gradient(140deg,var(--sienna-d) 0%,var(--sienna) 60%,#a04830 100%);
+  border-radius:10px;padding:1.8rem;margin-bottom:1.2rem;position:relative;overflow:hidden;}
+.dint::before{content:'';position:absolute;top:-40%;right:-15%;width:200px;height:200px;border-radius:50%;
+  background:radial-gradient(circle,rgba(245,215,150,.12),transparent 70%);pointer-events:none;}
+.ditag{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(245,239,230,.45);margin-bottom:.6rem;}
+.ditl{font-family:'Cormorant Garamond',serif;font-size:1.65rem;font-weight:300;color:var(--cream);margin-bottom:.6rem;line-height:1.2;}
+.ditx{font-size:.85rem;line-height:1.85;color:rgba(245,239,230,.68);position:relative;z-index:1;}
 
-/* affirmation pill */
-.affp{border:1px solid var(--sand);border-radius:40px;padding:.6rem 1.2rem;margin-bottom:1.2rem;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.92rem;color:var(--sienna);text-align:center;background:var(--white);}
+/* Quote block */
+.day-quote{border-left:3px solid var(--gold);padding:.9rem 1.1rem;background:var(--white);
+  border-radius:0 8px 8px 0;margin-bottom:1rem;box-shadow:0 2px 10px var(--sh);}
+.dq-author{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.3rem;}
+.dq-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--text2);line-height:1.6;}
 
-/* section card */
-.sc{background:var(--white);border-radius:8px;padding:1.3rem;margin-bottom:1rem;box-shadow:0 2px 12px var(--sh);}
-.sce{font-size:.78rem;letter-spacing:.04em;font-weight:400;color:var(--sienna);margin-bottom:.4rem;}
-.scq{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--text);margin-bottom:.4rem;line-height:1.4;}
-.sch{font-size:.7rem;color:var(--sienna-l);line-height:1.65;margin-bottom:.65rem;background:rgba(139,58,42,.06);border-left:2px solid var(--sienna-l);padding:.5rem .7rem;border-radius:0 3px 3px 0;font-style:italic;}
-textarea.jta{width:100%;background:var(--warm);border:1px solid var(--sand);border-radius:4px;color:var(--text);font-family:'Outfit',sans-serif;font-size:.78rem;font-weight:300;line-height:1.7;padding:.8rem 1rem;resize:vertical;min-height:100px;outline:none;transition:border-color .2s;}
+/* Impulse block */
+.impulse{background:rgba(139,58,42,.06);border:1px solid rgba(139,58,42,.15);border-radius:8px;
+  padding:1rem 1.2rem;margin-bottom:1rem;}
+.imp-eye{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sienna);margin-bottom:.35rem;}
+.imp-text{font-size:.84rem;line-height:1.75;color:var(--text2);}
+
+/* Affirmation pill */
+.affp{border:1px solid var(--sand);border-radius:40px;padding:.65rem 1.3rem;margin-bottom:1.2rem;
+  font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.96rem;color:var(--sienna);text-align:center;background:var(--white);}
+
+/* Section card */
+.sc{background:var(--white);border-radius:10px;padding:1.4rem;margin-bottom:1rem;box-shadow:0 2px 12px var(--sh);}
+.sce{font-size:.8rem;font-weight:500;color:var(--sienna);margin-bottom:.45rem;}
+.scq{font-family:'Cormorant Garamond',serif;font-size:1.08rem;color:var(--text);margin-bottom:.45rem;line-height:1.4;}
+.sch{font-size:.74rem;color:var(--sienna-l);line-height:1.7;margin-bottom:.7rem;
+  background:rgba(139,58,42,.06);border-left:2px solid var(--sienna-l);padding:.5rem .75rem;border-radius:0 4px 4px 0;font-style:italic;}
+textarea.jta{width:100%;background:var(--warm);border:1px solid var(--sand);border-radius:5px;
+  color:var(--text);font-family:'Outfit',sans-serif;font-size:.88rem;font-weight:300;
+  line-height:1.75;padding:.9rem 1.1rem;resize:vertical;min-height:110px;outline:none;transition:border-color .2s;}
 textarea.jta:focus{border-color:var(--sienna);background:var(--white);}
-textarea.jta::placeholder{color:var(--mid);opacity:1;}
-.ocard input::placeholder,.ocard textarea::placeholder{color:rgba(245,239,230,.55);opacity:1;}
-.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem;}
-.chip{border:1px solid var(--sand);border-radius:20px;background:var(--warm);color:var(--mid);cursor:pointer;font-size:.7rem;padding:.3rem .8rem;transition:all .18s;user-select:none;}
+textarea.jta::placeholder{color:var(--mid);}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.5rem;}
+.chip{border:1px solid var(--sand);border-radius:20px;background:var(--warm);color:var(--mid);
+  cursor:pointer;font-size:.72rem;padding:.32rem .88rem;transition:all .18s;user-select:none;}
 .chip.on{background:rgba(139,58,42,.1);border-color:var(--sienna);color:var(--sienna);}
-.irow{display:flex;align-items:center;gap:.8rem;margin-top:.5rem;}
-.inum{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--sienna);min-width:1.8rem;text-align:center;}
-input.rng{flex:1;-webkit-appearance:none;height:2px;background:linear-gradient(90deg,var(--sienna) var(--p,70%),var(--sand) var(--p,70%));outline:none;cursor:pointer;border-radius:1px;}
-input.rng::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:var(--sienna);border:2px solid var(--white);box-shadow:0 1px 4px var(--sh);}
+.irow{display:flex;align-items:center;gap:.9rem;margin-top:.5rem;}
+.inum{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--sienna);min-width:2rem;text-align:center;}
+input.rng{flex:1;-webkit-appearance:none;height:2px;background:linear-gradient(90deg,var(--sienna) var(--p,65%),var(--sand) var(--p,65%));outline:none;cursor:pointer;border-radius:1px;}
+input.rng::-webkit-slider-thumb{-webkit-appearance:none;width:15px;height:15px;border-radius:50%;background:var(--sienna);border:2px solid var(--white);box-shadow:0 1px 5px var(--sh);}
 
-/* EMDR — warm dark brown, only dark element kept intentionally */
-.ep{background:var(--bg);border-radius:8px;padding:1.5rem;margin-bottom:1rem;}
-.ep h4{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;color:var(--gold-l);margin-bottom:.3rem;}
-.ep .esub{font-size:.75rem;color:rgba(245,239,230,.55);line-height:1.7;margin-bottom:1.1rem;}
-.etrk{position:relative;height:68px;display:flex;align-items:center;margin-bottom:1rem;}
-.erail{position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(245,239,230,.15);transform:translateY(-50%);}
-#eb{position:absolute;top:50%;left:0;transform:translate(-50%,-50%);width:20px;height:20px;border-radius:50%;background:var(--gold-l);box-shadow:0 0 16px rgba(232,192,106,.6),0 0 36px rgba(232,192,106,.25);pointer-events:none;}
-.erow{display:flex;gap:.7rem;align-items:center;flex-wrap:wrap;}
-.bte{background:rgba(245,239,230,.15);border:1px solid rgba(245,239,230,.2);border-radius:3px;color:var(--cream);cursor:pointer;font-family:'Outfit',sans-serif;font-size:.68rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;padding:.6rem 1.3rem;transition:all .2s;}
-.bte.on{background:rgba(196,150,58,.2);border:1px solid var(--gold-l);color:var(--gold-l);}
-.spd{display:flex;align-items:center;gap:.5rem;font-size:.62rem;color:rgba(245,239,230,.35);}
-.spd input[type=range]{-webkit-appearance:none;width:65px;height:1px;background:rgba(245,239,230,.2);outline:none;cursor:pointer;}
-.spd input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:9px;height:9px;border-radius:50%;background:var(--gold-l);}
-.ehint{font-size:.64rem;color:rgba(245,239,230,.35);margin-top:.5rem;letter-spacing:.06em;min-height:1em;}
-.savebtn{width:100%;background:var(--sienna);border:none;border-radius:4px;color:var(--white);cursor:pointer;font-family:'Outfit',sans-serif;font-size:.75rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;padding:1rem;margin-top:1rem;transition:all .25s;}
+/* EMDR panel */
+.ep{background:var(--bg);border-radius:10px;padding:1.6rem;margin-bottom:1rem;}
+.ep h4{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;color:var(--gold-l);margin-bottom:.3rem;}
+.ep .esub{font-size:.78rem;color:rgba(245,239,230,.52);line-height:1.75;margin-bottom:1.2rem;}
+.etrk{position:relative;height:72px;display:flex;align-items:center;margin-bottom:1rem;}
+.erail{position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(245,239,230,.12);transform:translateY(-50%);}
+#eb{position:absolute;top:50%;left:0;transform:translate(-50%,-50%);width:22px;height:22px;border-radius:50%;
+  background:var(--gold-l);box-shadow:0 0 18px rgba(232,192,106,.55),0 0 40px rgba(232,192,106,.22);pointer-events:none;}
+.erow{display:flex;gap:.8rem;align-items:center;flex-wrap:wrap;}
+.bte{background:rgba(245,239,230,.14);border:1px solid rgba(245,239,230,.2);border-radius:4px;color:var(--cream);
+  cursor:pointer;font-family:'Outfit',sans-serif;font-size:.7rem;font-weight:400;letter-spacing:.14em;
+  text-transform:uppercase;padding:.65rem 1.4rem;transition:all .2s;}
+.bte.on{background:rgba(196,150,58,.18);border:1px solid var(--gold-l);color:var(--gold-l);}
+.spd{display:flex;align-items:center;gap:.5rem;font-size:.64rem;color:rgba(245,239,230,.32);}
+.spd input[type=range]{-webkit-appearance:none;width:70px;height:1px;background:rgba(245,239,230,.18);outline:none;cursor:pointer;}
+.spd input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:10px;height:10px;border-radius:50%;background:var(--gold-l);}
+.ehint{font-size:.66rem;color:rgba(245,239,230,.3);margin-top:.5rem;min-height:1em;}
+
+.savebtn{width:100%;background:var(--sienna);border:none;border-radius:5px;color:var(--white);cursor:pointer;
+  font-family:'Outfit',sans-serif;font-size:.78rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;
+  padding:1.1rem;margin-top:1rem;transition:all .25s;}
 .savebtn:hover{background:var(--sienna-l);}
 .savebtn.sv{background:var(--gold);}
 .fsc{border:1px solid var(--sienna);background:rgba(139,58,42,.04);}
-#toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(16px);background:var(--sienna);color:var(--white);font-size:.75rem;padding:.65rem 1.5rem;border-radius:30px;opacity:0;transition:all .3s;pointer-events:none;z-index:300;white-space:nowrap;}
+
+#toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(16px);
+  background:var(--sienna);color:var(--white);font-size:.78rem;padding:.7rem 1.6rem;
+  border-radius:30px;opacity:0;transition:all .3s;pointer-events:none;z-index:300;white-space:nowrap;}
 #toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+
+@media(max-width:600px){
+  .dash,.dbody{padding:1.2rem 1rem;}
+  .dbar,.abar{padding:.85rem 1rem;}
+}
 </style>
 </head>
 <body>
@@ -248,14 +218,11 @@ input.rng::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;b
 
 <!-- ONBOARDING -->
 <div id="ob" class="screen active">
-  <div class="ob-inner">
+  <div class="ob-in">
     <div class="ob-ey">30 Tage Transformation · EMDR Manifestation</div>
-    <h1>Werde<br><em>Sie.</em></h1>
-    <p class="osub">Manifestation bedeutet nicht, etwas zu wünschen. Es bedeutet, die Person zu werden, die es bereits empfangen kann. Diese 30 Tage sind deine innere Reise.</p>
-    <div class="ocard">
-      <label>Dein Name</label>
-      <input type="text" id="on" placeholder="z.B. Sofia">
-    </div>
+    <h1 class="ob-h1">Werde<br><em>Sie.</em></h1>
+    <p class="ob-sub">Manifestation bedeutet nicht, etwas zu wünschen. Es bedeutet, die Person zu werden, die es bereits empfangen kann. Diese 30 Tage sind deine innere Reise.</p>
+    <div class="ocard"><label>Dein Name</label><input type="text" id="on" placeholder="z.B. Sofia"></div>
     <div class="ocard">
       <label>Welche Version von dir möchtest du in 30 Tagen verkörpern?</label>
       <textarea id="ow" placeholder="z.B. Eine Frau, die aus innerer Sicherheit liebt, entscheidet und sich selbst treu ist."></textarea>
@@ -277,7 +244,7 @@ input.rng::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;b
         <span class="ap" onclick="pa(this)">Persönliche Kraft</span>
       </div>
     </div>
-    <button class="btnbeg" onclick="begin()">Meine Reise beginnt jetzt →</button>
+    <button class="btn-start" onclick="begin()">Meine Reise beginnt jetzt →</button>
   </div>
 </div>
 
@@ -290,19 +257,12 @@ input.rng::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;b
   <div class="dash">
     <div class="hero">
       <div class="rw">
-        <svg width="72" height="72" viewBox="0 0 72 72">
-          <circle class="rt" cx="36" cy="36" r="32"/>
-          <circle class="rp" id="rp" cx="36" cy="36" r="32"/>
-        </svg>
+        <svg width="76" height="76" viewBox="0 0 76 76"><circle class="rt" cx="38" cy="38" r="34"/><circle class="rp" id="rp" cx="38" cy="38" r="34"/></svg>
         <div class="rn" id="rpct">0%</div>
       </div>
-      <div class="htxt"><h3 id="hg">Willkommen</h3><p id="hs">Jeder Tag ist eine Wahl.</p></div>
+      <div class="htxt"><h3 id="hg">Willkommen</h3><p id="hs">Deine Reise beginnt heute.</p></div>
     </div>
-    <div class="wstrip">
-      <div class="we">Meine Intention</div>
-      <div class="ww" id="ww">—</div>
-      <div class="wa" id="wa">—</div>
-    </div>
+    <div class="wstrip"><div class="we">Meine Intention</div><div class="ww" id="ww">—</div><div class="wa" id="wa">—</div></div>
     <div class="wnav">
       <button class="wn active" data-w="1" onclick="sw(1)"><span class="wnn">I</span><span class="wnl">Erkennen</span></button>
       <button class="wn" data-w="2" onclick="sw(2)"><span class="wnn">II</span><span class="wnl">Loslassen</span></button>
@@ -331,259 +291,515 @@ input.rng::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;b
 </div>
 
 <script>
-const D=[
-{d:1,w:1,wn:"Erkennen",
+// ═══════════════════════════════════════════════
+// PROGRAM DATA — 30 Tage, vollständig
+// ═══════════════════════════════════════════════
+const D = [
+
+// ── WOCHE 1: ERKENNEN ──────────────────────────
+{d:1,w:1,
 title:"Das Programm beobachten",
-desc:"Du bist nicht deine Gedanken. Heute beginnst du zu beobachten, mit neugieriger Offenheit.",
-intro:"95% unserer Handlungen laufen automatisch ab – Gedanken, Reaktionen, Überzeugungen, die tief im Körper gespeichert sind. Heute beobachtest du dieses Programm wie ein neugieriger Zeuge. Mit Sanftheit, mit Interesse, mit Mitgefühl. Nimm dir 5–10 Minuten, atme tief durch und beantworte die Fragen ehrlich.",
-q1:"Was sind die ersten Gedanken, die morgens auftauchen, wenn du aufwachst? Was sagt deine innere Stimme als Erstes?",
-h1:"z.B. 'Heute wird ein guter Tag.' · 'Ich muss so viel erledigen.' · 'Ich bin schon wieder müde.' · 'Hoffentlich klappt alles.' – schreibe genau das, was wirklich kommt, ohne es zu beschönigen.",
-q2:"In welchem Lebensbereich erkennst du ein wiederkehrendes Muster – immer dieselben Situationen, dieselben Reaktionen, dieselben Gefühle?",
-h2:"z.B. 'In Beziehungen ziehe ich immer Menschen an, die mich brauchen aber nicht wirklich da sind.' · 'Im Job passiert mir immer wieder, dass meine Arbeit nicht gesehen wird.' · 'Mit Geld wiederhole ich immer dasselbe Muster: verdienen, ausgeben, Stress.'",
-q3:"Schließe die Augen für eine Minute. Atme tief ein und aus. Was nimmst du gerade in deinem Körper wahr – wo ist Anspannung, Enge oder Schwere?",
-h3:"z.B. 'Spannung im Nacken und an den Schultern.' · 'Eine leichte Enge in der Brust wenn ich an meinen Alltag denke.' · 'Schwere in den Beinen.' – scanne deinen Körper vom Kopf bis zu den Füßen.",
-q4:"Wenn du ehrlich bist: Welcher Satz über dich selbst läuft am häufigsten im Hintergrund? Der Satz, den du nie laut sagst, aber oft fühlst?",
-h4:"z.B. 'Ich bin nicht gut genug.' · 'Ich bin zu viel.' · 'Ich muss erst X erreichen, bevor ich Y verdiene.' · 'Es klappt bei anderen, aber nicht bei mir.' – schreibe den Ersten, der dir kommt.",
-type:"full",emdr:false,
-bodyAreas:["Kopf","Kehle","Brust","Herz","Bauch","Rücken","Schultern","Hände","Beine","Ganzer Körper"]},
+desc:"Du bist nicht deine Gedanken. Heute beobachtest du mit neugieriger Offenheit.",
+intro:"95% unserer täglichen Handlungen laufen automatisch ab – Gedanken, Reaktionen, Überzeugungen, die tief im Körper gespeichert sind. Heute machst du den ersten Schritt: Du beobachtest dieses Programm wie ein neugieriger Zeuge. Nicht urteilen, nicht kämpfen – nur sehen. Nimm dir 8–10 Minuten.",
+quote:"Das Gehirn denkt Gedanken basierend auf dem, was wir in der Vergangenheit erlebt haben. Wenn du dieselben Gedanken denkst, triffst du dieselben Entscheidungen und handelst auf dieselbe Weise.",
+author:"Joe Dispenza",
+impulse:"Tagesimpuls: Beobachte heute dreimal inne und frage dich: 'Was denke ich gerade? Ist das wirklich wahr?' Keine Bewertung – nur Neugier.",
+qs:[
+  {e:"Frage 1",q:"Was sind die ersten Gedanken, die morgens auftauchen, bevor du aufstehst?",h:"z.B. 'Ich muss wieder so viel erledigen.' · 'Ich bin schon wieder müde.' · 'Hoffentlich klappt alles.' – schreibe den allerersten Gedanken."},
+  {e:"Frage 2",q:"In welchem Lebensbereich erkennst du ein wiederkehrendes Muster – immer dieselbe Situation, dieselbe Reaktion?",h:"z.B. 'In Beziehungen ziehe ich immer Menschen an, die mich brauchen aber nicht wirklich da sind.' · 'Im Job werde ich immer wieder übergangen.' · 'Mit Geld bleibt es immer eng.'"},
+  {e:"Körper-Check",q:"Schließe die Augen für eine Minute und scanne deinen Körper. Wo trägst du gerade Anspannung oder Schwere?",h:"z.B. 'Enge in der Brust.' · 'Druck im Nacken.' · 'Schwere in den Schultern.' · 'Kribbeln im Bauch.' – beschreibe die Empfindung ohne sie zu erklären."},
+  {e:"Frage 3",q:"Welcher automatische Satz über dich selbst läuft am häufigsten im Hintergrund – der Satz, den du nie laut sagst, aber oft fühlst?",h:"z.B. 'Ich bin nicht gut genug.' · 'Ich bin zu viel.' · 'Ich muss erst X erreichen, bevor ich Y verdiene.' · 'Es klappt bei anderen, aber nie bei mir.'"},
+  {e:"Reflexion",q:"Was nimmst du aus dem heutigen Tag mit? Was hast du über dein automatisches Programm beobachtet?",h:"z.B. 'Ich merke, dass mein erster Gedanke fast immer Sorge ist.' · 'Ich erkenne ein Muster in Beziehungen.' · 'Mein Körper trägt mehr als ich dachte.'"}
+],
+bodyAreas:["Kopf","Kehle","Brust","Herz","Bauch","Rücken","Schultern","Hände","Beine","Ganzer Körper"],
+emdr:false},
 
-{d:2,w:1,wn:"Erkennen",title:"Der Körper erinnert sich",desc:"Dein Körper trägt, was die Seele noch nicht sagen kann.",
-intro:"Was wir erlebt haben, lebt im Körper weiter – als Anspannung, als Enge, als Wärme oder Schwere. Heute gibst du diesen Empfindungen Raum und eine Stimme.",
-q1:"Schließe die Augen und denke an einen Bereich, der dich beschäftigt. Was nimmst du im Körper wahr?",
-h1:"z.B. 'Eine leichte Enge in der Brust.' · 'Meine Schultern ziehen sich hoch.' · 'Im Bauch ein Kribbeln.' – beschreibe die Empfindung so präzise wie möglich.",
-q2:"Welche Körperhaltung kennst du von dir in Momenten, wo du dich unsicher fühlst?",
-h2:"z.B. 'Ich ziehe die Schultern ein und schaue nach unten.' · 'Ich halte den Atem an.' · 'Meine Stimme wird leiser und ich mache mich kleiner.'",
-type:"body",emdr:false,
-bodyAreas:["Kopf","Kehle","Brust","Herz","Bauch","Rücken","Schultern","Hände","Beine","Ganzer Körper"]},
+{d:2,w:1,
+title:"Der Körper erinnert sich",
+desc:"Dein Körper ist das Unterbewusstsein. Er trägt Überzeugungen als Empfindungen.",
+intro:"Was wir erlebt haben, lebt nicht in unseren Erinnerungen – es lebt in unserem Körper. Anspannung im Kiefer, Enge in der Brust, Schwere in den Schultern. Das sind keine zufälligen Empfindungen. Heute gibst du deinem Körper eine Stimme und lernst, seine Sprache zu verstehen.",
+quote:"Trauma ist nicht das, was mit dir passiert ist. Es ist das, was in deinem Körper passiert ist als Reaktion darauf.",
+author:"Bessel van der Kolk",
+impulse:"Tagesimpuls: Lege heute dreimal eine Hand auf deine Brust, atme tief ein und frage: 'Was trägst du gerade?' Nicht antworten – nur fühlen.",
+qs:[
+  {e:"Körper-Scan",q:"Schließe die Augen und denke an einen Bereich, der dich belastet. Was passiert genau in deinem Körper? Beschreibe Ort, Qualität und Intensität.",h:"z.B. 'Enge in der Brust, wie ein Druck von innen, mittlere Intensität.' · 'Schwere im Rücken, zwischen den Schulterblättern.' · 'Kribbeln im Bauch, fast wie Übelkeit.'"},
+  {e:"Frage 1",q:"Welche Körperhaltung nimmst du automatisch ein, wenn du dich klein, unsicher oder übergangen fühlst?",h:"z.B. 'Ich ziehe die Schultern ein und schaue nach unten.' · 'Ich halte die Luft an und werde still.' · 'Meine Kiefer verkrampft sich und die Stimme wird leiser.'"},
+  {e:"Frage 2",q:"Gibt es eine Körperstelle, die sich seit Jahren angespannt anfühlt – die du fast vergessen hast, weil sie so normal geworden ist?",h:"z.B. 'Mein Nacken ist immer steif.' · 'Mein Bauch ist ständig ein wenig angespannt.' · 'Meine Schultern hängen nie wirklich los.'"},
+  {e:"Körper & Emotion",q:"Welche Emotion versteckt sich hinter dieser körperlichen Empfindung? Was würde dein Körper sagen, wenn er sprechen könnte?",h:"z.B. 'Er würde sagen: Ich bin erschöpft davon, immer stark zu sein.' · 'Er würde sagen: Ich habe Angst, nicht zu genügen.' · 'Er würde sagen: Ich möchte endlich loslassen.'"},
+  {e:"Reflexion",q:"Was hat sich heute verändert, als du deinem Körper wirklich zugehört hast?",h:"z.B. 'Ich merke, dass ich meinen Körper selten wirklich wahrnehme.' · 'Die Enge hat sich etwas gelöst als ich sie einfach gefühlt habe.' · 'Ich spüre, wo ich noch Arbeit vor mir habe.'"}
+],
+bodyAreas:["Kopf","Kiefer","Kehle","Nacken","Brust","Herz","Bauch","Rücken","Schultern","Hände","Beine"],
+emdr:false},
 
-{d:3,w:1,wn:"Erkennen",title:"Der Schmerz als Wegweiser",desc:"Schmerz zeigt uns präzise, was noch gehört werden möchte.",
-intro:"Schmerz ist einer der treuesten Wegweiser, den wir haben. Er zeigt uns, was wir wirklich brauchen – und was noch ungehört in uns wartet. Heute hörst du hin.",
-q1:"Welches Muster begegnet dir immer wieder – in Beziehungen, im Beruf, mit dir selbst?",
-h1:"z.B. 'Ich gebe immer mehr als ich empfange.' · 'Ich stelle meine Bedürfnisse hinten an.' · 'Immer wenn es gut wird, passiert etwas, das mich zurückwirft.'",
-q2:"Wenn dieses Muster oder dieser Schmerz dir eine Botschaft senden würde – was wäre sie?",
-h2:"z.B. 'Er würde sagen: Ich möchte gesehen werden.' · 'Die Botschaft wäre: Vertraue dir selbst.' · 'Ich glaube, er sagt mir: Du darfst Grenzen setzen und sie halten.'",
-type:"obs",emdr:false},
+{d:3,w:1,
+title:"Der Schmerz als Wegweiser",
+desc:"Schmerz ist kein Feind – er ist präzise Information über deine tiefsten Bedürfnisse.",
+intro:"Wir sind konditioniert, Schmerz zu vermeiden, zu betäuben oder zu überspielen. Aber Schmerz ist einer der treuesten Wegweiser, den wir haben. Er zeigt uns, was wir wirklich brauchen – und was noch ungehört in uns wartet. Heute drehst du dich dem zu, was weh tut – mit Mitgefühl, nicht mit Kampf.",
+quote:"Schmerz in deinem Leben ist ein Kompass. Er zeigt dir, was nicht mit deiner tiefsten Wahrheit übereinstimmt.",
+author:"Tony Robbins",
+impulse:"Tagesimpuls: Wenn heute etwas wehtut – emotional oder körperlich – frage dich: 'Was brauche ich gerade wirklich?' Nicht was du tun musst. Was du brauchst.",
+qs:[
+  {e:"Frage 1",q:"Was ist das wiederkehrende Muster in deinem Leben, das dich am meisten schmerzt – nicht ein einzelnes Ereignis, sondern das Muster dahinter?",h:"z.B. 'Ich gebe immer mehr als ich empfange und fühle mich am Ende leer.' · 'Immer wenn ich etwas aufbaue, sabotiere ich es irgendwie.' · 'Ich wähle immer wieder dieselbe Art von Menschen und wundere mich warum es nicht funktioniert.'"},
+  {e:"Frage 2",q:"Wenn dieser Schmerz eine Botschaft an dich hätte – was wäre sie? Was versucht er dir schon lange zu sagen?",h:"z.B. 'Er sagt: Du darfst Grenzen setzen.' · 'Er sagt: Du verdienst echte Verbindung, nicht nur Oberflächlichkeit.' · 'Er sagt: Es ist Zeit, dir selbst zu vertrauen.'"},
+  {e:"Frage 3",q:"Wann hast du diesen Schmerz zum ersten Mal gefühlt? Welche Situation oder Person war dabei?",h:"z.B. 'Als Kind wenn meine Eltern stritten und ich nicht wusste was ich tun soll.' · 'Als eine wichtige Person gegangen ist.' · 'Als ich merkte, dass meine Bedürfnisse nicht wichtig sind.'"},
+  {e:"Körper-Check",q:"Wo sitzt dieser Schmerz in deinem Körper gerade, während du daran denkst? Wie fühlt er sich an?",h:"z.B. 'Schwere im Herz.' · 'Enge im Bauch.' · 'Ein Kloß im Hals.' · 'Taubheit in der Brust.'"},
+  {e:"Reflexion",q:"Was brauchst du wirklich, um diesen Schmerz zu heilen – nicht zu übergehen, sondern zu heilen?",h:"z.B. 'Ich brauche echte Verbindung zu mir selbst.' · 'Ich brauche Erlaubnis, Grenzen zu setzen.' · 'Ich brauche mehr Mitgefühl mit mir selbst.'"}
+],
+emdr:false},
 
-{d:4,w:1,wn:"Erkennen",title:"Glaubenssätze sehen",desc:"Was du über dich glaubst, erschafft deine Erfahrung.",
-intro:"Glaubenssätze entstanden einmal als Schutz. Heute machst du sie sichtbar – denn was du sehen kannst, kannst du verwandeln.",
-q1:"Vervollständige spontan:\n• Ich bin nicht gut genug, weil...\n• Geld bedeutet für mich...\n• Liebe ist für mich...\n• Ich verdiene...",
-h1:"z.B. 'Ich bin nicht gut genug, weil ich nie perfekt bin.' · 'Geld bedeutet Stress.' · 'Liebe ist Arbeit.' – schreibe das Allererste, das kommt.",
-q2:"Erkennst du, woher dieser Glaube kommt?",
-h2:"z.B. 'Meine Mutter sagte oft...' · 'Als Kind erlebte ich, dass...' · 'In der Schule habe ich gelernt, dass ich...'",
-type:"bel",emdr:false,
-emotions:["Ich bin nicht genug","Ich bin nicht sicher","Ich bin nicht liebenswert","Ich bin allein","Ich muss funktionieren","Ich darf nicht zu viel sein","Ich bin nicht würdig","Ich muss kämpfen"]},
+{d:4,w:1,
+title:"Glaubenssätze sichtbar machen",
+desc:"Was du über dich glaubst, erschafft deine Realität.",
+intro:"Glaubenssätze sind Entscheidungen, die wir als Kind getroffen haben, um zu überleben und geliebt zu werden. Sie waren damals sinnvoll. Heute begrenzen sie uns. Heute machst du sie sichtbar – denn was du sehen kannst, kannst du verändern.",
+quote:"Bis du dein Unterbewusstsein bewusst machst, wird es dein Leben leiten und du wirst es Schicksal nennen.",
+author:"Carl Gustav Jung",
+impulse:"Tagesimpuls: Beobachte heute, wann du dich zurückziehst, kleinmachst oder entschuldigst, obwohl du es nicht müsstest. Das ist dein Glaubenssatz in Aktion.",
+qs:[
+  {e:"Spontan-Übung",q:"Vervollständige diese Sätze ohne zu denken – schreibe das Allererste, das kommt:\n• Ich bin nicht gut genug, weil...\n• Geld bedeutet für mich...\n• Liebe ist für mich...\n• Ich verdiene...\n• Erfolg bedeutet für mich...",h:"Lass es einfach fließen. z.B. 'Ich bin nicht gut genug, weil ich nicht perfekt bin.' · 'Geld bedeutet Stress und Verpflichtung.' – keine Korrektur, nur schreiben."},
+  {e:"Frage 1",q:"Welcher dieser Sätze trifft dich am stärksten – welcher sitzt am tiefsten?",h:"z.B. 'Der Satz über Liebe trifft mich am meisten – ich glaube tief innen, dass ich sie verdienen muss.' · 'Der Geld-Satz überrascht mich selbst.'"},
+  {e:"Frage 2",q:"Woher kommt dieser Glaubenssatz? Wer hat ihn dir damals gegeben – durch Worte, durch Verhalten, durch Schweigen?",h:"z.B. 'Mein Vater sagte immer: Wer nicht arbeitet, der hat kein Recht auf Ruhe.' · 'Meine Mutter hat mich nie gelobt, egal was ich getan habe.' · 'Ich habe früh gelernt, dass Bedürfnisse stören.'"},
+  {e:"Frage 3",q:"Dieser Glaubenssatz hat dich in der Vergangenheit geschützt. Wie hat er dir gedient – auch wenn er heute begrenzt?",h:"z.B. 'Er hat mich dazu gebracht, immer zu leisten und dadurch Anerkennung zu bekommen.' · 'Er hat mich davon abgehalten, verletzt zu werden indem ich niemanden zu nah ranlasse.'"},
+  {e:"Reflexion",q:"Wenn du diesem alten Glaubenssatz mit Mitgefühl begegnen würdest – was würdest du dem Kind in dir sagen, das ihn damals übernommen hat?",h:"z.B. 'Ich würde sagen: Du hast das Beste getan, was du konntest. Und jetzt darfst du es loslassen.' · 'Ich würde sagen: Du warst genug. Du bist es immer gewesen.'"}
+],
+emdr:false},
 
-{d:5,w:1,wn:"Erkennen",title:"Das Reaktionsmuster",desc:"Wie reagiert dein altes Ich in herausfordernden Momenten?",
-intro:"Jeder Mensch hat ein automatisches Reaktionsmuster. Es war einmal Schutz. Heute erkennst du deines mit Neugier und Freundlichkeit.",
-q1:"Wie reagierst du automatisch, wenn du dich abgelehnt oder missverstanden fühlst?",
-h1:"z.B. 'Ich ziehe mich zurück und werde still.' · 'Ich erkläre mich ausführlich und versuche alles richtig zu machen.' · 'Ich werde innerlich kalt und distanziere mich.'",
-q2:"Was schützt dieses Muster in dir? Was Kostbares bewacht es?",
-h2:"z.B. 'Es schützt mein Herz vor Ablehnung.' · 'Es bewacht meinen inneren Frieden.' · 'Es beschützt das kleine Mädchen in mir, das zu oft verletzt wurde.'",
-type:"obs",emdr:false},
+{d:5,w:1,
+title:"Das Reaktionsmuster erkennen",
+desc:"Wie reagiert dein altes Ich – automatisch, unbewusst, immer gleich?",
+intro:"Jeder Mensch hat ein automatisches Reaktionsmuster in stressigen oder herausfordernden Momenten. Manche ziehen sich zurück, manche werden laut, manche funktionieren einfach weiter. Dieses Muster ist kein Fehler – es war einmal Schutz. Heute erkennst du deines mit Neugier statt Selbstkritik.",
+quote:"Zwischen Reiz und Reaktion liegt ein Raum. In diesem Raum liegt unsere Freiheit und unsere Fähigkeit zu wachsen.",
+author:"Viktor Frankl",
+impulse:"Tagesimpuls: Wenn du heute getriggert wirst – pause. Atme dreimal tief durch bevor du reagierst. Dieser Raum ist deine Freiheit.",
+qs:[
+  {e:"Frage 1",q:"Wie reagierst du automatisch, wenn du dich abgelehnt, übergangen oder missverstanden fühlst? Beschreibe dein genaues Verhalten.",h:"z.B. 'Ich ziehe mich sofort zurück und werde still, auch wenn ich innerlich koche.' · 'Ich erkläre mich ausführlich und versuche alles richtig zu machen.' · 'Ich werde sarkastisch und distanziere mich.'"},
+  {e:"Frage 2",q:"Wie verhältst du dich, wenn du Angst hast, zu versagen oder nicht gut genug zu sein?",h:"z.B. 'Ich überarbeite alles und schlafe nicht.' · 'Ich prokrastiniere und tue gar nichts.' · 'Ich suche Bestätigung bei anderen.' · 'Ich werde selbstkritisch bis zur Erschöpfung.'"},
+  {e:"Frage 3",q:"Was schützt dieses Reaktionsmuster in dir? Was Kostbares bewacht es?",h:"z.B. 'Es schützt mein Herz davor, noch mehr verletzt zu werden.' · 'Es sorgt dafür, dass ich nicht zu viel Raum einnehme.' · 'Es hält mich davon ab, zu scheitern – indem ich gar nicht erst anfange.'"},
+  {e:"Körper-Reaktion",q:"Wie reagiert dein Körper in diesen Momenten – bevor dein Verstand eingreift?",h:"z.B. 'Mein Herz rast.' · 'Ich halte den Atem an.' · 'Mein Kiefer verkrampft sich.' · 'Mein Bauch zieht sich zusammen.' · 'Ich werde körperlich klein.'"},
+  {e:"Neue Wahl",q:"Wenn du in diesem Moment eine neue Wahl treffen könntest – wie würde die neue Version von dir reagieren?",h:"z.B. 'Sie würde tief atmen und klar sagen, was sie braucht.' · 'Sie würde Grenzen setzen, ohne sich zu entschuldigen.' · 'Sie würde aus Sicherheit antworten, nicht aus Angst.'"}
+],
+emdr:false},
 
-{d:6,w:1,wn:"Erkennen",title:"Die Geschichte, die du trägst",desc:"Heute siehst du deine eigene Geschichte mit neuen Augen.",
-intro:"Es gibt eine Geschichte, die du über dich selbst erzählst. Diese Geschichte ist eine Interpretation – und Interpretationen können neu geschrieben werden.",
-q1:"Schreibe die Geschichte, die du über dich selbst trägst – in der dritten Person: 'Sie ist eine Frau, die...'",
-h1:"z.B. 'Sie ist eine Frau, die immer für andere da ist, aber selten für sich selbst.' · 'Sie ist jemand, der sich nie sicher fühlt, dass sie genug ist.' · Schreibe einfach drauf los.",
-q2:"Welche Teile dieser Geschichte erkennst du als wahr – und welche hast du irgendwann entschieden zu glauben?",
-h2:"z.B. 'Dass ich fürsorglich bin, stimmt wirklich. Dass ich nicht genug Platz verdiene, habe ich als Kind entschieden, weil...' – trenne was du bist von dem was du geglaubt hast.",
-type:"obs",emdr:false},
+{d:6,w:1,
+title:"Die Geschichte, die du über dich erzählst",
+desc:"Wir sind nicht die Vergangenheit – aber wir können wählen, wie wir sie tragen.",
+intro:"Es gibt eine Geschichte, die du über dich selbst erzählst. Über wer du bist, was du kannst, was du verdienst. Diese Geschichte ist keine unveränderbare Wahrheit – sie ist eine Interpretation. Und Interpretationen können neu geschrieben werden. Heute siehst du deine Geschichte klar und mit Mitgefühl.",
+quote:"Deine Geschichte ist nicht deine Identität. Sie ist die Linse, durch die du dich siehst. Und Linsen können geändert werden.",
+author:"Laura Malina Seiler",
+impulse:"Tagesimpuls: Beobachte heute, wenn du Sätze mit 'Ich bin halt so...' oder 'Bei mir klappt das nie...' sagst. Das ist deine Geschichte in Aktion.",
+qs:[
+  {e:"Deine Geschichte",q:"Schreibe die Geschichte, die du über dich selbst trägst – in der dritten Person, wie ein Roman: 'Sie ist eine Frau, die...'",h:"Lass es fließen. z.B. 'Sie ist eine Frau, die immer für andere da ist, aber selten für sich selbst.' · 'Sie ist jemand, der immer kämpft, aber nie wirklich ankommt.' · 'Sie gibt alles, fragt sich aber ob es je genug ist.'"},
+  {e:"Frage 1",q:"Welche Teile dieser Geschichte sind wirklich wahr – und welche hast du irgendwann entschieden zu glauben?",h:"z.B. 'Dass ich fürsorglich bin, stimmt. Dass ich nicht genug Raum verdiene, habe ich als Kind entschieden.' · Trenne was du wirklich bist von dem, was dir erzählt wurde."},
+  {e:"Frage 2",q:"Was wäre möglich in deinem Leben, wenn diese Geschichte sich ändern würde?",h:"z.B. 'Ich könnte endlich ein Business aufbauen ohne die Angst zu scheitern.' · 'Ich könnte eine Beziehung eingehen ohne Angst verlassen zu werden.' · 'Ich könnte mich zeigen ohne mich zu entschuldigen.'"},
+  {e:"Frage 3",q:"Wer wärst du, wenn du diese Geschichte nicht mehr trägst? Beschreibe diese Frau.",h:"z.B. 'Ich wäre eine Frau, die weiß was sie wert ist.' · 'Ich wäre jemand, der aus Freude handelt, nicht aus Angst.' · 'Ich wäre leichter, offener, echter.'"},
+  {e:"Würdigung",q:"Diese Geschichte hat dich hierher gebracht. Was möchtest du würdigen – an dir, an deinem Weg, an deiner Stärke?",h:"z.B. 'Ich würdige, dass ich trotz allem immer weitergegangen bin.' · 'Ich würdige mein Herz, das immer wieder liebt, auch wenn es verletzt wurde.'"}
+],
+emdr:false},
 
-{d:7,w:1,wn:"Erkennen",title:"Würdigung und Abschluss",desc:"Du hast hingeschaut. Das braucht echten Mut.",
-intro:"Eine ganze Woche hingeschaut – auf das Programm, auf den Körper, auf die Überzeugungen. Bevor wir loslassen, ehren wir zuerst was war. Alles hatte seinen Sinn auf dieser Reise.",
-q1:"Was war die wichtigste Erkenntnis dieser Woche?",
-h1:"z.B. 'Ich habe gemerkt, dass mein Körper viel mehr trägt als ich dachte.' · 'Ich erkenne jetzt das Muster, das mich immer wieder an denselben Punkt bringt.'",
-q2:"Was möchtest du würdigen – an dir, an deiner Geschichte, an deiner Stärke bis hierhin?",
-h2:"z.B. 'Ich würdige, dass ich trotz allem immer weitergemacht habe.' · 'Ich ehre das kleine Mädchen in mir, das immer das Beste gegeben hat mit dem was es hatte.'",
-type:"cl",emdr:false},
+{d:7,w:1,
+title:"Wochentag der Stille – Bewusster Abschluss",
+desc:"Du hast eine Woche hingeschaut. Das braucht echten Mut.",
+intro:"Du hast 6 Tage lang tief in dich hineingeschaut – auf dein Programm, deinen Körper, deine Überzeugungen, deine Geschichte. Bevor wir loslassen, halten wir inne und ehren, was war. Alles, was du erlebt hast, hatte seinen Sinn. Jede Erfahrung, jeder Schmerz, jedes Muster – alles hat dich hierher gebracht.",
+quote:"Wachstum ist nicht der Weg von A nach B. Es ist die Bereitschaft, anzuschauen was ist – und trotzdem weiterzugehen.",
+author:"—",
+impulse:"Tagesimpuls: Tue heute eine Sache, die dir Freude macht – nicht weil du sie verdient hast, sondern weil du es darfst.",
+qs:[
+  {e:"Wochenrückblick",q:"Was war die wichtigste Erkenntnis dieser Woche? Was hat dich am meisten überrascht?",h:"z.B. 'Ich habe gemerkt, dass mein Körper viel mehr trägt als ich dachte.' · 'Ich erkenne jetzt ein Muster, das ich vorher nicht gesehen habe.'"},
+  {e:"Frage 1",q:"Was hat sich in dieser Woche bereits verändert – auch wenn es nur ein kleiner Shift ist?",h:"z.B. 'Ich bin bewusster in meinen Reaktionen.' · 'Ich beobachte meine Gedanken jetzt anders.' · 'Ich spüre meinen Körper aufmerksamer.'"},
+  {e:"Würdigung",q:"Was möchtest du würdigen und ehren – an dir, an deiner Geschichte, an deiner Reise bis hierhin?",h:"z.B. 'Ich würdige, dass ich trotz allem immer weitergemacht habe.' · 'Ich ehre das kleine Mädchen in mir, das immer das Beste gegeben hat.'"},
+  {e:"Freude & Dankbarkeit",q:"Was macht dich heute wirklich dankbar – nicht weil du es musst, sondern weil du es wirklich fühlst?",h:"z.B. 'Ich bin dankbar für meinen gesunden Körper.' · 'Ich bin dankbar für die Menschen, die bei mir sind.' · 'Ich bin dankbar, dass ich diese Reise begonnen habe.'"},
+  {e:"Absicht",q:"Welche Absicht setzt du für die nächste Woche – Woche 2: Altes Loslassen?",h:"z.B. 'Ich bin bereit, das alte Muster mit Liebe loszulassen.' · 'Ich öffne mich für Veränderung.' · 'Ich vertraue dem Prozess.'"}
+],
+emdr:false},
 
-{d:8,w:2,wn:"Loslassen",title:"Die Wahl zu loslassen",desc:"Loslassen ist eine bewusste Entscheidung – keine Niederlage.",
-intro:"Loslassen bedeutet nicht vergessen. Es bedeutet, dass du wählst, es nicht länger als Definition von dir zu tragen. Du triffst eine neue, freie Wahl.",
-q1:"Was bist du am bereitesten loszulassen – ein Muster, eine Überzeugung, ein Gefühl?",
-h1:"z.B. 'Die Überzeugung, dass ich Liebe verdienen muss.' · 'Das Gefühl, nie gut genug zu sein.' · 'Den Glauben, dass es gefährlich ist, Raum einzunehmen.'",
-q2:"Was wird in deinem Leben möglich, wenn du dieses Muster nicht mehr trägst?",
-h2:"z.B. 'Ich kann leichter Liebe annehmen.' · 'Ich kann mutige Entscheidungen treffen.' · 'Ich kann mich zeigen, ohne Angst vor dem Urteil anderer.'",
-type:"rel",emdr:true,emdrType:"release",before:"Wie schwer fühlt sich dieses Muster jetzt an? (1–10)",after:"Wie leicht fühlt es sich nach EMDR an? (1–10)"},
+// ── WOCHE 2: LOSLASSEN ─────────────────────────
+{d:8,w:2,
+title:"Die bewusste Wahl zu loslassen",
+desc:"Loslassen ist keine Niederlage – es ist die mutigste Form der Selbstliebe.",
+intro:"Loslassen bedeutet nicht, dass das was war nicht wichtig war. Es bedeutet, dass du entscheidest, es nicht länger als Definition von dir zu tragen. Heute triffst du eine neue, bewusste Wahl. Diese Woche beginnt die eigentliche EMDR-Arbeit – die Auflösung alter Muster direkt im Nervensystem.",
+quote:"Loslassen heißt nicht aufgeben. Es heißt erkennen, dass manche Dinge nicht zu deiner Geschichte gehören – sondern zu deiner Vergangenheit.",
+author:"—",
+impulse:"Tagesimpuls: Schreibe auf ein Blatt Papier das Muster, das du loslassen möchtest. Halte es in beiden Händen. Dann lege es bewusst hin und sage laut: 'Ich wähle, dich loszulassen.'",
+qs:[
+  {e:"Bereitschaft",q:"Was bist du am bereitesten loszulassen – ein Muster, eine Überzeugung, eine Emotion, eine alte Geschichte?",h:"z.B. 'Die Überzeugung, dass ich Liebe verdienen muss.' · 'Das Muster, meine eigenen Bedürfnisse zu ignorieren.' · 'Die Angst, zu viel Raum einzunehmen.'"},
+  {e:"Frage 1",q:"Was wird in deinem Leben möglich, wenn du dieses Muster nicht mehr trägst?",h:"z.B. 'Ich kann authentischere Beziehungen führen.' · 'Ich kann mutige Entscheidungen treffen.' · 'Ich kann mich zeigen ohne Angst.'"},
+  {e:"Vor der EMDR Session",q:"Aktiviere jetzt das Muster in deinem Körper: Denke daran, spüre es. Wie stark ist es gerade auf einer Skala von 1–10?",h:"Sei ehrlich mit dir selbst. Es geht nicht darum, eine bestimmte Zahl zu haben – sondern darum, deinen aktuellen Zustand wahrzunehmen."},
+  {e:"Reflexion nach EMDR",q:"Was hat sich nach der EMDR Session gezeigt? Was ist aufgetaucht, weicher geworden, verändert?",h:"z.B. 'Die Enge wurde wärmer und löste sich ein wenig.' · 'Ein altes Bild tauchte auf.' · 'Ich musste weinen – das hat sich gut angefühlt.'"},
+  {e:"Integration",q:"Wie fühlt sich dieses Muster jetzt an – nach der Session? Was nimmst du mit?",h:"z.B. 'Es fühlt sich leichter an.' · 'Noch nicht ganz los aber es hat sich bewegt.' · 'Ich spüre mehr Raum.'"}
+],
+emdr:true,emdrType:"release",
+before:"Intensität des Musters vor EMDR (1–10)",after:"Intensität nach EMDR (1–10)"},
 
-{d:9,w:2,wn:"Loslassen",title:"Vergebung – deine eigene Freiheit",desc:"Vergebung schenkst du zuallererst dir selbst.",
-intro:"Vergebung bedeutet nicht, dass das was passiert ist in Ordnung war. Es bedeutet, dass du aufhörst, die Last mitzutragen. Du gibst sie zurück – weil du frei sein möchtest.",
-q1:"Wen oder was trägst du noch in dir? Eine Person, eine Situation, einen Teil von dir selbst?",
-h1:"z.B. 'Ich trage noch Groll gegenüber meiner Mutter, weil...' · 'Ich trage Scham über eine Entscheidung von früher.' · 'Ich vergebe mir selbst, dass ich so lange gebraucht habe.'",
-q2:"Schreibe einen Brief der Vergebung – nur für dich. Beginne: 'Ich wähle, dich loszulassen, weil ich frei sein möchte...'",
-h2:"z.B. 'Ich wähle, dich loszulassen, weil ich frei sein möchte zu lieben, ohne Angst.' · 'Ich vergebe mir, weil ich damals mit dem getan habe, was ich konnte.'",
-type:"forg",emdr:true,emdrType:"release",before:"Wie schwer fühlt sich das Tragen an? (1–10)",after:"Wie viel Raum spürst du jetzt? (1–10)"},
+{d:9,w:2,
+title:"Vergebung – die stärkste Form der Freiheit",
+desc:"Vergebung schenkst du zuallererst dir selbst.",
+intro:"Vergebung bedeutet nicht, dass das was passiert ist in Ordnung war. Es bedeutet, dass du aufhörst, die Last mitzutragen. Du gibst sie zurück – nicht weil die andere Person es verdient, sondern weil du frei sein möchtest. Die schwerste Vergebung ist die an uns selbst.",
+quote:"Vergebung ist wie das Loslassen eines glühenden Steins in der Hoffnung, die andere Person zu verbrennen. Die einzige, die verbrennt, bist du.",
+author:"Siddhartha Gautama",
+impulse:"Tagesimpuls: Schreibe heute einen kurzen Brief der Vergebung – nicht um ihn zu senden, sondern um dich selbst zu befreien. Beginne mit: 'Ich wähle, dich loszulassen, weil...'",
+qs:[
+  {e:"Frage 1",q:"Wen oder was trägst du noch in dir? Eine Person, eine Situation, einen Teil von dir selbst, dem du nicht vergeben hast?",h:"z.B. 'Ich trage noch Groll gegenüber meiner Mutter.' · 'Ich trage Scham über eine Entscheidung von früher.' · 'Ich habe mir nie vergeben, dass ich so lange gewartet habe.'"},
+  {e:"Brief der Vergebung",q:"Schreibe jetzt einen Brief – nur für dich. Beginne: 'Ich wähle, dich loszulassen, weil ich frei sein möchte...'",h:"z.B. 'Ich wähle, dich loszulassen, weil ich frei sein möchte zu lieben ohne Angst.' · 'Ich vergebe mir selbst, weil ich damals das Beste getan habe was ich konnte.' · Lass es fließen."},
+  {e:"Körper der Vergebung",q:"Was passiert in deinem Körper während du diesen Brief schreibst? Wo spürst du Erleichterung – und wo noch Widerstand?",h:"z.B. 'Im Herz spüre ich etwas weicher werden.' · 'Im Bauch ist noch Widerstand.' · 'Meine Augen werden feucht.'"},
+  {e:"EMDR Reflexion",q:"Führe jetzt EMDR durch – aktiviere das Gefühl rund um das Thema Vergebung und folge dem Licht. Was zeigt sich danach?",h:"z.B. 'Ich fühle mich leichter.' · 'Ein altes Bild ist aufgetaucht und hat sich dann aufgelöst.' · 'Es braucht noch mehr Zeit – und das ist okay.'"},
+  {e:"Reflexion",q:"Was bedeutet Vergebung heute für dich – nicht als Konzept, sondern als gelebte Erfahrung?",h:"z.B. 'Vergebung fühlt sich an wie ein Aufatmen.' · 'Es ist ein Prozess, nicht ein Moment.' · 'Ich verstehe jetzt, dass ich mir selbst vergebe, nicht der anderen Person.'"}
+],
+emdr:true,emdrType:"release",
+before:"Schwere des Themas vor EMDR (1–10)",after:"Wie viel Raum spürst du jetzt? (1–10)"},
 
-{d:10,w:2,wn:"Loslassen",title:"Dein sicherer innerer Ort",desc:"Ein Anker, zu dem du jederzeit zurückkehren kannst.",
-intro:"In der EMDR-Arbeit ist der sichere Ort dein persönlicher Schutzraum. Wenn Emotionen intensiv werden, kannst du jederzeit hierhin zurückkehren. Er gehört ganz dir.",
-q1:"Wo bist du vollkommen sicher und geborgen? Beschreibe diesen Ort lebendig.",
-h1:"z.B. 'Ein stiller Strand bei Sonnenuntergang, warmer Sand unter meinen Füßen.' · 'Eine gemütliche Bibliothek mit warmem Licht.' · 'Eine goldene Wiese, umgeben von alten Bäumen und tiefem Frieden.'",
-q2:"Was nimmst du dort wahr? Was hörst du, riechst du, spürst du?",
-h2:"z.B. 'Ich höre Vogelgesang und spüre eine leichte Brise auf meiner Haut.' · 'Ich rieche frische Luft und Lavendel.' · 'Eine tiefe Wärme und vollkommene Stille.'",
-type:"safe",emdr:false},
+{d:10,w:2,
+title:"Dein sicherer innerer Ort",
+desc:"Ein Anker der Kraft, zu dem du jederzeit zurückkehren kannst.",
+intro:"In der EMDR-Arbeit ist der sichere Ort dein persönlicher Schutzraum. Wenn Emotionen zu intensiv werden, gehst du einfach hierhin. Er kann real oder imaginiert sein – er gehört ganz dir und niemand kann ihn dir nehmen. Je lebendiger du ihn erschaffst, desto stärker wird er als Anker.",
+quote:"Du hast immer einen Ort der Stärke in dir. Manchmal vergisst du nur, wie du dahin kommst.",
+author:"Laura Malina Seiler",
+impulse:"Tagesimpuls: Gehe heute dreimal für 60 Sekunden zu deinem sicheren Ort in Gedanken. Schließe die Augen, aktiviere alle Sinne und spüre die Sicherheit im Körper.",
+qs:[
+  {e:"Dein sicherer Ort",q:"Wo bist du vollkommen sicher, geborgen und frei? Beschreibe diesen Ort so lebendig wie möglich.",h:"z.B. 'Ein stiller Strand bei Sonnenuntergang, warmer Sand unter meinen Füßen, das Rauschen der Wellen.' · 'Eine gemütliche Bibliothek mit warmem Kaminlicht.' · 'Eine goldene Wiese umgeben von alten Bäumen.'"},
+  {e:"Die Sinne",q:"Was hörst du dort? Was riechst du? Wie fühlt sich der Boden, die Luft, die Temperatur an?",h:"z.B. 'Ich höre Vogelgesang und eine leichte Brise.' · 'Ich rieche frische Luft und Lavendel.' · 'Die Luft ist warm und der Boden fest unter meinen Füßen.'"},
+  {e:"Das Gefühl",q:"Welches Gefühl durchströmt dich an diesem Ort – wie fühlt es sich in deinem Körper an?",h:"z.B. 'Tiefe Entspannung in der Brust.' · 'Weite und Leichtigkeit.' · 'Eine warme Sicherheit, die vom Bauch ausstrahlt.'"},
+  {e:"Dein Schutz",q:"Gibt es an diesem Ort eine Person, ein Tier oder ein Symbol, das dich beschützt und bei dir ist?",h:"z.B. 'Meine Großmutter, die immer Wärme ausgestrahlt hat.' · 'Ein großer alter Baum der mich schützt.' · 'Ein warmes goldenes Licht das mich umhüllt.'"},
+  {e:"Aktivierung",q:"Aktiviere jetzt deinen sicheren Ort vollständig – alle Sinne, das Gefühl im Körper. Wie stark ist die Verbindung auf einer Skala von 1–10?",h:"Je öfter du ihn aktivierst, desto stärker wird er. Das ist wie ein Muskel."}
+],
+emdr:false},
 
-{d:11,w:2,wn:"Loslassen",title:"EMDR – Das Alte sanft auflösen",desc:"Dein Nervensystem verarbeitet, was der Verstand nicht greifen kann.",
-intro:"EMDR arbeitet direkt im Nervensystem – tiefer als Worte reichen. Heute aktivierst du ein altes Muster und lässt die bilaterale Stimulation es sanft verarbeiten.",
-q1:"Welcher Glaubenssatz aus Woche 1 hat dich am stärksten berührt? Aktiviere ihn im Körper – dann starte EMDR.",
-h1:"z.B. 'Ich spüre 'Ich bin nicht genug' als Enge im Bauch.' · 'Ich fühle 'Ich bin allein' als Schwere in der Brust.' – aktiviere es, starte EMDR und beobachte nur.",
-q2:"Was hat sich nach der Session gezeigt oder verändert?",
-h2:"z.B. 'Die Enge wurde weicher und wärmer.' · 'Ein Bild aus meiner Kindheit tauchte auf.' · 'Plötzlich kam Trauer – die sich danach leichter anfühlte.'",
-type:"emdr_s",emdr:true,emdrType:"release",before:"Intensität des Glaubenssatzes jetzt (1–10)",after:"Intensität nach der Session (1–10)"},
+{d:11,w:2,
+title:"EMDR – Das Alte sanft verarbeiten",
+desc:"Dein Nervensystem verarbeitet, was der Verstand nicht greifen kann.",
+intro:"EMDR arbeitet tiefer als Worte reichen – direkt im Nervensystem. Heute aktivierst du das alte Muster, das du in Woche 1 erkannt hast, und lässt die bilaterale Stimulation dabei helfen, es sanft zu verarbeiten. Kein Kämpfen, kein Analysieren – nur beobachten und zulassen.",
+quote:"Das Gehirn kann sich selbst heilen. Es braucht nur die richtigen Bedingungen – Sicherheit, Fokus und bilaterale Stimulation.",
+author:"Francine Shapiro",
+impulse:"Tagesimpuls: Wenn Emotionen aufsteigen während EMDR – lass sie kommen. Atme durch sie hindurch. Du bist sicher.",
+qs:[
+  {e:"Vorbereitung",q:"Welches Muster oder welchen Glaubenssatz aus Woche 1 möchtest du heute verarbeiten? Beschreibe es kurz.",h:"z.B. 'Ich bin nicht gut genug.' · 'Ich bin nicht sicher wenn ich Raum einnehme.' · 'Ich muss Liebe verdienen.'"},
+  {e:"Körper-Aktivierung",q:"Aktiviere das Muster jetzt in deinem Körper – denke daran, fühle es. Wo sitzt es? Wie intensiv ist es (1–10)?",h:"Atme tief durch. Dann starte EMDR und beobachte nur – ohne zu analysieren."},
+  {e:"Nach EMDR – direkt",q:"Was ist unmittelbar nach der Session aufgetaucht? Was hast du gespürt, gesehen, gefühlt?",h:"z.B. 'Die Enge hat sich gelöst.' · 'Ein altes Bild ist aufgetaucht.' · 'Ich musste gähnen oder tief atmen – das ist Verarbeitung.' · 'Es hat sich kaum etwas verändert – auch das ist okay.'"},
+  {e:"Sicherer Ort",q:"Gehe jetzt zu deinem sicheren Ort aus Tag 10. Aktiviere ihn vollständig. Wie fühlt er sich an?",h:"z.B. 'Ich spüre sofort die Wärme und Sicherheit.' · 'Es dauert ein paar Atemzüge bis ich dort bin.' · 'Die Verbindung ist stark.'"},
+  {e:"Integration",q:"Was nimmst du aus dieser Session mit? Was darf noch verarbeitet werden?",h:"z.B. 'Ich merke, dass mehr darunter liegt als ich dachte.' · 'Es bewegt sich etwas – langsam aber spürbar.' · 'Ich vertraue dem Prozess.'"}
+],
+emdr:true,emdrType:"release",
+before:"Intensität des Glaubenssatzes (1–10)",after:"Intensität nach Session + sicherer Ort (1–10)"},
 
-{d:12,w:2,wn:"Loslassen",title:"Der Körper darf loslassen",desc:"Was im Körper gespeichert ist, kann der Körper auch freilassen.",
-intro:"Heute arbeitest du direkt mit dem, was du im Körper trägst. Anspannung, Enge, Atemstopp – das sind Emotionen die auf Freigabe warten.",
-q1:"Wo trägst du diese Woche körperliche Anspannung? Benenne die Stelle.",
-h1:"z.B. 'Anspannung im Kiefer.' · 'Mein Rücken fühlt sich schwer an.' · 'Die Schultern ziehen sich zusammen, wenn ich an das Thema denke.'",
-q2:"Richte deine Aufmerksamkeit auf diese Körperstelle, starte EMDR und beschreibe danach was passiert ist.",
-h2:"z.B. 'Das Kribbeln wurde wärmer und löste sich langsam.' · 'Ich musste tief seufzen – das fühlte sich wie Erleichterung an.' · 'Die Stelle wurde weicher und ich spürte aufsteigende Wärme.'",
-type:"emdr_s",emdr:true,emdrType:"release",before:"Intensität der Körperempfindung (1–10)",after:"Was hat sich verändert? (1–10)"},
+{d:12,w:2,
+title:"Der Körper darf freilassen",
+desc:"Was im Körper gespeichert ist, kann der Körper auch lösen.",
+intro:"Trauma und alte Überzeugungen sitzen nicht im Kopf – sie sitzen im Gewebe, in den Muskeln, in der Atmung. Gähnen, Seufzen, Zittern, Weinen während EMDR sind keine Zeichen der Schwäche – sie sind Zeichen der Heilung. Heute gibst du deinem Körper explizit die Erlaubnis, loszulassen.",
+quote:"Der Körper behält die Rechnung. Aber er kann sie auch ausstellen lassen.",
+author:"Bessel van der Kolk",
+impulse:"Tagesimpuls: Wenn dein Körper heute zuckt, seufzt, gähnt oder Tränen kommen – lass es zu. Das ist keine Schwäche. Das ist Heilung.",
+qs:[
+  {e:"Körper-Scan",q:"Wo trägst du gerade körperliche Anspannung? Benenne die Stelle so präzise wie möglich.",h:"z.B. 'Anspannung im Kiefer und Nacken.' · 'Schwere zwischen den Schulterblättern.' · 'Enge im Brustkorb die sich wie Druck anfühlt.'"},
+  {e:"Frage 1",q:"Wenn diese Körperstelle eine Geschichte hätte – welche wäre es? Was hat sie schon lange gehalten?",h:"z.B. 'Mein Nacken hält die Last von allem, was ich nicht sagen durfte.' · 'Meine Brust hält den Schmerz von Trennungen.' · 'Mein Bauch hält die Angst.'"},
+  {e:"EMDR Körperarbeit",q:"Richte deine Aufmerksamkeit auf diese Körperstelle und starte EMDR. Lass deinen Körper verarbeiten ohne deinen Verstand einzumischen. Was passiert?",h:"z.B. 'Die Stelle wird wärmer.' · 'Ich musste tief seufzen und es wurde leichter.' · 'Ein Kribbeln hat sich ausgebreitet.' · 'Ich spürte Tränen kommen.'"},
+  {e:"Nachher",q:"Wie fühlt sich diese Körperstelle jetzt an – verglichen mit vorher?",h:"z.B. 'Weicher und wärmer.' · 'Noch da aber leichter.' · 'Kaum verändert – ich brauche mehr Sessions.'"},
+  {e:"Erlaubnis",q:"Was darfst du deinem Körper ab heute erlauben? Welche Botschaft möchtest du ihm geben?",h:"z.B. 'Du darfst loslassen.' · 'Du bist sicher.' · 'Du musst nicht alles alleine tragen.' · 'Du darfst weich sein.'"}
+],
+emdr:true,emdrType:"release",
+before:"Körperliche Spannung vor EMDR (1–10)",after:"Körperliche Leichtigkeit danach (1–10)"},
 
-{d:13,w:2,wn:"Loslassen",title:"Was mich wirklich glücklich macht",desc:"Freude ist Nahrung für deine neue Realität.",
-intro:"Dinge zu tun die uns wirklich glücklich machen sendet ein direktes Signal ans Nervensystem: Ich bin sicher. Ich bin gut. Das Leben ist schön. Freude ist Transformation.",
-q1:"Was macht dich wirklich lebendig und glücklich – jenseits von Verpflichtungen?",
-h1:"z.B. 'Tanzen, auch alleine in meiner Wohnung.' · 'In der Natur sein ohne Ziel.' · 'Kochen mit Lieblingsmusik.' · 'Ein Bad mit Kerzen.' · 'Kreativ sein ohne Ergebnis.'",
-q2:"Was wirst du heute oder morgen tun, das dir echte Freude bringt?",
-h2:"z.B. 'Ich werde heute Abend eine Stunde nur für mich reservieren.' · 'Ich kaufe mir Blumen.' · 'Ich tanze drei Lieder in meiner Küche.'",
-type:"joy",emdr:false,
-joyChips:["Tanzen","Natur","Kochen","Musik","Kreativität","Lachen","Verbindung","Stille","Bewegen","Schreiben","Baden","Lesen","Träumen","Spielen"]},
+{d:13,w:2,
+title:"Freude als Transformation",
+desc:"Dinge zu tun die dich glücklich machen ist kein Luxus – es ist Heilung.",
+intro:"Mitten in der Arbeit des Loslassens vergessen wir oft das Wichtigste: uns Dinge zu erlauben, die uns wirklich glücklich machen. Freude ist keine Belohnung für Transformation – sie ist Transformation. In Momenten echter Freude sendest du ein direktes Signal ans Nervensystem: Ich bin sicher. Ich bin gut. Das Leben ist gut.",
+quote:"Freude ist nicht etwas, das du verdienst. Freude ist dein natürlicher Zustand. Alles andere ist angelernt.",
+author:"—",
+impulse:"Tagesimpuls: Tue heute eine Sache, die dir echte Freude bereitet – ohne Zweck, ohne Ergebnis, einfach weil du es darfst.",
+qs:[
+  {e:"Deine Freuden",q:"Was macht dich wirklich glücklich – nicht was du glaubst dass es sein sollte, sondern was dich wirklich zum Leuchten bringt?",h:"z.B. 'Tanzen alleine in meiner Wohnung.' · 'Spaziergang ohne Handy.' · 'Kochen mit Lieblingsmusik.' · 'Kreativ sein ohne Ergebnis.' · 'Echtes Lachen mit einer Freundin.'"},
+  {e:"Frage 1",q:"Wann hast du das letzte Mal etwas nur aus Freude getan – ohne Produktivität, ohne Zweck?",h:"z.B. 'Vor Wochen.' · 'Ich kann mich kaum erinnern.' · 'Gestern beim Malen.' – Sei ehrlich."},
+  {e:"Erlaubnis",q:"Was hindert dich daran, dir täglich Freude zu erlauben? Was sagt die innere Stimme?",h:"z.B. 'Du hast noch so viel zu tun.' · 'Das ist Zeitverschwendung.' · 'Erst wenn alles erledigt ist.' · 'Du hast es nicht verdient.'"},
+  {e:"Frage 2",q:"Was wirst du heute oder morgen tun, das dir echte Freude bereitet – auch wenn es nur 10 Minuten sind?",h:"z.B. 'Ich werde heute Abend tanzen.' · 'Ich kaufe mir Blumen.' · 'Ich nehme mir 30 Minuten für mein Lieblingsbuch.' · 'Ich rufe meine beste Freundin an.'"},
+  {e:"Körper der Freude",q:"Wenn du an diese Sache denkst – was passiert in deinem Körper?",h:"z.B. 'Ein Lächeln kommt automatisch.' · 'Ich spüre Leichtigkeit im Brustbereich.' · 'Meine Schultern gehen etwas nach unten.' – Das ist dein Kompass."}
+],
+joyChips:["Tanzen","Natur","Kochen","Musik","Kreativität","Lachen","Verbindung","Stille","Bewegen","Schreiben","Baden","Lesen","Träumen","Spielen","Malen","Singen"],
+emdr:false},
 
-{d:14,w:2,wn:"Loslassen",title:"Abschluss – ich habe gewählt",desc:"Loslassen ist die mutigste Form der Selbstliebe.",
-intro:"Du hast Dinge angeschaut, die viele Menschen meiden. Das ist außergewöhnlich. Loslassen heißt, dass du die Wahl getroffen hast, es nicht länger als deine Wahrheit zu tragen.",
-q1:"Was hast du in dieser Woche losgelassen – auch wenn es nur einen Zentimeter war?",
-h1:"z.B. 'Die Überzeugung, immer stark sein zu müssen, ein Stück leichter.' · 'Ich habe mir selbst vergeben für eine Entscheidung, die ich lange bereut habe.'",
-q2:"Wie fühlt sich dieser neue Raum in dir an?",
-h2:"z.B. 'Wie ein tiefes Ausatmen.' · 'Wie Weite in der Brust.' · 'Wie ein leises, noch zartes Gefühl von Freiheit.'",
-type:"cl",emdr:false},
+{d:14,w:2,
+title:"Abschluss – ich habe gewählt",
+desc:"Loslassen ist nicht einmalig. Es ist eine tägliche Entscheidung.",
+intro:"Du hast diese Woche Dinge angeschaut, die viele Menschen ein Leben lang meiden. Du hast vergebung geübt, deinen Körper gehört, EMDR erlebt. Das ist außergewöhnlich. Loslassen heißt nicht, dass alles weg ist. Es heißt, dass du die Wahl getroffen hast, es nicht länger als deine Wahrheit zu tragen.",
+quote:"Transformation ist kein Moment. Es ist eine Reihe kleiner Entscheidungen, immer und immer wieder.",
+author:"—",
+impulse:"Tagesimpuls: Sage heute laut zu dir selbst: 'Ich wähle mich.' Dreimal. Und dann noch einmal.",
+qs:[
+  {e:"Wochenrückblick",q:"Was hast du in dieser Woche wirklich losgelassen – auch wenn es nur ein Millimeter war?",h:"z.B. 'Etwas der Anspannung in meinem Körper.' · 'Ein Stück der alten Geschichte.' · 'Einen Teil des Grolls.'"},
+  {e:"Frage 1",q:"Was hat EMDR diese Woche in dir ausgelöst? Was hat sich verändert?",h:"z.B. 'Ich habe gemerkt, wie viel im Körper gespeichert ist.' · 'Ich fühle mich nach jeder Session leichter.' · 'Es braucht Zeit – aber ich vertraue dem Prozess.'"},
+  {e:"Frage 2",q:"Wie fühlt sich der neue Raum an, der durch das Loslassen entstanden ist – auch wenn er klein ist?",h:"z.B. 'Wie ein tiefes Ausatmen.' · 'Wie Weite in der Brust.' · 'Wie ein zartes Gefühl von Freiheit.' · 'Noch kaum spürbar – aber ich weiß er ist da.'"},
+  {e:"Dankbarkeit",q:"Für was bist du dir selbst dankbar in dieser Woche?",h:"z.B. 'Dass ich hingeschaut habe, auch wenn es schwer war.' · 'Dass ich nicht aufgehört habe.' · 'Dass ich mir erlaubt habe zu fühlen.'"},
+  {e:"Absicht Woche 3",q:"Welche Absicht setzt du für Woche 3 – Neue Identität erschaffen?",h:"z.B. 'Ich bin bereit, die neue Version von mir zu erschaffen.' · 'Ich öffne mich für das was möglich ist.' · 'Ich bin gespannt auf wen ich werde.'"}
+],
+emdr:false},
 
-{d:15,w:3,wn:"Werden",title:"Wer du bist, wenn alles möglich ist",desc:"Manifestation beginnt mit Identität – nicht mit Wünschen.",
-intro:"Das Quantenfeld antwortet nicht auf das was du willst – es antwortet auf wer du bist. Die entscheidende Frage: Wer muss ich werden, damit es natürlich in mein Leben fließt?",
-q1:"Schreibe in der Gegenwart: Wer bist du in deiner vollsten Version? Beginne mit 'Ich bin eine Frau, die...' – schreibe mindestens 10 Sätze.",
-h1:"z.B. 'Ich bin eine Frau, die sich selbst kennt und aus dieser Kenntnis handelt.' · 'Ich bin eine Frau, die Liebe empfangen kann ohne sie zu verdienen.' · 'Ich bin eine Frau, die wählt statt zu reagieren.'",
-q2:"Wie bewegt sich diese Version von dir durch die Welt? Wie spricht sie, wie entscheidet sie?",
-h2:"z.B. 'Sie spricht klar und warmherzig.' · 'Sie entscheidet aus Sicherheit, nicht aus Angst.' · 'Sie trägt sich aufrecht, nimmt Raum ein und lächelt von innen.'",
-type:"id",emdr:false},
+// ── WOCHE 3: WERDEN ────────────────────────────
+{d:15,w:3,
+title:"Wer du bist, wenn alles möglich ist",
+desc:"Manifestation beginnt nicht mit Wünschen – sie beginnt mit Identität.",
+intro:"Joe Dispenza sagt: Das Quantenfeld antwortet nicht auf das was du willst – es antwortet auf wer du bist. Die entscheidende Frage ist nicht 'Was möchte ich haben?' sondern 'Wer muss ich werden, damit es natürlich in mein Leben fließt?' Heute erschaffst du diese neue Identität.",
+quote:"Um eine neue persönliche Realität zu erschaffen, musst du buchstäblich eine neue Persönlichkeit erschaffen.",
+author:"Joe Dispenza",
+impulse:"Tagesimpuls: Stelle dir heute dreimal vor, wie deine neue Version durch den Tag geht. Wie sitzt sie? Wie spricht sie? Was entscheidet sie?",
+qs:[
+  {e:"Deine neue Identität",q:"Schreibe in der Gegenwart: Wer bist du in deiner vollsten Version? Beginne mit 'Ich bin eine Frau, die...' – schreibe mindestens 10 Sätze.",h:"z.B. 'Ich bin eine Frau, die sich selbst kennt und aus dieser Kenntnis handelt.' · 'Ich bin eine Frau, die Liebe empfangen kann ohne sie zu verdienen.' · 'Ich bin eine Frau, die wählt statt zu reagieren.'"},
+  {e:"Frage 1",q:"Wie bewegt sich diese Version von dir durch die Welt? Wie trägt sie sich, wie spricht sie, wie entscheidet sie?",h:"z.B. 'Sie trägt sich aufrecht.' · 'Sie spricht klar und warmherzig.' · 'Sie entscheidet aus Sicherheit, nicht aus Angst.' · 'Sie sagt klar Ja und klar Nein.'"},
+  {e:"Frage 2",q:"Was lässt diese neue Version von dir hinter sich – welche Gewohnheiten, Muster, Überzeugungen gehören nicht mehr zu ihr?",h:"z.B. 'Sie entschuldigt sich nicht mehr dafür, dass sie da ist.' · 'Sie wartet nicht mehr auf Erlaubnis.' · 'Sie erklärt sich nicht mehr jedem.'"},
+  {e:"Körpergefühl",q:"Wo im Körper spürst du die Energie dieser neuen Identität? Wie fühlt sie sich an?",h:"z.B. 'Weite in der Brust.' · 'Wärme im Bauch.' · 'Aufgerichtete Wirbelsäule.' · 'Leichtigkeit in den Schultern.'"},
+  {e:"Ein Bild",q:"Welche eine Szene verkörpert diese neue Version von dir am stärksten – wo bist du, was tust du, wie fühlst du dich?",h:"z.B. 'Ich sitze an einem schönen Ort und arbeite mit Begeisterung an meinem Business.' · 'Ich halte eine Rede und bin vollkommen klar und ruhig.' · 'Ich liebe und werde geliebt, aus Stärke nicht aus Angst.'"}
+],
+emdr:false},
 
-{d:16,w:3,wn:"Werden",title:"Das innere Bild der neuen Person",desc:"Dein Gehirn unterscheidet nicht zwischen real und lebhaft vorgestellt.",
-intro:"Was du dir vollständig vorstellst – mit allen Sinnen, mit echter Emotion – trainiert dein Gehirn auf diese neue Wahrheit. Heute erschaffst du dein inneres Meisterbild.",
-q1:"Schließe die Augen für 2–3 Minuten. Du wachst als deine neue Version auf. Was siehst du? Schreibe danach alles auf.",
-h1:"z.B. 'Ich wache in einem hellen Zimmer auf und fühle mich ausgeruht und satt.' · 'Ich trage mich aufrechter.' · 'Ich gehe ruhig in meinen Tag, ganz bei mir.'",
-q2:"Welche eine Szene war in dieser Visualisierung besonders lebendig?",
-h2:"z.B. 'Das Bild, wie ich am Tisch sitze und ruhig frühstücke, vollkommen präsent.' · 'Eine Szene, in der ich mit anderen spreche und mich vollkommen sicher fühle.'",
-type:"vis",emdr:false},
+{d:16,w:3,
+title:"Das innere Meisterbild",
+desc:"Dein Gehirn kann nicht unterscheiden zwischen lebhaft Vorgestelltem und Realität.",
+intro:"Neurowissenschaftler haben bewiesen: Wenn wir uns etwas vollständig vorstellen – mit allen Sinnen, mit echter Emotion – aktivieren wir dieselben Gehirnbereiche wie bei realen Erfahrungen. Visualisierung ist kein New-Age-Konzept. Es ist Neuroplastizität in Aktion.",
+quote:"Die Imagination ist alles. Sie ist eine Vorschau auf das Kommende.",
+author:"Albert Einstein",
+impulse:"Tagesimpuls: Nimm dir heute 5 Minuten und visualisiere dein Meisterbild. Augen zu, alle Sinne aktivieren, die Emotion spüren. Täglich.",
+qs:[
+  {e:"Visualisierung",q:"Schließe die Augen für 3–5 Minuten. Du wachst morgens als deine neue Version auf. Was siehst du? Schreibe danach alles auf was du erlebt hast.",h:"z.B. 'Ich wache in einem hellen Zimmer auf und fühle mich ausgeruht und satt.' · 'Ich trage mich aufrechter.' · 'Der Morgen fühlt sich ruhig und klar an.'"},
+  {e:"Frage 1",q:"Welche eine Szene aus dieser Visualisierung war am lebendigsten und kraftvollsten?",h:"z.B. 'Das Bild von mir am Schreibtisch, ruhig und fokussiert.' · 'Die Szene wie ich in einem Meeting klar und selbstsicher spreche.' · 'Wie ich jemanden umarme und mich vollkommen sicher fühle.'"},
+  {e:"Die Emotion",q:"Welche Emotion hat diese Visualisierung in dir ausgelöst? Wo spürst du sie im Körper?",h:"z.B. 'Tiefe Freude in der Brust.' · 'Dankbarkeit im ganzen Körper.' · 'Ruhige Kraft vom Bauch ausgehend.'"},
+  {e:"Details",q:"Füge mehr Details hinzu: Was trägst du? Wer ist bei dir? Wie sieht dein Alltag aus?",h:"Je detaillierter das Bild, desto stärker das Training für dein Gehirn. Schreibe wirklich alles."},
+  {e:"Verankern",q:"Wähle ein Wort oder eine Geste, die dich sofort mit diesem Bild verbindet – deinen persönlichen Anker.",h:"z.B. 'Das Wort: Zuhause.' · 'Eine Hand auf das Herz legen.' · 'Dreimal tief einatmen.' – Dieser Anker wird dein tägliches Werkzeug."}
+],
+emdr:false},
 
-{d:17,w:3,wn:"Werden",title:"Elevated Emotions – deine neue Frequenz",desc:"Deine Emotion ist dein stärkster Magnet.",
-intro:"Joe Dispenza nennt sie 'elevated emotions' – Freude, Dankbarkeit, Liebe, Staunen. Wenn du diese Emotionen wirklich fühlst, verändert sich deine Biologie.",
-q1:"Welche drei Emotionen möchtest du als Grundton in deinem neuen Leben tragen?",
-h1:"z.B. 'Dankbarkeit, Leichtigkeit und Liebe.' · 'Vertrauen, Freude und Sicherheit.' · 'Ruhe, Fülle und Lebendigkeit.'",
-q2:"Wann hast du diese Emotionen zuletzt wirklich im Körper gespürt? Was hat sie ausgelöst?",
-h2:"z.B. 'Als ich morgens in Stille meinen Kaffee trank.' · 'Als meine Tochter lachte.' · 'Als ich einen Sonnenuntergang sah und alles in mir zur Ruhe kam.'",
-type:"em",emdr:false,
-emotions:["Freude","Dankbarkeit","Liebe","Staunen","Frieden","Leichtigkeit","Kraft","Vertrauen","Weite","Fülle","Lebendigkeit","Sicherheit"]},
+{d:17,w:3,
+title:"Elevated Emotions – die Frequenz deiner neuen Realität",
+desc:"Deine Emotion ist dein stärkster Magnet – stärker als jeder Gedanke.",
+intro:"Joe Dispenza nennt sie 'elevated emotions' – Freude, Dankbarkeit, Liebe, Staunen. Wenn wir diese Emotionen nicht nur denken sondern wirklich fühlen, verändern wir unsere Biologie: Kortisol sinkt, Endorphine steigen, das Nervensystem entspannt sich. In diesem Zustand ziehen wir an, was wir wirklich möchten.",
+quote:"Elevated emotions sind die Sprache der Seele. Wenn du dich gut fühlst, sagst du dem Universum: Schicke mir mehr davon.",
+author:"Joe Dispenza",
+impulse:"Tagesimpuls: Aktiviere heute morgen für 5 Minuten eine elevated emotion – bevor du anfängst zu denken. Fühle sie zuerst.",
+qs:[
+  {e:"Deine Frequenz",q:"Welche drei elevated emotions möchtest du als Grundton in deinem neuen Leben tragen?",h:"z.B. 'Dankbarkeit, Leichtigkeit und Liebe.' · 'Vertrauen, Freude und Sicherheit.' · 'Ruhe, Fülle und Lebendigkeit.'"},
+  {e:"Frage 1",q:"Wann hast du diese Emotionen zuletzt wirklich im Körper gespürt? Was hat sie ausgelöst?",h:"z.B. 'Als ich morgens in Stille meinen Kaffee getrunken habe.' · 'Als meine Tochter lachte.' · 'Als ich einen Sonnenuntergang sah und alles in mir zur Ruhe kam.'"},
+  {e:"Frage 2",q:"Was hindert dich daran, diese Emotionen täglich zu fühlen – unabhängig von äußeren Umständen?",h:"z.B. 'Ich denke, ich muss erst X haben bevor ich Y fühlen darf.' · 'Wenn es mir gut geht warte ich auf den Einbruch.' · 'Ich fühle mich schuldig wenn ich glücklich bin obwohl anderes nicht klappt.'"},
+  {e:"Aktivierung",q:"Aktiviere jetzt eine dieser Emotionen in deinem Körper – ohne äußeren Grund. Schließe die Augen, erinnere dich an einen Moment wo du sie stark gespürt hast, und bringe sie zurück. Was passiert?",h:"z.B. 'Das Bild von meiner Oma bringt sofort Wärme und Sicherheit.' · 'Wenn ich an den Strand denke entspannt sich sofort mein Körper.' · 'Das Lachen meiner Freundin löst sofort Freude aus.'"},
+  {e:"Körper",q:"Wo und wie spürst du diese elevated emotion in deinem Körper? Wie fühlt sie sich physisch an?",h:"z.B. 'Wärme im Herz, die ausstrahlt.' · 'Leichtigkeit in der Brust.' · 'Ein leises Lächeln das von innen kommt.' · 'Entspannung im ganzen Körper.'"}
+],
+emdr:false,
+emotions:["Freude","Dankbarkeit","Liebe","Staunen","Frieden","Leichtigkeit","Kraft","Vertrauen","Weite","Fülle","Lebendigkeit","Sicherheit","Wärme","Verbundenheit"]},
 
-{d:18,w:3,wn:"Werden",title:"EMDR – Neue Identität verankern",desc:"Dein Nervensystem lernt die neue Person kennen.",
-intro:"Jetzt arbeitest du mit EMDR auf der positiven Seite. Du aktivierst deine neue Identität – das Bild, die Emotion, den Kernsatz – und verankerst sie tief im Körper.",
-q1:"Aktiviere gleichzeitig: dein Bild aus Tag 16, deine Emotion aus Tag 17 und deinen Kernsatz. Spüre es im Körper – dann starte EMDR.",
-h1:"z.B. 'Ich halte das Bild vom ruhigen Morgen, fühle Dankbarkeit, sage innerlich meinen Kernsatz – dann folge ich dem Licht mit den Augen.'",
-q2:"Was hat sich nach der Session verändert? Wie fühlt sich die neue Identität im Körper an?",
-h2:"z.B. 'Die Emotion hat sich tiefer und echter angefühlt.' · 'Ein Wärmegefühl in der Brust.' · 'Der Kernsatz klingt jetzt wie meine eigene Stimme.'",
-type:"emdr_s",emdr:true,emdrType:"install",before:"Wie vertraut fühlt sich die neue Identität an? (1–10)",after:"Wie tief hat sie sich verankert? (1–10)"},
+{d:18,w:3,
+title:"EMDR – Die neue Identität verankern",
+desc:"Dein Nervensystem lernt die neue Person kennen.",
+intro:"Jetzt arbeiten wir mit EMDR auf der positiven Seite. Du aktivierst deine neue Identität – das Bild, die elevated emotion, den Kernsatz – und verankerst sie tief im Nervensystem. Das ist keine Selbsttäuschung. Das ist Neuroplastizität: Du trainierst dein Gehirn auf eine neue Wahrheit.",
+quote:"Wenn du dich so verhältst, als wäre die neue Version von dir bereits real, wird dein Gehirn beginnen, es als real zu behandeln.",
+author:"Joe Dispenza",
+impulse:"Tagesimpuls: Bevor du heute EMDR startest, nimm dir 2 Minuten um wirklich in die Emotion einzutauchen. Je stärker du sie spürst, desto tiefer verankert EMDR sie.",
+qs:[
+  {e:"Vorbereitung",q:"Aktiviere gleichzeitig: dein Meisterbild aus Tag 16, deine elevated emotion aus Tag 17 und deinen Kernsatz. Schreibe kurz wie das sich anfühlt.",h:"z.B. 'Ich halte das Bild vom ruhigen Morgen, spüre Dankbarkeit im Herz, sage innerlich meinen Kernsatz – dann ist da diese Wärme.'"},
+  {e:"EMDR Session",q:"Starte jetzt EMDR mit dieser positiven Aktivierung. Folge dem Licht und halte dabei Bild + Emotion + Kernsatz gleichzeitig. Was passiert?",h:"z.B. 'Die Emotion wurde intensiver.' · 'Das Bild wurde klarer.' · 'Ich habe den Kernsatz plötzlich wirklich geglaubt.' · 'Ich musste lächeln.'"},
+  {e:"Körper nach EMDR",q:"Wie fühlt sich die neue Identität nach der Session in deinem Körper an?",h:"z.B. 'Wärmer und echter.' · 'Der Kernsatz klingt jetzt wie meine eigene Stimme.' · 'Mein Körper kennt diese Version von mir ein bisschen besser.'"},
+  {e:"Vergleich",q:"Wie fühlt sich die neue Identität jetzt an – verglichen mit dem Beginn von Woche 3?",h:"z.B. 'Vertrauter.' · 'Weniger fremd.' · 'Ich glaube langsam daran.' · 'Noch ein Stück Weg – aber es wird klarer.'"},
+  {e:"Widerstände",q:"Was ist der größte innere Widerstand, wenn du dich als diese neue Person vorstellst?",h:"z.B. 'Die innere Stimme sagt: Wer glaubst du wer du bist.' · 'Ich habe Angst vor Enttäuschung.' · 'Es fühlt sich hochmütig an.' – Diese Widerstände sind wertvoll."}
+],
+emdr:true,emdrType:"install",
+before:"Wie vertraut fühlt sich die neue Identität an? (1–10)",after:"Wie tief hat sie sich verankert? (1–10)"},
 
-{d:19,w:3,wn:"Werden",title:"Neue Glaubenssätze – deine neuen Wahrheiten",desc:"Formuliere Sätze, die sich wahr anfühlen und dein Herz öffnen.",
-intro:"Die neuen Sätze müssen sich sofort wahr anfühlen. Ein Satz der resoniert, gibt dir Gänsehaut.",
-q1:"Schreibe 5 neue Glaubenssätze, die sich jetzt schon wahr anfühlen.",
-h1:"z.B. Statt 'Ich bin reich' → 'Ich erkenne täglich mehr, wie viel bereits da ist.' · 'Sicherheit ist mein natürlicher Zustand.' · 'Ich öffne mich mehr und mehr dafür, Liebe zu empfangen.'",
-q2:"Welcher Satz öffnet dein Herz einen Moment lang? Welcher gibt dir Gänsehaut?",
-h2:"z.B. 'Als ich schrieb: Ich bin genau richtig so wie ich bin – lief es mir kalt den Rücken runter.' · Dieser Satz ist deiner.",
-type:"aff",emdr:false},
+{d:19,w:3,
+title:"Neue Glaubenssätze – deine neue Wahrheit",
+desc:"Formuliere Sätze, die sich wahr anfühlen – und dein Herz öffnen.",
+intro:"Die neuen Sätze dürfen nicht wie eine ferne Hoffnung klingen – sie müssen sich sofort wahr anfühlen. Ein Satz der zu groß ist, wird vom Nervensystem sofort abgelehnt. Ein Satz der resoniert, gibt dir Gänsehaut. Und dieser Gänsehaut-Moment ist dein innerer Kompass.",
+quote:"Affirmationen die sich wahr anfühlen sind keine Lügen – sie sind Erinnerungen an das, was du eigentlich schon weißt.",
+author:"Louise Hay",
+impulse:"Tagesimpuls: Sage heute deinen stärksten Glaubenssatz dreimal laut in den Spiegel. Schau dir dabei in die Augen. Beobachte was passiert.",
+qs:[
+  {e:"Neue Sätze",q:"Schreibe 5 neue Glaubenssätze. Formuliere sie so, dass sie sich jetzt schon wahr anfühlen.",h:"Statt 'Ich bin reich' → 'Ich erkenne täglich mehr, wie viel bereits da ist.' · Statt 'Ich werde geliebt' → 'Ich öffne mich mehr und mehr dafür, Liebe zu empfangen.' · 'Sicherheit ist mein natürlicher Zustand.'"},
+  {e:"Frage 1",q:"Welcher dieser Sätze öffnet dein Herz? Welcher gibt dir Gänsehaut?",h:"Das ist dein Hauptsatz. Dieser Satz resoniert weil er wahr ist – tiefer als dein alter Glaube."},
+  {e:"Körper-Test",q:"Sage jeden Satz laut und beobachte deinen Körper. Welcher lässt dich aufatmen oder lächeln?",h:"Der Körper lügt nicht. Ein Satz der sich richtig anfühlt zeigt sich in Entspannung, Wärme oder einem leichten Lächeln."},
+  {e:"Der alte vs. neue Satz",q:"Dein alter Glaubenssatz war: '...' Dein neuer ist: '...' Was verändert sich wenn du vom alten zum neuen wechselst?",h:"z.B. 'Vom Ich bin nicht genug zum Ich bin genau richtig so wie ich bin – das fühlt sich zunächst falsch an. Dann kommt ein leises Ja.'"},
+  {e:"Verpflichtung",q:"Welchen einen Satz wählst du als deinen täglichen Anker für die nächsten 2 Wochen?",h:"Schreibe ihn auf. Lege ihn ans Bett, ans Badezimmerspiegeln, als Handy-Hintergrundbild."}
+],
+emdr:false},
 
-{d:20,w:3,wn:"Werden",title:"Echte Dankbarkeit – nicht als Technik",desc:"Dankbarkeit als Zustand verändert deine Biochemie.",
-intro:"Echte Dankbarkeit – nicht das Aufschreiben von Listen sondern das wirkliche Fühlen – senkt Kortisol, entspannt das Nervensystem und öffnet dich für das was kommt.",
-q1:"Denke an 3 Dinge, die dich wirklich berühren wenn du sie wirklich fühlst. Schreibe sie auf.",
-h1:"z.B. 'Die Tatsache, dass ich atme und gesund bin.' · 'Das Lachen meiner besten Freundin.' · 'Dass ich diese Reise begonnen habe und jeden Tag wähle weiterzugehen.'",
-q2:"Wie fühlt sich echte Dankbarkeit in deinem Körper an?",
-h2:"z.B. 'Wie Weite und Wärme in der Brust.' · 'Wie ein leises Lächeln, das von innen kommt.' · 'Wie Entspannung im ganzen Körper.'",
-type:"gr",emdr:false},
+{d:20,w:3,
+title:"EMDR – Positive Vision vollständig verankern",
+desc:"Heute vernetzt sich alles: Vision, Emotion, Körper, Kernsatz.",
+intro:"In dieser Session aktivierst du alle 5 Elemente gleichzeitig: deine Vision (Tag 15), dein Meisterbild (Tag 16), deine elevated emotion (Tag 17), dein Körpergefühl und deinen neuen Kernsatz (Tag 19). Dann lässt EMDR das Nervensystem diese neue Realität tief verankern.",
+quote:"Was du dir vollständig vorstellst – mit allen Sinnen und echter Emotion – behandelt dein Gehirn als real.",
+author:"Joe Dispenza",
+impulse:"Tagesimpuls: Diese Session ist kraftvoll. Nimm dir Zeit. Atme tief. Lass nichts überstürzen.",
+qs:[
+  {e:"5-Elemente Aktivierung",q:"Aktiviere gleichzeitig alle 5 Elemente: Vision + Meisterbild + elevated Emotion + Körpergefühl + Kernsatz. Beschreibe wie es sich anfühlt wenn alles gleichzeitig aktiv ist.",h:"z.B. 'Es ist wie ein warmes Leuchten von innen.' · 'Ich spüre Weite und Kraft gleichzeitig.' · 'Es fühlt sich fast zu schön an um wahr zu sein – aber es fühlt sich richtig an.'"},
+  {e:"EMDR Session",q:"Starte jetzt EMDR – langsam und tief. Halte alle 5 Elemente. Wiederhole so oft bis du auf einer Skala von 1–10 bei mindestens 8 bist. Was passiert?",h:"z.B. 'Nach dem dritten Durchgang spüre ich es wirklich.' · 'Die Emotion hat sich vertieft.' · 'Der Kernsatz klingt jetzt wie ich.'"},
+  {e:"Körper nach EMDR",q:"Beschreibe deine neue Körpererfahrung nach dieser Session.",h:"z.B. 'Wärme und Weite in der Brust.' · 'Entspannung im Bauch.' · 'Aufrechte Haltung ohne Anstrengung.' · 'Ein Lächeln das ich nicht unterdrücken kann.'"},
+  {e:"Die schönste Erkenntnis",q:"Was ist das Schönste, das du heute über dich entdeckt oder wiederentdeckt hast?",h:"z.B. 'Dass ich diese Version von mir wirklich fühlen kann.' · 'Dass mein Körper sofort reagiert wenn ich mich als neue Person vorstelle.' · 'Dass es sich echt anfühlt.'"},
+  {e:"Wunscherklärung",q:"Schreibe deine persönliche Wunscherklärung: 'Ich bin auf dem besten Weg, alles anzuziehen, was ich brauche, um...'",h:"Schreibe es in der Gegenwart, als ob es bereits auf dem Weg ist. Lies sie täglich laut vor."}
+],
+emdr:true,emdrType:"install",
+before:"Intensität der positiven Vision (1–10)",after:"Wie tief hat sie sich verankert? (1–10)"},
 
-{d:21,w:3,wn:"Werden",title:"Was hat sich bereits verschoben?",desc:"Transformation zeigt sich in kleinen, echten Momenten.",
-intro:"Transformation zeigt sich selten dramatisch. Sie zeigt sich in kleinen Verschiebungen: Ein Gedanke der leichter ist. Eine Reaktion die ausgeblieben ist.",
-q1:"Was hat sich in den letzten 3 Wochen verändert – auch in den kleinsten Dingen?",
-h1:"z.B. 'Ich schlafe tiefer.' · 'Ich reagiere in einem bestimmten Moment ruhiger als früher.' · 'Ich habe mich in einer Situation anders entschieden als sonst.'",
-q2:"Was würdest du der Version von dir von vor 3 Wochen sagen?",
-h2:"z.B. 'Ich würde ihr sagen: Du bist auf dem richtigen Weg.' · 'Vertrau dem Prozess – es passiert wirklich etwas in dir.'",
-type:"ref",emdr:false},
+{d:21,w:3,
+title:"Wochenmitte – Was hat sich bereits verschoben?",
+desc:"Transformation zeigt sich in kleinen, echten Veränderungen.",
+intro:"Transformation zeigt sich selten als dramatische Veränderung. Sie zeigt sich in einem Gedanken der leichter ist. In einer Reaktion die ausgeblieben ist. In einem Morgen der sich anders anfühlt. Heute hältst du inne und erkennst wie weit du bereits gegangen bist.",
+quote:"Die kleinen täglichen Entscheidungen sind es, die eine neue Identität formen – nicht die dramatischen Momente.",
+author:"James Clear",
+impulse:"Tagesimpuls: Frage heute drei Menschen, die dich gut kennen: 'Hast du in letzter Zeit etwas an mir verändert wahrgenommen?' Nimm ihre Antworten ohne zu kommentieren an.",
+qs:[
+  {e:"Rückblick",q:"Was hat sich in den letzten 3 Wochen verändert – auch in den kleinsten Dingen?",h:"z.B. 'Ich schlafe tiefer.' · 'Ich reagiere ruhiger auf bestimmte Situationen.' · 'Ich bemerke meine Muster jetzt schneller.' · 'Mein Körper fühlt sich etwas leichter an.'"},
+  {e:"Frage 1",q:"Welche eine konkrete Situation hat sich verändert – wo du früher anders reagiert hättest?",h:"z.B. 'Letzte Woche hat mein Partner etwas gesagt das mich früher tagelang beschäftigt hätte. Diesmal konnte ich es schneller loslassen.'"},
+  {e:"Frage 2",q:"Was überrascht dich an deiner eigenen Transformation?",h:"z.B. 'Wie viel im Körper gespeichert war.' · 'Wie schnell sich Dinge verändern können wenn man hinschaut.' · 'Dass es sich manchmal leichter anfühlt als ich dachte.'"},
+  {e:"Dankbarkeit",q:"Für was bist du dir selbst dankbar – für deinen Mut, deine Konsequenz, deine Ehrlichkeit mit dir selbst?",h:"z.B. 'Dass ich jeden Tag wieder aufs Neue gewählt habe.' · 'Dass ich hingeschaut habe auch wenn es schwer war.'"},
+  {e:"Brief an das alte Ich",q:"Was würdest du der Version von dir vor 3 Wochen sagen?",h:"z.B. 'Du bist auf dem richtigen Weg.' · 'Es ist okay loszulassen.' · 'Vertraue dem Prozess – du wirst sehen was möglich ist.'"}
+],
+emdr:false},
 
-{d:22,w:4,wn:"Verkörpern",title:"Als sie aufwachen",desc:"Der erste Moment des Tages setzt den Ton.",
-intro:"Win the morning, win the day. Dein erster Gedanke morgens ist entweder das alte Programm oder eine neue Wahl. Ab heute triffst du diese Wahl bewusst.",
-q1:"Erschaffe dein 5-Minuten Morgenritual als neue Version von dir.",
-h1:"z.B. '1. Hand aufs Herz und Kernsatz. 2. 30 Sekunden inneres Bild. 3. Drei tiefe Atemzüge mit Dankbarkeit.' – einfach, klar, täglich.",
-q2:"Führe dieses Ritual heute durch und schreibe danach auf, wie du dich gefühlt hast.",
-h2:"z.B. 'Ich fühlte mich zentrierter als sonst.' · 'Es war kurz, aber es hat mich geerdet.' · 'Ich bin anders in den Tag gegangen.'",
-type:"prac",emdr:true,emdrType:"install",before:"Wie präsent ist deine neue Identität morgens? (1–10)",after:"Wie hat sich das Ritual angefühlt? (1–10)"},
+// ── WOCHE 4: VERKÖRPERN ────────────────────────
+{d:22,w:4,
+title:"Als sie aufwachen – das Morgenritual",
+desc:"Der erste Moment des Tages entscheidet die Qualität aller anderen Momente.",
+intro:"Joe Dispenza sagt: Win the morning, win the day. Dein erster Gedanke morgens ist entweder das alte Programm oder eine neue Wahl. Ab heute triffst du diese Wahl bewusst – mit einem 5-Minuten Ritual das deine neue Identität täglich neu verankert.",
+quote:"Die meisten Menschen stehen morgens auf und beginnen sofort, über ihre Probleme nachzudenken. Was wäre, wenn du stattdessen zuerst deine neue Identität aktivieren würdest?",
+author:"Joe Dispenza",
+impulse:"Tagesimpuls: Stelle deinen Wecker 5 Minuten früher. Diese 5 Minuten gehören nur deiner neuen Identität.",
+qs:[
+  {e:"Dein Morgenritual",q:"Erschaffe dein persönliches 5-Minuten Morgenritual als neue Version von dir. Was tust du, was sagst du dir, was aktivierst du?",h:"z.B. '1. Hand aufs Herz + Kernsatz. 2. 60 Sekunden Meisterbild visualisieren. 3. Drei tiefe Atemzüge mit elevated emotion. 4. Eine Absicht für den Tag setzen.' – einfach, klar, täglich."},
+  {e:"Heute durchführen",q:"Führe dieses Ritual heute durch. Was hast du gespürt?",h:"z.B. 'Ich fühlte mich zentrierter.' · 'Es hat mich geerdet.' · 'Es war seltsam am Anfang – aber es hat sich gut angefühlt.' · 'Ich bin anders in den Tag gestartet.'"},
+  {e:"EMDR Morgenverankerung",q:"Starte jetzt EMDR und halte dabei dein Morgenritual-Gefühl. Verankere diesen Zustand tief im Körper.",h:"z.B. 'Die Ruhe hat sich vertieft.' · 'Das Morgenritual fühlt sich nach EMDR echter an.' · 'Ich spüre meinen Körper klarer.'"},
+  {e:"Frage 1",q:"Was ändert sich in deinem Tag wenn du ihn als neue Person beginnst?",h:"z.B. 'Ich reagiere ruhiger auf erste Herausforderungen.' · 'Ich habe mehr Energie.' · 'Ich bin fokussierter.'"},
+  {e:"Commitment",q:"Wie lange kannst du dich zu diesem 5-Minuten Ritual verpflichten?",h:"z.B. 'Die nächsten 7 Tage.' · 'Bis zum Ende dieses Programms.' · 'Ab jetzt täglich.' – Realistisch und machbar."}
+],
+emdr:true,emdrType:"install",
+before:"Wie präsent ist deine neue Identität morgens? (1–10)",after:"Nach Morgenritual + EMDR (1–10)"},
 
-{d:23,w:4,wn:"Verkörpern",title:"Die neue Person in Begegnungen",desc:"Transformation zeigt sich in der Begegnung mit anderen.",
-intro:"Unsere alten Muster zeigen sich am deutlichsten in Beziehungen. Die neue Version von dir begegnet anderen aus Sicherheit – nicht aus Angst.",
-q1:"In welcher Begegnung möchtest du bewusst als neue Version von dir agieren?",
-h1:"z.B. 'Im nächsten Gespräch mit meiner Mutter.' · 'In meinem Team wenn Kritik kommt.' · 'Wenn mein Partner etwas tut, das mich früher aus der Bahn geworfen hat.'",
-q2:"Aktiviere deine neue Identität mit EMDR und visualisiere dabei diese Begegnung. Was spürst du?",
-h2:"z.B. 'Ich spürte mehr Sicherheit in meiner Mitte.' · 'Das Bild fühlte sich ruhiger an als ich erwartet hatte.' · 'Ich merkte, wie ich innerlich mehr Raum hatte.'",
-type:"emdr_s",emdr:true,emdrType:"install",before:"Wie sicher fühlst du dich in dieser Situation? (1–10)",after:"Wie fühlt es sich jetzt an? (1–10)"},
+{d:23,w:4,
+title:"Die neue Person in Begegnungen",
+desc:"Unsere tiefsten Muster zeigen sich in der Begegnung mit anderen.",
+intro:"Unsere alten Reaktionsmuster zeigen sich am deutlichsten in Beziehungen – besonders mit Menschen, die uns triggern. Die neue Version von dir begegnet anderen aus Sicherheit, nicht aus Angst. Aus Fülle, nicht aus Mangel. Heute übst du das konkret.",
+quote:"Deine Beziehungen sind der Spiegel deiner inneren Welt. Wenn du innerlich wächst, verändern sich deine Beziehungen von selbst.",
+author:"—",
+impulse:"Tagesimpuls: Wähle heute bewusst eine Situation in der du als neue Person reagierst. Auch wenn es schwer ist – especially wenn es schwer ist.",
+qs:[
+  {e:"Frage 1",q:"Mit welcher Person oder in welcher Situation gleitest du am häufigsten ins alte Reaktionsmuster zurück?",h:"z.B. 'Mit meiner Mutter wenn sie Kritik übt.' · 'Im Team wenn ich das Gefühl habe nicht gehört zu werden.' · 'Mit meinem Partner wenn er sich zurückzieht.'"},
+  {e:"Die neue Reaktion",q:"Wie würde die neue Version von dir in genau dieser Situation reagieren? Beschreibe es konkret.",h:"z.B. 'Sie würde ruhig atmen, klar sagen was sie braucht und sich nicht entschuldigen dafür.' · 'Sie würde aus Sicherheit sprechen, nicht aus der Angst abgelehnt zu werden.'"},
+  {e:"EMDR Vorbereitung",q:"Aktiviere deine neue Identität und visualisiere dabei diese Begegnung. Dann starte EMDR. Was passiert in deinem Körper?",h:"z.B. 'Mehr Sicherheit.' · 'Das Bild fühlt sich ruhiger an als erwartet.' · 'Ich spüre wie ich innerlich mehr Raum habe in dieser Situation.'"},
+  {e:"Grenzen",q:"Gibt es eine Grenze die du setzen musst – in einer Beziehung, in einer Situation – die deine neue Identität von dir verlangt?",h:"z.B. 'Ich muss klar sagen, dass ich diese Art von Kommentaren nicht akzeptiere.' · 'Ich muss aufhören, meine Bedürfnisse hinter denen anderer zu stellen.'"},
+  {e:"Fürsorge für andere",q:"Wie kannst du aus deiner neuen Identität heraus anderen wirklich nützlich sein – nicht um zu gefallen, sondern weil es dir Freude macht?",h:"z.B. 'Ich kann meine Erfahrungen teilen.' · 'Ich kann präsent sein ohne die Probleme anderer lösen zu müssen.' · 'Ich kann authentisch und offen sein.'"}
+],
+emdr:true,emdrType:"install",
+before:"Sicherheit in dieser Beziehung/Situation (1–10)",after:"Nach EMDR (1–10)"},
 
-{d:24,w:4,wn:"Verkörpern",title:"Empfangen – die Kunst der offenen Hände",desc:"Deine Manifestation kann nur ankommen, wenn du bereit bist zu empfangen.",
-intro:"Die meisten von uns haben gelernt zu kämpfen und zu verdienen. Empfangen fühlt sich fremd an. Aber genau hier wartet deine nächste Ebene.",
-q1:"Was fällt dir schwer anzunehmen – Lob, Hilfe, Liebe, Geld, Zeit für dich?",
-h1:"z.B. 'Ich winke Komplimente ab, ohne sie wirklich anzunehmen.' · 'Wenn jemand mir hilft, fühle ich mich schuldig.' · 'Ich gönne mir Ruhe nur wenn ich sie verdient habe.'",
-q2:"Was erlaubst du dir ab heute zu empfangen, ganz ohne Rechtfertigung?",
-h2:"z.B. 'Ich erlaube mir, ein Kompliment einfach mit Danke zu beantworten.' · 'Ich erlaube mir, Hilfe anzunehmen.' · 'Ich erlaube mir, einfach zu ruhen weil ich es darf.'",
-type:"rec",emdr:false},
+{d:24,w:4,
+title:"Empfangen lernen – die offenen Hände",
+desc:"Manifestation ist nicht nur Erschaffen. Es ist auch Empfangen können.",
+intro:"Die meisten von uns haben gelernt zu kämpfen, zu leisten, zu verdienen. Empfangen fühlt sich fremd an – fast gefährlich. Aber dein Wunsch kann nur ankommen, wenn du bereit bist, ihn zu empfangen. Offene Hände, ein offenes Herz, eine offene Energie. Das ist Empfangen.",
+quote:"Das Universum gibt dir nicht das was du willst. Es gibt dir das was du bereit bist zu empfangen.",
+author:"—",
+impulse:"Tagesimpuls: Wenn dir heute jemand ein Kompliment macht, Hilfe anbietet oder etwas Gutes tut – nimm es an. Einfach: Danke. Ohne Abschwächen, ohne Umleiten.",
+qs:[
+  {e:"Frage 1",q:"Was fällt dir schwer anzunehmen – Lob, Hilfe, Liebe, Geld, Zeit für dich, Stille, Freude?",h:"z.B. 'Wenn jemand mir hilft fühle ich mich sofort verpflichtet.' · 'Komplimente winke ich ab bevor ich sie wirklich höre.' · 'Wenn es mir gut geht warte ich auf den Einbruch.'"},
+  {e:"Frage 2",q:"Was glaubst du tief innen darüber, ob du es verdienst, empfangen zu dürfen?",h:"z.B. 'Ein Teil von mir glaubt ich muss es erst verdienen.' · 'Ich fühle mich schuldig wenn ich nehme ohne zu geben.' · 'Empfangen fühlt sich schwächer an als geben.'"},
+  {e:"Körper des Empfangens",q:"Visualisiere jetzt: Du empfängst etwas Schönes – Liebe, Erfolg, Leichtigkeit. Was passiert in deinem Körper? Gibst du es sofort zurück oder kannst du es halten?",h:"z.B. 'Ich bemerke, dass ich innerlich sofort daran denke, wie ich es erwidere.' · 'Mein Körper entspannt sich beim Gedanken zu empfangen.' · 'Ich halte es erst kurz und dann löst sich der Widerstand.'"},
+  {e:"EMDR Empfangen",q:"Aktiviere das Bild des Empfangens und starte EMDR. Verankere die Erlaubnis zu empfangen tief im Körper.",h:"z.B. 'Ich spürte wie sich etwas im Bauch öffnete.' · 'Der Widerstand wurde kleiner.' · 'Ich lächelte unwillkürlich.'"},
+  {e:"Erlaubnis",q:"Was erlaubst du dir ab heute zu empfangen – ohne Rechtfertigung, ohne Verdienen, ohne Gegenleistung?",h:"z.B. 'Ich erlaube mir, Komplimente wirklich anzunehmen.' · 'Ich erlaube mir, Hilfe zu bitten.' · 'Ich erlaube mir, Ruhe zu genießen ohne schlechtes Gewissen.'"}
+],
+emdr:true,emdrType:"install",
+before:"Leichtigkeit beim Empfangen (1–10)",after:"Nach EMDR (1–10)"},
 
-{d:25,w:4,wn:"Verkörpern",title:"Freude täglich wählen",desc:"Was dich glücklich macht ist ein Wegweiser in deine neue Realität.",
-intro:"Dinge zu tun die uns glücklich machen sendet ein direktes Signal ans Nervensystem: Ich bin sicher. Das Leben trägt mich. In diesem Zustand entsteht Manifestation von selbst.",
-q1:"Welche drei Dinge machen dich wirklich glücklich und kommen zu kurz?",
-h1:"z.B. 'Tanzen zu meiner Lieblingsmusik.' · 'Ein Nachmittag ohne Plan.' · 'Kreativ sein ohne Zweck.' · 'Langer Spaziergang in der Natur.' · 'Ein Abend mit meiner besten Freundin.'",
-q2:"Wie integrierst du ab heute mindestens eine dieser Freuden täglich?",
-h2:"z.B. 'Jeden Morgen 10 Minuten tanzen.' · 'Jeden Abend ohne Telefon spazieren.' · 'Einmal pro Woche nur für meine Kreativität.'",
-type:"joy",emdr:false,
-joyChips:["Tanzen","Natur","Kochen","Musik","Kreativität","Lachen","Verbindung","Stille","Bewegen","Schreiben","Baden","Träumen","Spielen","Genießen"]},
+{d:25,w:4,
+title:"Freude täglich wählen – dein Kompass",
+desc:"Was dich glücklich macht ist kein Zufall – es ist ein Wegweiser.",
+intro:"Dinge zu tun die uns wirklich glücklich machen ist kein Luxus. Es ist ein direktes Signal ans Nervensystem: Ich bin sicher. Das Leben ist gut. In diesem Zustand öffnen sich Türen, entstehen Ideen, kommen Verbindungen. Freude ist nicht das Ziel der Manifestation – sie ist das Vehikel.",
+quote:"Wenn du die Frequenz der Freude ausstrahlst, wirst du Dinge anziehen, die auf dieser Frequenz schwingen.",
+author:"Rhonda Byrne",
+impulse:"Tagesimpuls: Mache heute etwas das dir echte Freude bereitet – nicht weil es produktiv ist, sondern weil es dich leuchten lässt.",
+qs:[
+  {e:"Dein Freudekompass",q:"Was sind die 5 Dinge, die dir wirklich echte Freude bereiten – jenseits von Verpflichtungen und Erwartungen?",h:"z.B. 'Tanzen alleine.' · 'Kreativ sein ohne Ergebnis.' · 'Tief schlafen ohne Wecker.' · 'Stundenlang in der Natur sein.' · 'Mit einer guten Freundin lachen.'"},
+  {e:"Frage 1",q:"Welche dieser Freuden kommt in deinem Alltag zu kurz?",h:"Wahrscheinlich alle fünf. Das ist okay. Welche eine könntest du ab morgen täglich integrieren?"},
+  {e:"Frage 2",q:"Was müsstest du loslassen oder umstrukturieren, um täglich Raum für echte Freude zu schaffen?",h:"z.B. 'Weniger Zeit am Telefon.' · 'Früher aufstehen.' · 'Weniger Ja sagen zu Dingen die mir keine Freude machen.'"},
+  {e:"Körper der Freude",q:"Denke jetzt an eine dieser Freuden. Was passiert sofort in deinem Körper?",h:"Das ist dein Kompass. Dieser Körperzustand ist die Frequenz auf der du senden möchtest."},
+  {e:"Commitment",q:"Was wirst du konkret tun? Wann? Wie oft?",h:"z.B. 'Jeden Morgen 10 Minuten tanzen bevor ich in den Tag starte.' · 'Jeden Abend 20 Minuten ohne Handy in der Natur.' · 'Einmal pro Woche kreativ sein ohne Ergebnis.'"}
+],
+joyChips:["Tanzen","Natur","Kochen","Musik","Kreativität","Lachen","Verbindung","Stille","Bewegen","Schreiben","Baden","Träumen","Spielen","Malen","Singen","Lesen"],
+emdr:false},
 
-{d:26,w:4,wn:"Verkörpern",title:"EMDR – Tägliche Verankerung",desc:"Wiederholung ist die Sprache des Nervensystems.",
-intro:"Neuroplastizität braucht Wiederholung. Jedes Mal wenn du die neue Identität aktivierst und mit EMDR verankerst, werden die neuen Verbindungen stärker und vertrauter.",
-q1:"Aktiviere alle Elemente deiner neuen Identität: Bild, Emotion, Körpergefühl, Kernsatz. Starte EMDR und lass es tief sinken.",
-h1:"z.B. 'Heute kommt das Bild schneller als letzte Woche.' · 'Die Emotion fühlt sich vertrauter an.' · 'Der Kernsatz klingt inzwischen wie meine eigene Stimme.'",
-q2:"Was fühlt sich heute anders an als in Woche 3?",
-h2:"z.B. 'Die Verankerung fühlt sich tiefer an.' · 'Ich komme schneller in den Zustand.' · 'Es fühlt sich weniger wie Übung an – mehr wie ich selbst.'",
-type:"emdr_s",emdr:true,emdrType:"install",before:"Wie vertraut ist die neue Identität heute? (1–10)",after:"Wie tief hat sie sich verankert? (1–10)"},
+{d:26,w:4,
+title:"EMDR – Tägliche Verankerung",
+desc:"Wiederholung ist die Sprache des Nervensystems.",
+intro:"Neuroplastizität braucht Wiederholung. Jedes Mal wenn du deine neue Identität aktivierst und mit EMDR verankerst, werden neue neuronale Verbindungen stärker. Es ist wie ein Trampelpfad der zum breiten Weg wird. Heute trainierst du wieder – und du wirst merken: Es wird leichter.",
+quote:"Jedes Mal wenn du denkst, fühlst und handelst wie die neue Version von dir, bestätigst du deinem Gehirn: Das bin ich jetzt.",
+author:"Joe Dispenza",
+impulse:"Tagesimpuls: EMDR ist ab heute Teil deines täglichen Rituals – mindestens 5 Minuten. Nicht weil du musst. Weil du weißt was es bewirkt.",
+qs:[
+  {e:"Aktivierung",q:"Aktiviere alle Elemente deiner neuen Identität: Meisterbild + elevated Emotion + Körpergefühl + Kernsatz. Starte EMDR. Was passiert heute?",h:"z.B. 'Es geht schneller als früher.' · 'Die Emotion kommt sofort.' · 'Das Bild ist klarer und lebendiger.' · 'Der Kernsatz klingt inzwischen wie ich.'"},
+  {e:"Vergleich",q:"Wie fühlt sich diese Session heute an, verglichen mit den ersten EMDR Sessions in Woche 2?",h:"z.B. 'Deutlich vertrauter und tiefer.' · 'Ich weiß jetzt was passiert und kann mich darauf einlassen.' · 'Es braucht weniger Zeit um in den Zustand zu kommen.'"},
+  {e:"Frage 1",q:"Welche neue Überzeugung über dich selbst fühlt sich heute wahr an – die sich vor 4 Wochen noch fremd angefühlt hätte?",h:"z.B. 'Dass ich es verdiene, geliebt zu werden ohne es zu verdienen.' · 'Dass mein Business wächst.' · 'Dass ich sicher bin.'"},
+  {e:"Widerstände",q:"Welcher letzte Widerstand ist noch da? Was hält sich noch?",h:"z.B. 'Die Angst vor dem Endgültigen.' · 'Das Gefühl es dürfte nicht so einfach sein.' · 'Alte Familienüberzeugungen die noch nachhallen.'"},
+  {e:"Fürsorge & Geben",q:"Wie kannst du in dieser Woche jemanden anderen durch deine neue Energie unterstützen – nicht aus Pflicht, sondern aus Freude?",h:"z.B. 'Ich kann meiner Freundin zuhören ohne ratschläge zu geben.' · 'Ich kann Kunden wirklich helfen weil ich aus Stärke gebe.' · 'Ich kann präsent sein für die Menschen die ich liebe.'"}
+],
+emdr:true,emdrType:"install",
+before:"Vertrautheit mit neuer Identität heute (1–10)",after:"Tiefe der Verankerung nach EMDR (1–10)"},
 
-{d:27,w:4,wn:"Verkörpern",title:"Kein Endpunkt – eine Lebensweise",desc:"Transformation ist kein Projekt. Sie ist eine Art zu leben.",
-intro:"Es gibt keinen Moment, an dem du 'fertig' bist – und das ist wunderbar. Transformation ist ein kontinuierlicher, liebevoller Prozess des Hinschauens, Loslassens und Neuwählens.",
-q1:"Was bedeutet es für dich, diese Reise als Lebensweise zu verstehen?",
-h1:"z.B. 'Es bedeutet, täglich einen kleinen Schritt zu gehen, ohne Druck.' · 'Rückschritte sind Teil des Weges – kein Zeichen des Scheiterns.'",
-q2:"Welche drei Praktiken möchtest du dauerhaft integrieren?",
-h2:"z.B. '1. Tägliches Morgenritual (5 Min). 2. Einmal pro Woche EMDR. 3. Abends 3 Dinge aufschreiben, für die ich dankbar bin.'",
-type:"obs",emdr:false},
+{d:27,w:4,
+title:"Kein Endpunkt – eine Lebensweise",
+desc:"Transformation ist kein Projekt mit Abgabedatum. Sie ist eine Art zu leben.",
+intro:"Es gibt keinen Moment, an dem du 'fertig' bist. Und das ist wunderbar. Transformation ist ein kontinuierlicher, liebevoller Prozess des Hinschauens, Loslassens und Neuwählens. Du wirst zurückfallen. Du wirst ins alte Muster gleiten. Und dann wirst du wieder wählen. Das ist nicht Versagen – das ist der Weg.",
+quote:"Das Geheimnis ist nicht, nie zurückzufallen. Das Geheimnis ist, immer wieder aufzustehen – und jedes Mal ein wenig schneller.",
+author:"—",
+impulse:"Tagesimpuls: Wenn du heute ins alte Muster gleitest – lächele. Sage dir: 'Da ist mein altes Programm. Ich sehe dich. Und ich wähle neu.'",
+qs:[
+  {e:"Frage 1",q:"Was bedeutet es für dich, diese innere Arbeit als Lebensweise zu verstehen – nicht als Programm das endet?",h:"z.B. 'Es bedeutet, dass ich mir selbst gegenüber geduldig bleibe.' · 'Es bedeutet, dass ich täglich kleine Schritte machen kann ohne Druck.' · 'Es bedeutet, dass Rückschritte Teil des Weges sind.'"},
+  {e:"Deine Praktiken",q:"Welche drei Praktiken aus diesem Programm möchtest du dauerhaft in deinen Alltag integrieren?",h:"z.B. '1. Tägliches Morgenritual (5 Min). 2. Wöchentliches EMDR. 3. Jeden Abend 3 echte Dankbarkeiten.' – Realistisch und machbar."},
+  {e:"Frage 2",q:"Was wird passieren wenn du in 6 Monaten auf heute zurückschaust und treu geblieben bist?",h:"z.B. 'Ich werde eine andere Frau sein.' · 'Meine Beziehungen werden tiefer sein.' · 'Ich werde mein Business aufgebaut haben.' · 'Ich werde mir selbst vertrauen.'"},
+  {e:"Dankbarkeit an dich",q:"Was bist du dir selbst gegenüber dankbar für diese 27 Tage?",h:"z.B. 'Dass ich jeden Tag wieder gewählt habe.' · 'Dass ich hingeschaut habe auch wenn es schwer war.' · 'Dass ich mir selbst eine Chance gegeben habe.'"},
+  {e:"Unterstützung",q:"Wie kannst du diese Reise mit anderen teilen – ohne aufzuzwingen?",h:"z.B. 'Ich kann ein Vorbild sein durch mein Wesen.' · 'Ich kann dieses Programm weiterempfehlen.' · 'Ich kann offen über meine Transformation sprechen wenn der richtige Moment kommt.'"}
+],
+emdr:false},
 
-{d:28,w:4,wn:"Verkörpern",title:"Selbstvergebung – der tiefste Frieden",desc:"Die heilsamste Vergebung beginnt bei dir selbst.",
-intro:"Wir vergeben anderen oft leichter als uns selbst. Aber jede Selbstverurteilung hält das alte Programm am Leben. Heute schenkst du dir Mitgefühl.",
-q1:"Was hast du dir lange nicht vergeben? Was hast du dir gegenüber zu hart beurteilt?",
-h1:"z.B. 'Dass ich so lange in einer Situation geblieben bin, die mir nicht gut tat.' · 'Dass ich meine Bedürfnisse so lange ignoriert habe.'",
-q2:"Schreibe dir selbst einen Brief. Beginne: 'Liebe [Name], du hast damals das Beste getan, was du konntest mit dem...'",
-h2:"z.B. 'Liebe Sofia, du hast damals das Beste getan, was du konntest mit dem Wissen und der Kraft, die du hattest. Heute weißt du mehr. Das ist kein Versagen – das ist Wachstum.'",
-type:"forg",emdr:false},
+{d:28,w:4,
+title:"Selbstvergebung – der tiefste Friede",
+desc:"Die heilsamste Vergebung beginnt immer bei dir selbst.",
+intro:"Wir vergeben anderen leichter als uns selbst. Aber jede Selbstverurteilung, jedes 'Ich hätte es besser wissen müssen', jedes 'Warum habe ich das so lange zugelassen' hält das alte Programm am Leben. Heute schenkst du dir vollständiges Mitgefühl.",
+quote:"Du hast damals das Beste getan, was du konntest, mit dem Wissen das du hattest. Wenn du mehr gewusst hättest, hättest du anders gehandelt.",
+author:"Maya Angelou",
+impulse:"Tagesimpuls: Lege heute eine Hand auf dein Herz und sage laut: 'Ich vergebe mir. Vollständig und ganz.'",
+qs:[
+  {e:"Selbstvergebung",q:"Was hast du dir lange nicht vergeben? Was hast du dir gegenüber zu hart beurteilt?",h:"z.B. 'Dass ich so lange in einer Situation geblieben bin die mir nicht gut tat.' · 'Dass ich meine eigenen Bedürfnisse so lange ignoriert habe.' · 'Dass ich so oft klein geblieben bin.'"},
+  {e:"Brief an dich",q:"Schreibe dir selbst einen Brief mit den Worten, die du damals gebraucht hättest. Beginne: 'Liebe [Name], du hast damals das Beste getan...'",h:"z.B. 'Liebe Nicole, du hast damals das Beste getan was du konntest mit dem Wissen und der Kraft die du hattest. Du warst mutig, auch wenn du es nicht so gesehen hast.'"},
+  {e:"EMDR Selbstvergebung",q:"Aktiviere das Gefühl von Selbstmitgefühl und Selbstvergebung und starte EMDR. Was passiert?",h:"z.B. 'Ich spürte wie sich etwas im Brustbereich löste.' · 'Tränen kamen.' · 'Ich fühlte plötzlich Wärme für mich selbst.'"},
+  {e:"Frage 1",q:"Wie fühlt sich Selbstliebe in deinem Körper an – jetzt in diesem Moment?",h:"z.B. 'Wie warme Hände auf meinem Herz.' · 'Wie ein tiefer Atemzug.' · 'Noch zart und neu – aber spürbar.'"},
+  {e:"Reflexion",q:"Was wäre anders in deinem Leben wenn du dir täglich diese Selbstvergebung und dieses Mitgefühl schenkst?",h:"z.B. 'Ich würde mutiger Entscheidungen treffen.' · 'Ich würde weniger Zeit damit verbringen mich zu kritisieren.' · 'Ich würde authentischer mit anderen sein.'"}
+],
+emdr:true,emdrType:"install",
+before:"Selbstmitgefühl vor EMDR (1–10)",after:"Selbstmitgefühl nach EMDR (1–10)"},
 
-{d:29,w:4,wn:"Verkörpern",title:"Die Frau, die ich bin",desc:"Eine Liebeserklärung an dich selbst.",
-intro:"29 Tage. Du hast hingeschaut, losgelassen, neu gewählt und verkörpert. Heute schreibst du ein Zeugnis – als Erinnerung für dich.",
-q1:"Schreibe in der Gegenwart: Wer bist du heute? Beginne mit 'Ich bin eine Frau, die...' – lass es fließen.",
-h1:"Schreibe einfach drauf los. z.B. 'Ich bin eine Frau, die ihren Körper hört.' · 'Ich bin eine Frau, die sich selbst vergibt.' · 'Ich bin eine Frau, die wählt statt zu reagieren.'",
-q2:"Was ist das Schönste, das du in diesen 29 Tagen über dich erinnert hast?",
-h2:"z.B. 'Ich habe erinnert, dass ich viel stärker bin als ich dachte.' · 'Dass mein Körper ein Verbündeter ist.' · 'Dass Sanftheit mit mir selbst kein Zeichen von Schwäche ist.'",
-type:"cl",emdr:true,emdrType:"install",before:"Wie vertraut fühlt sich deine neue Identität heute an? (1–10)",after:"Wie tief in deinem Körper ist sie angekommen? (1–10)"},
+{d:29,w:4,
+title:"Die Frau, die ich bin",
+desc:"Eine Liebeserklärung an dich selbst.",
+intro:"29 Tage. Du hast hingeschaut, losgelassen, neu gewählt und verkörpert. Das war keine leichte Reise. Das war eine Liebeserklärung an dich selbst. Heute schreibst du ein Zeugnis dieser Transformation – nicht als Beweis für andere, sondern als Erinnerung für dich.",
+quote:"Die wichtigste Beziehung in deinem Leben ist die zu dir selbst. Alles andere ist ein Spiegel davon.",
+author:"—",
+impulse:"Tagesimpuls: Stehe heute vor einem Spiegel, schau dir in die Augen und sage: 'Ich bin stolz auf dich. Du hast es getan.'",
+qs:[
+  {e:"Wer ich bin",q:"Schreibe in der Gegenwart: Wer bist du heute? Beginne mit 'Ich bin eine Frau, die...' und lass es fließen – mindestens 10 Sätze.",h:"Schreibe drauf los. z.B. 'Ich bin eine Frau, die ihren Körper hört.' · 'Ich bin eine Frau, die sich selbst vergibt.' · 'Ich bin eine Frau, die wählt statt zu reagieren.'"},
+  {e:"Die Veränderung",q:"Was ist das Kostbarste, das sich in dir verändert hat – das du nicht mehr hergeben möchtest?",h:"z.B. 'Das Wissen, dass ich wählen kann.' · 'Das Gespür für meinen Körper.' · 'Die Fähigkeit, schneller loszulassen.' · 'Das Vertrauen in mich selbst.'"},
+  {e:"EMDR Abschluss",q:"Aktiviere dein vollstes Selbst – alle Elemente – und starte eine letzte tiefe EMDR Session. Verankere wer du bist.",h:"Nimm dir Zeit. Das ist dein Abschluss."},
+  {e:"An zukünftige dich",q:"Schreibe einen Brief an die Version von dir in 6 Monaten. Was hast du ihr zu sagen?",h:"z.B. 'Liebe zukünftige Nicole, ich hoffe du bist die Frau geworden, die du dir vorgestellt hast. Ich habe heute den Grundstein gelegt.'"},
+  {e:"Die Schönheit",q:"Was ist das Schönste das du in diesen 29 Tagen über dich gelernt oder wiederentdeckt hast?",h:"z.B. 'Dass ich viel stärker bin als ich dachte.' · 'Dass mein Körper ein Verbündeter ist.' · 'Dass Sanftheit mit mir selbst kein Zeichen von Schwäche ist.'"}
+],
+emdr:true,emdrType:"install",
+before:"Vertrautheit mit neuer Identität (1–10)",after:"Tiefe der Verankerung heute (1–10)"},
 
-{d:30,w:4,wn:"Verkörpern",title:"Tag 30 – Ankommen im Neubeginn",desc:"Es gibt keinen Endpunkt. Nur eine neue, bewusste Wahl.",
-intro:"Herzlichen Glückwunsch. 30 Tage durch Erkenntnis, Loslassen, Werden und Verkörpern. Das war eine Liebeserklärung an dich selbst. Und jetzt beginnt Tag 31.",
-q1:"Wer bist du heute, verglichen mit Tag 1? Was hat sich verändert?",
-h1:"z.B. 'Ich trage mich ruhiger.' · 'Ich reagiere in bestimmten Situationen anders.' · 'Ich erkenne mein altes Programm schneller und wähle bewusster.' · 'Ich bin mir selbst vertrauter geworden.'",
-q2:"Schreibe deine Wunscherklärung für die nächsten 30 Tage – als Ankündigung:",
-h2:"z.B. 'Ich entscheide mich täglich dafür, die Frau zu sein, die aus Liebe handelt, sich selbst vertraut und offen empfängt was das Leben bereit hält.'",
-type:"fin",emdr:true,emdrType:"install",before:"Wie lebendig fühlt sich deine neue Identität heute an? (1–10)",after:"Wie tief ist sie in deinem Körper? (1–10)"}
-];
+{d:30,w:4,
+title:"Tag 30 – Ankommen im Neubeginn",
+desc:"Es gibt keinen Endpunkt. Nur eine neue, bewusste, täglich gewählte Version von dir.",
+intro:"Herzlichen Glückwunsch. 30 Tage durch Erkenntnis, Loslassen, Werden und Verkörpern. Das war eine außergewöhnliche Liebeserklärung an dich selbst. Und weißt du was das Schönste ist? Heute beginnt Tag 31. Und der ist genauso wichtig wie Tag 1.",
+quote:"Du hast nicht 30 Tage ein Programm abgeschlossen. Du hast 30 Tage eine neue Person geübt. Diese Person bist du jetzt.",
+author:"—",
+impulse:"Tagesimpuls: Teile deine Transformation mit einer Person die du liebst – nicht um zu beweisen, sondern um zu inspirieren.",
+qs:[
+  {e:"Vergleich Tag 1 und Tag 30",q:"Wer bist du heute, verglichen mit Tag 1? Was hat sich verändert – in dir, in deinen Gedanken, in deinem Körper, in deinen Beziehungen?",h:"z.B. 'Ich trage mich ruhiger.' · 'Ich erkenne meine Muster jetzt schneller.' · 'Ich vertraue mir selbst mehr.' · 'Ich bin leichter.'"},
+  {e:"Die wichtigste Lektion",q:"Was war die wichtigste Erkenntnis dieser 30 Tage – die eine Sache, die alles verändert hat?",h:"z.B. 'Dass ich wählen kann wer ich bin.' · 'Dass mein Körper mehr weiß als mein Verstand.' · 'Dass Loslassen Selbstliebe ist.'"},
+  {e:"Wunscherklärung",q:"Schreibe deine Wunscherklärung für die nächsten 30 Tage: 'Ich entscheide mich täglich dafür, die Frau zu sein, die...'",h:"z.B. 'Ich entscheide mich täglich dafür, die Frau zu sein, die aus Liebe handelt, sich selbst vertraut und offen empfängt was das Leben bereit hält.'"},
+  {e:"EMDR – Die neue Person",q:"Eine letzte EMDR Session: Aktiviere deine vollste neue Identität. Verankere sie für immer.",h:"Nimm dir alle Zeit die du brauchst. Das ist kein Abschluss – es ist ein Anfang."},
+  {e:"An die Welt",q:"Was möchtest du mit dieser neuen Version von dir in die Welt bringen – für andere, für deine Kinder, für die Frauen die dich sehen?",h:"z.B. 'Ich möchte zeigen, dass Veränderung möglich ist.' · 'Ich möchte meinen Kindern vorleben was es bedeutet sich selbst treu zu sein.' · 'Ich möchte andere Frauen auf diesem Weg unterstützen.'"}
+],
+emdr:true,emdrType:"install",
+before:"Lebendigkeit der neuen Identität heute (1–10)",after:"Tiefe der finalen Verankerung (1–10)",
+isFinal:true}
+
+]; // end DAYS
 
 const QQ=[
   {q:"Das Quantenfeld antwortet nicht auf das was du willst – es antwortet auf wer du bist.",a:"Joe Dispenza"},
@@ -601,14 +817,19 @@ const QQ=[
   {q:"Dein altes Ich ist nicht dein Feind. Es hat dich hierher gebracht.",a:"—"},
   {q:"Loslassen ist keine Niederlage. Es ist die mutigste Form der Selbstliebe.",a:"—"},
   {q:"Empfangen ist eine Fertigkeit. Und du kannst sie täglich üben.",a:"—"},
+  {q:"Was wäre, wenn alles was du brauchst bereits in dir ist?",a:"—"},
+  {q:"Dein Körper glaubt was du ihm zeigst – nicht was du denkst.",a:"Joe Dispenza"},
+  {q:"Die mutigste Entscheidung ist die, du selbst zu sein.",a:"Coco Chanel"},
+  {q:"Liebe dich selbst – das ist keine Arroganz. Es ist die Basis für alles.",a:"Laura Malina Seiler"},
+  {q:"Deine Geschichte endet nicht hier. Sie beginnt gerade.",a:"—"},
 ];
 
 const WN=["Erkennen","Loslassen","Werden","Verkörpern"];
 const WC=["var(--w1)","var(--w2)","var(--w3)","var(--w4)"];
-const KEY='ws30v4';
+const KEY='ws30v5';
 
 let S={name:"",wish:"",aff:"",area:"",day:1,entries:{}};
-let cW=1,oD=1,eOn=false,eRaf=null,eT=null,eSpd=20;
+let cW=1,eOn=false,eRaf=null,eT=null,eSpd=20;
 
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
 function load(){try{const d=localStorage.getItem(KEY);if(d){S=JSON.parse(d);return true;}}catch(e){}return false;}
@@ -619,30 +840,23 @@ function begin(){
   S.wish=document.getElementById('ow').value.trim()||'—';
   S.aff=document.getElementById('oa').value.trim()||'—';
   S.area=document.querySelector('.ap.on')?.textContent||'';
-  S.day=1;save();
-  sh('dsh');rd();
+  S.day=1;save();sh('dsh');rd();
 }
 
 function sh(id){
-  // Hide all screens
-  document.querySelectorAll('.screen').forEach(s=>{
-    s.classList.remove('active');
-    s.style.display='none';
-  });
+  document.querySelectorAll('.screen').forEach(s=>{s.classList.remove('active');s.style.display='none';});
   const el=document.getElementById(id);
-  el.style.display='block';
-  el.classList.add('active');
-  // Scroll to very top instantly
-  window.scrollTo(0,0);
-  document.documentElement.scrollTop=0;
-  document.body.scrollTop=0;
+  el.style.display='block';el.classList.add('active');
+  window.scrollTo(0,0);document.documentElement.scrollTop=0;
 }
 function gh(){sE();sh('dsh');rd();}
 
 function rd(){
   const dn=Object.values(S.entries).filter(e=>e&&e.done).length;
   const pct=Math.round(dn/30*100);
-  document.getElementById('rp').style.strokeDashoffset=201-201*pct/100;
+  const circ=2*Math.PI*34;
+  document.getElementById('rp').style.strokeDasharray=circ;
+  document.getElementById('rp').style.strokeDashoffset=circ-circ*pct/100;
   document.getElementById('rpct').textContent=pct+'%';
   const h=new Date().getHours();
   document.getElementById('hg').textContent=(h<12?'Guten Morgen':h<18?'Guten Tag':'Guten Abend')+', '+S.name;
@@ -668,8 +882,7 @@ function rDots(){
   const g=document.getElementById('ddots');g.innerHTML='';
   const s=(cW-1)*7,e=Math.min(s+7,30);
   for(let i=s;i<e;i++){
-    const d=i+1;
-    const day=D[i],el=document.createElement('div');
+    const d=i+1,day=D[i],el=document.createElement('div');
     el.className='dd';el.textContent=d;el.dataset.w=day.w;
     if(S.entries[d]?.done)el.classList.add('done');
     else if(d===S.day)el.classList.add('td');
@@ -677,207 +890,198 @@ function rDots(){
     el.addEventListener('click',()=>{if(d<=S.day)od(d);});
     g.appendChild(el);
   }
-  // Scroll today's dot into view
-  const today=g.querySelector('.td,.done:last-child');
-  if(today)setTimeout(()=>today.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'}),100);
 }
 
 function sw(w){cW=w;rd();}
 function ot(){od(S.day);}
 
 function od(d){
-  oD=d;const day=D[d-1];if(!day)return;
+  const day=D[d-1];if(!day)return;
   document.getElementById('dbt').textContent=`Tag ${d} – ${day.title}`;
   const bg=document.getElementById('wbg');
   bg.textContent=`Woche ${day.w} · ${WN[day.w-1]}`;
   bg.style.background=WC[day.w-1];
-  document.getElementById('dbody').innerHTML=bld(day,S.entries[d]||{});
-  document.querySelectorAll('.rng').forEach(r=>ir(r));
+  document.getElementById('dbody').innerHTML=buildDay(day,S.entries[d]||{});
+  document.querySelectorAll('.rng').forEach(r=>irng(r));
   sh('ds');
-  if(day.emdr)setTimeout(iE,200);
+  if(day.emdr)setTimeout(iE,300);
 }
 
-function bld(day,e){
+function buildDay(day,e){
   let h='';
-  h+=`<div class="dint"><div class="ditag">Woche ${day.w} · ${WN[day.w-1]} · Tag ${day.d} von 30</div><div class="ditl">${day.title}</div><div class="ditx">${day.intro}</div></div>`;
+  // Intro
+  h+=`<div class="dint">
+    <div class="ditag">Woche ${day.w} · ${WN[day.w-1]} · Tag ${day.d} von 30</div>
+    <div class="ditl">${day.title}</div>
+    <div class="ditx">${day.intro}</div>
+  </div>`;
+  // Quote
+  h+=`<div class="day-quote">
+    <div class="dq-author">${day.author}</div>
+    <div class="dq-text">„${day.quote}"</div>
+  </div>`;
+  // Impulse
+  h+=`<div class="impulse">
+    <div class="imp-eye">Tagesimpuls</div>
+    <div class="imp-text">${day.impulse}</div>
+  </div>`;
+  // Affirmation
   if(S.aff&&S.aff!=='—')h+=`<div class="affp">${S.aff}</div>`;
-  if(day.bodyAreas)h+=`<div class="sc"><div class="sce">Körper-Check</div><div class="scq">Wo spürst du es gerade in deinem Körper?</div><div class="sch">Wähle die Stelle, die zuerst deine Aufmerksamkeit zieht.</div><div class="chips">${day.bodyAreas.map(a=>`<span class="chip${e.bodyArea===a?' on':''}" onclick="sl(this)">${a}</span>`).join('')}</div></div>`;
-  if(day.emotions)h+=`<div class="sc"><div class="sce">Welcher Satz resoniert?</div><div class="scq">Wähle den, der dich innerlich berührt.</div><div class="sch">Wähle intuitiv – den der sich am vertrautesten anfühlt, nicht den du dir wünschst.</div><div class="chips">${day.emotions.map(em=>`<span class="chip${e.emotion===em?' on':''}" onclick="sl(this)">${em}</span>`).join('')}</div></div>`;
-  if(day.joyChips)h+=`<div class="sc"><div class="sce">Was macht mich lebendig</div><div class="scq">Was bringt dir echte Freude?</div><div class="sch">Wähle so viele du möchtest – alles was sich wirklich wahr anfühlt.</div><div class="chips">${day.joyChips.map(j=>`<span class="chip${(e.joy||[]).includes(j)?' on':''}" onclick="this.classList.toggle('on')">${j}</span>`).join('')}</div></div>`;
-  if(day.before)h+=`<div class="sc"><div class="sce">Vor der Session</div><div class="scq">${day.before}</div><div class="irow"><span style="font-size:.67rem;color:var(--lt)">1</span><input type="range" class="rng" id="irb" min="1" max="10" value="${e.before||6}" oninput="ur(this,'irbv')" style="--p:${(((e.before||6)-1)/9*100).toFixed()}%"><span style="font-size:.67rem;color:var(--lt)">10</span><span class="inum" id="irbv">${e.before||6}</span></div></div>`;
-  h+=`<div class="sc"><div class="sce">Frage 1</div><div class="scq">${day.q1}</div><div class="sch">${day.h1}</div><textarea class="jta" id="j1" placeholder="Schreibe, was wirklich kommt...">${e.j1||''}</textarea></div>`;
-  if(day.q3)h+=`<div class="sc"><div class="sce">Frage 2</div><div class="scq">${day.q3||day.q2}</div><div class="sch">${day.h3||day.h2}</div><textarea class="jta" id="j3" placeholder="Nimm dir Zeit...">${e.j3||''}</textarea></div>`;
-  if(day.emdr){const inst=day.emdrType==='install';h+=`<div class="ep"><h4>${inst?'EMDR · Positive Verankerung':'EMDR · Sanfte Auflösung'}</h4><p class="esub">${inst?"Aktiviere gleichzeitig: dein inneres Bild, deine Emotion, dein Körpergefühl und deinen Kernsatz. Wenn du alles spürst – starte die Augenbewegung. Dein Kopf bleibt gerade, nur die Augen folgen dem goldenen Licht.":"Aktiviere das Muster, das du sanft loslassen möchtest – fühle es im Körper. Dann starte EMDR und beobachte nur. Kein Kämpfen – einfach da sein."}</p><div class="etrk"><div class="erail"></div><div id="eb"></div></div><div class="erow"><button class="bte" id="ebt" onclick="tE()">▶ Starten</button><div class="spd">Tempo <input type="range" id="sc" min="8" max="35" value="${eSpd}" oninput="eSpd=+this.value"> sanft</div></div><div class="ehint" id="eh">Bereit · Atme tief durch bevor du startest</div></div>`;}
-  h+=`<div class="sc"><div class="sce">${day.emdr?'Reflexion nach EMDR':day.q3?'Frage 3':'Reflexion'}</div><div class="scq">${day.q4||day.q2}</div><div class="sch">${day.h4||day.h2}</div><textarea class="jta" id="j2" placeholder="Schreibe was auftaucht...">${e.j2||''}</textarea></div>`;
-  if(!day.q3){}// q2 already shown above as main reflection
-  if(day.q3)h+=`<div class="sc"><div class="sce">Reflexion</div><div class="scq">${day.q2}</div><div class="sch">${day.h2}</div><textarea class="jta" id="j4" placeholder="Was nimmst du mit...">${e.j4||''}</textarea></div>`;
-  if(day.after)h+=`<div class="sc"><div class="sce">Nach der Session</div><div class="scq">${day.after}</div><div class="irow"><span style="font-size:.67rem;color:var(--lt)">1</span><input type="range" class="rng" id="ira" min="1" max="10" value="${e.after||8}" oninput="ur(this,'irav')" style="--p:${(((e.after||8)-1)/9*100).toFixed()}%"><span style="font-size:.67rem;color:var(--lt)">10</span><span class="inum" id="irav">${e.after||8}</span></div></div>`;
-  if(day.type==='fin')h+=`<div class="sc fsc"><div class="sce">Meine Wunscherklärung für Tag 31+</div><div class="scq">Ich entscheide mich täglich dafür, die Frau zu sein, die...</div><div class="sch">z.B. 'Ich entscheide mich täglich dafür, die Frau zu sein, die aus Liebe handelt, sich selbst vertraut und offen empfängt was das Leben bereit hält.'</div><textarea class="jta" id="jd" placeholder="Lass es fließen...">${e.decl||''}</textarea></div>`;
-  h+=`<button class="savebtn${e.done?' sv':''}" onclick="sv(${day.d})">${e.done?'✓ Tag '+day.d+' abgeschlossen':'Tag '+day.d+' abschließen'}</button><div style="height:2rem"></div>`;
+  // Body areas
+  if(day.bodyAreas)h+=`<div class="sc">
+    <div class="sce">Körper-Check</div>
+    <div class="scq">Wo spürst du es gerade in deinem Körper?</div>
+    <div class="sch">Wähle die Stelle, die zuerst deine Aufmerksamkeit zieht – ohne zu überlegen.</div>
+    <div class="chips">${day.bodyAreas.map(a=>`<span class="chip${e.bodyArea===a?' on':''}" onclick="sl(this)">${a}</span>`).join('')}</div>
+  </div>`;
+  // Emotions
+  if(day.emotions)h+=`<div class="sc">
+    <div class="sce">Deine elevated Emotion</div>
+    <div class="scq">Welche Emotion möchtest du als Grundton tragen?</div>
+    <div class="sch">Wähle intuitiv – die, die sich wahr und sehnsuchtsvoll anfühlt.</div>
+    <div class="chips">${day.emotions.map(em=>`<span class="chip${e.emotion===em?' on':''}" onclick="sl(this)">${em}</span>`).join('')}</div>
+  </div>`;
+  // Joy chips
+  if(day.joyChips)h+=`<div class="sc">
+    <div class="sce">Was macht mich lebendig</div>
+    <div class="scq">Was bringt dir echte Freude – wähle heute deine:</div>
+    <div class="sch">Wähle so viele du möchtest. Dein Körper weiß es.</div>
+    <div class="chips">${day.joyChips.map(j=>`<span class="chip${(e.joy||[]).includes(j)?' on':''}" onclick="this.classList.toggle('on')">${j}</span>`).join('')}</div>
+  </div>`;
+  // Before intensity
+  if(day.before)h+=`<div class="sc">
+    <div class="sce">Vor der EMDR Session</div>
+    <div class="scq">${day.before}</div>
+    <div class="irow">
+      <span style="font-size:.68rem;color:var(--lt)">1</span>
+      <input type="range" class="rng" id="irb" min="1" max="10" value="${e.before||6}" oninput="ur(this,'irbv')" style="--p:${(((e.before||6)-1)/9*100).toFixed()}%">
+      <span style="font-size:.68rem;color:var(--lt)">10</span>
+      <span class="inum" id="irbv">${e.before||6}</span>
+    </div>
+  </div>`;
+  // Questions
+  (day.qs||[]).forEach((q,i)=>{
+    h+=`<div class="sc">
+      <div class="sce">${q.e}</div>
+      <div class="scq">${q.q.replace(/\n/g,'<br>')}</div>
+      <div class="sch">${q.h}</div>
+      <textarea class="jta" id="j${i}" placeholder="Schreibe, was wirklich kommt...">${e['j'+i]||''}</textarea>
+    </div>`;
+  });
+  // EMDR
+  if(day.emdr){
+    const inst=day.emdrType==='install';
+    h+=`<div class="ep">
+      <h4>${inst?'EMDR · Positive Verankerung':'EMDR · Sanfte Auflösung'}</h4>
+      <p class="esub">${inst
+        ?"Aktiviere gleichzeitig: dein inneres Bild, deine Emotion, dein Körpergefühl und deinen Kernsatz. Wenn du alles spürst – starte die Augenbewegung. Dein Kopf bleibt gerade, nur die Augen folgen dem goldenen Licht. Wiederhole so oft bis du bei 8–10 bist."
+        :"Aktiviere das Muster, das du sanft loslassen möchtest – fühle es im Körper. Dann starte EMDR und beobachte nur. Kein Kämpfen. Wenn es zu intensiv wird – gehe zu deinem sicheren Ort."
+      }</p>
+      <div class="etrk"><div class="erail"></div><div id="eb"></div></div>
+      <div class="erow">
+        <button class="bte" id="ebt" onclick="tE()">▶ Starten</button>
+        <div class="spd">Tempo <input type="range" id="sc" min="8" max="35" value="${eSpd}" oninput="eSpd=+this.value"> sanft</div>
+      </div>
+      <div class="ehint" id="eh">Bereit · Atme tief durch bevor du startest</div>
+    </div>`;
+  }
+  // After intensity
+  if(day.after)h+=`<div class="sc">
+    <div class="sce">Nach der EMDR Session</div>
+    <div class="scq">${day.after}</div>
+    <div class="irow">
+      <span style="font-size:.68rem;color:var(--lt)">1</span>
+      <input type="range" class="rng" id="ira" min="1" max="10" value="${e.after||8}" oninput="ur(this,'irav')" style="--p:${(((e.after||8)-1)/9*100).toFixed()}%">
+      <span style="font-size:.68rem;color:var(--lt)">10</span>
+      <span class="inum" id="irav">${e.after||8}</span>
+    </div>
+  </div>`;
+  // Final declaration
+  if(day.isFinal)h+=`<div class="sc fsc">
+    <div class="sce">Meine Wunscherklärung für Tag 31+</div>
+    <div class="scq">Ich entscheide mich täglich dafür, die Frau zu sein, die...</div>
+    <div class="sch">z.B. 'Ich entscheide mich täglich dafür, die Frau zu sein, die aus Liebe handelt, sich selbst vertraut und offen empfängt was das Leben bereit hält.'</div>
+    <textarea class="jta" id="jdecl" placeholder="Lass es fließen...">${e.decl||''}</textarea>
+  </div>`;
+  // Save button
+  h+=`<button class="savebtn${e.done?' sv':''}" onclick="sv(${day.d})">${e.done?'✓ Tag '+day.d+' abgeschlossen':'Tag '+day.d+' abschließen'}</button>
+  <div style="height:2.5rem"></div>`;
   return h;
 }
 
 function sl(el){el.closest('.chips').querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));el.classList.add('on');}
-function ir(r){r.style.setProperty('--p',(((+r.value-+r.min)/(+r.max-+r.min))*100).toFixed(1)+'%');}
-function ur(r,v){ir(r);const el=document.getElementById(v);if(el)el.textContent=r.value;}
+function irng(r){r.style.setProperty('--p',(((+r.value-+r.min)/(+r.max-+r.min))*100).toFixed(1)+'%');}
+function ur(r,v){irng(r);const el=document.getElementById(v);if(el)el.textContent=r.value;}
 
 function iE(){eT=null;const b=document.getElementById('eb');if(b)b.style.left='12px';}
 function tE(){eOn?sE():stE();}
-function stE(){eOn=true;eT=null;const bt=document.getElementById('ebt'),eh=document.getElementById('eh');if(bt){bt.textContent='■ Stoppen';bt.classList.add('on');}if(eh)eh.textContent='Folge dem goldenen Licht mit den Augen · Kopf bleibt gerade';eRaf=requestAnimationFrame(an);}
-function sE(){eOn=false;if(eRaf)cancelAnimationFrame(eRaf);const bt=document.getElementById('ebt'),eh=document.getElementById('eh');if(bt){bt.textContent='▶ Starten';bt.classList.remove('on');}if(eh)eh.textContent='Schließe die Augen · atme tief ein und aus · lass alles los';}
-function an(ts){if(!eT)eT=ts;if(!eOn)return;const tr=document.querySelector('.etrk'),b=document.getElementById('eb');if(!tr||!b)return;const u=tr.offsetWidth-20,p=(42-eSpd)*130+1800,t=((ts-eT)%p)/p,f=t<.5?eio(t*2):1-eio((t-.5)*2);b.style.left=(f*u+10)+'px';eRaf=requestAnimationFrame(an);}
+function stE(){eOn=true;eT=null;
+  const bt=document.getElementById('ebt'),eh=document.getElementById('eh');
+  if(bt){bt.textContent='■ Stoppen';bt.classList.add('on');}
+  if(eh)eh.textContent='Folge dem goldenen Licht · Kopf bleibt gerade';
+  eRaf=requestAnimationFrame(an);}
+function sE(){eOn=false;if(eRaf)cancelAnimationFrame(eRaf);
+  const bt=document.getElementById('ebt'),eh=document.getElementById('eh');
+  if(bt){bt.textContent='▶ Starten';bt.classList.remove('on');}
+  if(eh)eh.textContent='Schließe die Augen · atme tief durch · lass alles los';}
+function an(ts){if(!eT)eT=ts;if(!eOn)return;
+  const tr=document.querySelector('.etrk'),b=document.getElementById('eb');
+  if(!tr||!b)return;
+  const u=tr.offsetWidth-22,p=(42-eSpd)*130+1800,t=((ts-eT)%p)/p;
+  const f=t<.5?eio(t*2):1-eio((t-.5)*2);
+  b.style.left=(f*u+11)+'px';
+  eRaf=requestAnimationFrame(an);}
 function eio(t){return t<.5?2*t*t:-1+(4-2*t)*t;}
 
 function sv(d){
   if(!S.entries[d])S.entries[d]={};const e=S.entries[d];
-  const g=id=>{const el=document.getElementById(id);return el?el.value:null;};
-  const gn=id=>{const el=document.getElementById(id);return el?+el.value:null;};
-  const j1=g('j1'),j2=g('j2'),jd=g('jd'),j3=g('j3'),j4=g('j4');
-  if(j1)e.j1=j1;if(j2)e.j2=j2;if(jd)e.decl=jd;if(j3)e.j3=j3;if(j4)e.j4=j4;
-  const ib=gn('irb'),ia=gn('ira');if(ib)e.before=ib;if(ia)e.after=ia;
+  // Save all journal entries
+  const day=D[d-1];
+  (day.qs||[]).forEach((_,i)=>{const el=document.getElementById('j'+i);if(el)e['j'+i]=el.value;});
+  const jd=document.getElementById('jdecl');if(jd)e.decl=jd.value;
+  const ib=document.getElementById('irb');if(ib)e.before=+ib.value;
+  const ia=document.getElementById('ira');if(ia)e.after=+ia.value;
   const chip=document.querySelector('#dbody .chip.on');if(chip)e.emotion=chip.textContent;
   const joys=[...document.querySelectorAll('#dbody .chip.on')].map(c=>c.textContent);if(joys.length)e.joy=joys;
   e.done=true;e.at=Date.now();
-  const nextDay=d<30?d+1:null;
+  const next=d<30?d+1:null;
   if(d===S.day&&d<30)S.day=d+1;
   cW=D[S.day-1]?.w||4;save();sE();
   toast('Tag '+d+' abgeschlossen ✨');
-  // Open next day directly after short delay
+  setTimeout(()=>{next?od(next):gh();},900);
+}
+
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200);}
+
+// PWA
+window.addEventListener('beforeinstallprompt',(e)=>{
+  e.preventDefault();let dp=e;
   setTimeout(()=>{
-    if(nextDay){
-      od(nextDay);
-    } else {
-      gh();
-    }
-  },1000);
-}
-
-function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2400);}
-
-window.addEventListener('load',()=>{if(load()&&S.name&&S.wish){cW=D[S.day-1]?.w||1;sh('dsh');rd();}});
-
-// ═══════════════════════════════════
-// PWA – Install Prompt
-// ═══════════════════════════════════
-let deferredPrompt = null;
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  // Show install banner after 3 seconds
-  setTimeout(showInstallBanner, 3000);
+    if(document.getElementById('pwa-b'))return;
+    const b=document.createElement('div');b.id='pwa-b';
+    b.innerHTML=`<div style="position:fixed;bottom:0;left:0;right:0;z-index:500;background:var(--sienna);color:var(--cream);padding:1rem 1.5rem;display:flex;align-items:center;gap:1rem;box-shadow:0 -4px 20px rgba(42,31,24,.2);">
+      <div style="flex:1"><div style="font-family:'Cormorant Garamond',serif;font-size:.95rem">Als App installieren</div><div style="font-size:.7rem;opacity:.7;margin-top:.1rem">Immer griffbereit auf deinem Homescreen</div></div>
+      <button onclick="dp.prompt();this.closest('#pwa-b').remove();" style="background:var(--cream);border:none;border-radius:3px;color:var(--sienna);font-family:'Outfit',sans-serif;font-size:.7rem;font-weight:500;padding:.5rem 1rem;cursor:pointer;">Installieren</button>
+      <button onclick="this.closest('#pwa-b').remove()" style="background:none;border:none;color:var(--cream);font-size:1.3rem;cursor:pointer;opacity:.7">×</button>
+    </div>`;
+    document.body.appendChild(b);
+  },4000);
 });
-
-function showInstallBanner() {
-  const existing = document.getElementById('pwa-banner');
-  if (existing) return;
-  const banner = document.createElement('div');
-  banner.id = 'pwa-banner';
-  banner.innerHTML = `
-    <div style="
-      position:fixed;bottom:0;left:0;right:0;z-index:500;
-      background:var(--sienna);color:var(--cream);
-      padding:1rem 1.4rem;
-      display:flex;align-items:center;gap:1rem;
-      box-shadow:0 -4px 20px rgba(42,31,24,.2);
-      animation:slideUp .35s ease;
-    ">
-      <div style="font-size:1.6rem">📱</div>
-      <div style="flex:1">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:.95rem;font-weight:400">Als App installieren</div>
-        <div style="font-size:.7rem;opacity:.75;margin-top:.1rem">Immer griffbereit auf deinem Homescreen</div>
-      </div>
-      <button onclick="installPWA()" style="
-        background:var(--cream);border:none;border-radius:3px;
-        color:var(--sienna);font-family:'Outfit',sans-serif;
-        font-size:.7rem;font-weight:500;letter-spacing:.1em;
-        text-transform:uppercase;padding:.5rem 1rem;cursor:pointer;
-        white-space:nowrap;
-      ">Installieren</button>
-      <button onclick="document.getElementById('pwa-banner').remove()" style="
-        background:none;border:none;color:var(--cream);
-        font-size:1.2rem;cursor:pointer;opacity:.7;padding:0 .2rem;
-      ">×</button>
-    </div>
-    <style>@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}</style>
-  `;
-  document.body.appendChild(banner);
+if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!window.navigator.standalone){
+  setTimeout(()=>{
+    if(document.getElementById('pwa-b'))return;
+    const b=document.createElement('div');b.id='pwa-b';
+    b.innerHTML=`<div style="position:fixed;bottom:0;left:0;right:0;z-index:500;background:var(--sienna);color:var(--cream);padding:1.1rem 1.5rem 1.5rem;box-shadow:0 -4px 20px rgba(42,31,24,.2);">
+      <div style="display:flex;justify-content:space-between;margin-bottom:.5rem"><span style="font-family:'Cormorant Garamond',serif;font-size:1rem">Zum Homescreen hinzufügen</span><button onclick="this.closest('#pwa-b').remove()" style="background:none;border:none;color:var(--cream);font-size:1.3rem;cursor:pointer;opacity:.7">×</button></div>
+      <div style="font-size:.76rem;line-height:1.7;opacity:.8">1. Tippe auf <strong>Teilen ⬆</strong> in Safari<br>2. Wähle <strong>„Zum Home-Bildschirm"</strong><br>3. Fertig – deine App ist installiert 🌸</div>
+    </div>`;
+    document.body.appendChild(b);
+  },5000);
 }
 
-function installPWA() {
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then(() => {
-      deferredPrompt = null;
-      const b = document.getElementById('pwa-banner');
-      if (b) b.remove();
-    });
-  }
-}
-
-// iOS: show manual instructions (Safari doesn't support beforeinstallprompt)
-function isIOS() {
-  return /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
-}
-function isInStandaloneMode() {
-  return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
-}
-
-if (isIOS() && !isInStandaloneMode()) {
-  setTimeout(() => {
-    const existing = document.getElementById('pwa-banner');
-    if (existing) return;
-    const banner = document.createElement('div');
-    banner.id = 'pwa-banner';
-    banner.innerHTML = `
-      <div style="
-        position:fixed;bottom:0;left:0;right:0;z-index:500;
-        background:var(--sienna);color:var(--cream);
-        padding:1.1rem 1.4rem 1.4rem;
-        box-shadow:0 -4px 20px rgba(42,31,24,.2);
-        animation:slideUp .35s ease;
-      ">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.6rem">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:1rem">Zum Homescreen hinzufügen</div>
-          <button onclick="document.getElementById('pwa-banner').remove()" style="background:none;border:none;color:var(--cream);font-size:1.3rem;cursor:pointer;opacity:.7">×</button>
-        </div>
-        <div style="font-size:.75rem;line-height:1.7;opacity:.8">
-          1. Tippe auf <strong>Teilen</strong> <span style="font-size:1rem">⬆</span> unten in Safari<br>
-          2. Wähle <strong>„Zum Home-Bildschirm"</strong><br>
-          3. Fertig — deine App ist installiert 🌸
-        </div>
-        <style>@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}</style>
-      </div>
-    `;
-    document.body.appendChild(banner);
-  }, 4000);
-}
-
-// ═══════════════════════════════════
-// SERVICE WORKER
-// ═══════════════════════════════════
-if ('serviceWorker' in navigator) {
-  const swCode = `
-    const CACHE = 'werde-sie-v1';
-    const ASSETS = ['./', './index.html'];
-    self.addEventListener('install', e => {
-      e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS).catch(() => {})));
-    });
-    self.addEventListener('fetch', e => {
-      e.respondWith(
-        caches.match(e.request).then(r => r || fetch(e.request).catch(() => caches.match('./')))
-      );
-    });
-    self.addEventListener('activate', e => {
-      e.waitUntil(caches.keys().then(keys =>
-        Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))
-      ));
-    });
-  `;
-  const swBlob = new Blob([swCode], {type: 'application/javascript'});
-  const swURL = URL.createObjectURL(swBlob);
-  navigator.serviceWorker.register(swURL).catch(() => {});
-}
+window.addEventListener('load',()=>{
+  if(load()&&S.name&&S.wish){cW=D[S.day-1]?.w||1;sh('dsh');rd();}
+});
 </script>
 </body>
 </html>
