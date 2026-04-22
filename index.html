@@ -73,28 +73,28 @@ document.write('<link rel="manifest" href="' + manifestURL + '">');
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
 body{background:var(--cream);color:var(--text);font-family:'Outfit',sans-serif;font-weight:300;min-height:100dvh;overflow-x:hidden;}
+
+/* Verschwommenes Hintergrundbild */
+body::before{
+  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 20%, rgba(139,58,42,.18) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 80% 80%, rgba(196,150,58,.12) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 50% 50%, rgba(212,196,174,.3) 0%, transparent 80%);
+  background-color: var(--cream);
+}
 body::after{content:'';position:fixed;inset:0;z-index:999;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");opacity:.35;}
 
-/* ── Centered app shell on desktop ── */
-@media(min-width:540px){
-  body { background: #e8ddd0; }
-  .screen {
-    max-width: 480px;
-    margin: 0 auto;
-    box-shadow: 0 0 60px rgba(42,31,24,.18);
-    min-height: 100dvh;
-    position: relative;
-  }
-  .abar { position: sticky; top: 0; }
-}
-
-.screen{display:none;animation:fu .4s ease;}.screen.active{display:block;}
+/* Volle Breite auf allen Geräten */
+.screen{display:none;animation:fu .4s ease;position:relative;z-index:1;}
+.screen.active{display:block;}
 @keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
 
 /* ONBOARDING — warm sienna-red base */
-#ob{min-height:100dvh;background:linear-gradient(160deg,var(--sienna-d) 0%,var(--sienna) 55%,#a04830 100%);display:flex;flex-direction:column;justify-content:center;padding:3rem 1.8rem;position:relative;overflow:hidden;}
+#ob{min-height:100dvh;background:linear-gradient(160deg,var(--sienna-d) 0%,var(--sienna) 55%,#a04830 100%);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:3rem 1.8rem;position:relative;overflow:hidden;}
 #ob::before{content:'';position:absolute;top:-20%;right:-15%;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(245,225,180,.12),transparent 70%);pointer-events:none;}
 #ob::after{content:'';position:absolute;bottom:-25%;left:-10%;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(42,31,24,.2),transparent 70%);pointer-events:none;z-index:0;}
+.ob-inner{width:100%;max-width:560px;position:relative;z-index:1;}
 .ob-ey{font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(245,239,230,.45);margin-bottom:1.2rem;position:relative;z-index:1;}
 #ob h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,8vw,4rem);font-weight:300;line-height:1.1;color:var(--cream);margin-bottom:.5rem;position:relative;z-index:1;}
 #ob h1 em{color:var(--gold-l);font-style:italic;}
@@ -118,7 +118,7 @@ body::after{content:'';position:fixed;inset:0;z-index:999;pointer-events:none;ba
 .adayb{background:var(--sienna);color:var(--white);border-radius:20px;font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;padding:.28rem .8rem;}
 
 /* DASHBOARD */
-.dash{padding:1.2rem;max-width:100%;}
+.dash{padding:1.4rem;max-width:640px;margin:0 auto;}
 .hero{background:linear-gradient(135deg,var(--sienna-d) 0%,var(--sienna) 100%);border-radius:10px;padding:1.5rem;margin-bottom:1.2rem;display:flex;align-items:center;gap:1.4rem;position:relative;overflow:hidden;}
 .hero::before{content:'';position:absolute;top:-40%;right:-10%;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(245,220,160,.15),transparent 70%);pointer-events:none;}
 .rw{position:relative;width:72px;height:72px;flex-shrink:0;}
@@ -172,7 +172,7 @@ body::after{content:'';position:fixed;inset:0;z-index:999;pointer-events:none;ba
 .back{background:none;border:none;cursor:pointer;font-size:1.1rem;color:var(--mid);padding:0;line-height:1;}
 .dbt{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:400;color:var(--text2);}
 .wbg{margin-left:auto;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;padding:.22rem .7rem;border-radius:20px;color:var(--white);}
-.dbody{padding:1.2rem;max-width:100%;}
+.dbody{padding:1.4rem;max-width:640px;margin:0 auto;}
 
 /* day intro — warm sienna instead of black */
 .dint{background:linear-gradient(135deg,var(--sienna-d) 0%,var(--sienna) 60%,#a04830 100%);border-radius:8px;padding:1.6rem;margin-bottom:1.2rem;position:relative;overflow:hidden;}
@@ -228,35 +228,37 @@ input.rng::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;b
 
 <!-- ONBOARDING -->
 <div id="ob" class="screen active">
-  <div class="ob-ey">30 Tage Transformation · EMDR Manifestation</div>
-  <h1>Werde<br><em>Sie.</em></h1>
-  <p class="osub">Manifestation bedeutet nicht, etwas zu wünschen. Es bedeutet, die Person zu werden, die es bereits empfangen kann. Diese 30 Tage sind deine innere Reise.</p>
-  <div class="ocard">
-    <label>Dein Name</label>
-    <input type="text" id="on" placeholder="z.B. Sofia">
-  </div>
-  <div class="ocard">
-    <label>Welche Version von dir möchtest du in 30 Tagen verkörpern?</label>
-    <textarea id="ow" placeholder="z.B. Eine Frau, die aus innerer Sicherheit liebt, entscheidet und sich selbst treu ist."></textarea>
-    <p class="oh">Denke in Identität, nicht in Dingen. Wer möchtest du sein?</p>
-  </div>
-  <div class="ocard">
-    <label>Mein Kernsatz – wer ich bereits bin</label>
-    <input type="text" id="oa" placeholder="z.B. Ich bin eine Frau, die sich selbst vertraut und in Fülle lebt.">
-    <p class="oh">Dieser Satz begleitet dich durch alle 30 Tage als innerer Anker.</p>
-  </div>
-  <div class="ocard">
-    <label>Mein Fokusbereich</label>
-    <div class="apills">
-      <span class="ap" onclick="pa(this)">Liebe & Partnerschaft</span>
-      <span class="ap" onclick="pa(this)">Business & Erfolg</span>
-      <span class="ap" onclick="pa(this)">Gesundheit & Körper</span>
-      <span class="ap" onclick="pa(this)">Finanzen & Freiheit</span>
-      <span class="ap" onclick="pa(this)">Spiritualität & Sinn</span>
-      <span class="ap" onclick="pa(this)">Persönliche Kraft</span>
+  <div class="ob-inner">
+    <div class="ob-ey">30 Tage Transformation · EMDR Manifestation</div>
+    <h1>Werde<br><em>Sie.</em></h1>
+    <p class="osub">Manifestation bedeutet nicht, etwas zu wünschen. Es bedeutet, die Person zu werden, die es bereits empfangen kann. Diese 30 Tage sind deine innere Reise.</p>
+    <div class="ocard">
+      <label>Dein Name</label>
+      <input type="text" id="on" placeholder="z.B. Sofia">
     </div>
+    <div class="ocard">
+      <label>Welche Version von dir möchtest du in 30 Tagen verkörpern?</label>
+      <textarea id="ow" placeholder="z.B. Eine Frau, die aus innerer Sicherheit liebt, entscheidet und sich selbst treu ist."></textarea>
+      <p class="oh">Denke in Identität, nicht in Dingen. Wer möchtest du sein?</p>
+    </div>
+    <div class="ocard">
+      <label>Mein Kernsatz – wer ich bereits bin</label>
+      <input type="text" id="oa" placeholder="z.B. Ich bin eine Frau, die sich selbst vertraut und in Fülle lebt.">
+      <p class="oh">Dieser Satz begleitet dich durch alle 30 Tage als innerer Anker.</p>
+    </div>
+    <div class="ocard">
+      <label>Mein Fokusbereich</label>
+      <div class="apills">
+        <span class="ap" onclick="pa(this)">Liebe & Partnerschaft</span>
+        <span class="ap" onclick="pa(this)">Business & Erfolg</span>
+        <span class="ap" onclick="pa(this)">Gesundheit & Körper</span>
+        <span class="ap" onclick="pa(this)">Finanzen & Freiheit</span>
+        <span class="ap" onclick="pa(this)">Spiritualität & Sinn</span>
+        <span class="ap" onclick="pa(this)">Persönliche Kraft</span>
+      </div>
+    </div>
+    <button class="btnbeg" onclick="begin()">Meine Reise beginnt jetzt →</button>
   </div>
-  <button class="btnbeg" onclick="begin()">Meine Reise beginnt jetzt →</button>
 </div>
 
 <!-- DASHBOARD -->
@@ -310,13 +312,20 @@ input.rng::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;b
 
 <script>
 const D=[
-{d:1,w:1,wn:"Erkennen",title:"Das Programm beobachten",desc:"Du bist nicht deine Gedanken. Heute beobachtest du mit neugieriger Offenheit.",
-intro:"95% unserer Handlungen laufen automatisch ab – gespeichert in Körper und Geist. Heute beobachtest du dieses Programm wie ein neugieriger Zeuge. Mit Sanftheit, mit Interesse, mit Mitgefühl.",
-q1:"Was sind die ersten Gedanken, die morgens auftauchen, wenn du aufwachst?",
-h1:"z.B. 'Heute wird ein guter Tag.' · 'Ich muss so viel erledigen.' · 'Ich frage mich, was heute kommt.' – schreibe genau das, was wirklich auftaucht.",
-q2:"In welchem Lebensbereich erkennst du ein wiederkehrendes Muster?",
-h2:"z.B. 'In Beziehungen ziehe ich immer Menschen an, die...' · 'Im Job passiert mir immer wieder, dass...' · 'Wenn es ums Geld geht, denke ich automatisch...'",
-type:"obs",emdr:false},
+{d:1,w:1,wn:"Erkennen",
+title:"Das Programm beobachten",
+desc:"Du bist nicht deine Gedanken. Heute beginnst du zu beobachten, mit neugieriger Offenheit.",
+intro:"95% unserer Handlungen laufen automatisch ab – Gedanken, Reaktionen, Überzeugungen, die tief im Körper gespeichert sind. Heute beobachtest du dieses Programm wie ein neugieriger Zeuge. Mit Sanftheit, mit Interesse, mit Mitgefühl. Nimm dir 5–10 Minuten, atme tief durch und beantworte die Fragen ehrlich.",
+q1:"Was sind die ersten Gedanken, die morgens auftauchen, wenn du aufwachst? Was sagt deine innere Stimme als Erstes?",
+h1:"z.B. 'Heute wird ein guter Tag.' · 'Ich muss so viel erledigen.' · 'Ich bin schon wieder müde.' · 'Hoffentlich klappt alles.' – schreibe genau das, was wirklich kommt, ohne es zu beschönigen.",
+q2:"In welchem Lebensbereich erkennst du ein wiederkehrendes Muster – immer dieselben Situationen, dieselben Reaktionen, dieselben Gefühle?",
+h2:"z.B. 'In Beziehungen ziehe ich immer Menschen an, die mich brauchen aber nicht wirklich da sind.' · 'Im Job passiert mir immer wieder, dass meine Arbeit nicht gesehen wird.' · 'Mit Geld wiederhole ich immer dasselbe Muster: verdienen, ausgeben, Stress.'",
+q3:"Schließe die Augen für eine Minute. Atme tief ein und aus. Was nimmst du gerade in deinem Körper wahr – wo ist Anspannung, Enge oder Schwere?",
+h3:"z.B. 'Spannung im Nacken und an den Schultern.' · 'Eine leichte Enge in der Brust wenn ich an meinen Alltag denke.' · 'Schwere in den Beinen.' – scanne deinen Körper vom Kopf bis zu den Füßen.",
+q4:"Wenn du ehrlich bist: Welcher Satz über dich selbst läuft am häufigsten im Hintergrund? Der Satz, den du nie laut sagst, aber oft fühlst?",
+h4:"z.B. 'Ich bin nicht gut genug.' · 'Ich bin zu viel.' · 'Ich muss erst X erreichen, bevor ich Y verdiene.' · 'Es klappt bei anderen, aber nicht bei mir.' – schreibe den Ersten, der dir kommt.",
+type:"full",emdr:false,
+bodyAreas:["Kopf","Kehle","Brust","Herz","Bauch","Rücken","Schultern","Hände","Beine","Ganzer Körper"]},
 
 {d:2,w:1,wn:"Erkennen",title:"Der Körper erinnert sich",desc:"Dein Körper trägt, was die Seele noch nicht sagen kann.",
 intro:"Was wir erlebt haben, lebt im Körper weiter – als Anspannung, als Enge, als Wärme oder Schwere. Heute gibst du diesen Empfindungen Raum und eine Stimme.",
@@ -590,10 +599,18 @@ function begin(){
   S.wish=document.getElementById('ow').value.trim()||'—';
   S.aff=document.getElementById('oa').value.trim()||'—';
   S.area=document.querySelector('.ap.on')?.textContent||'';
-  S.day=1;save();sh('dsh');rd();
+  S.day=1;save();
+  sh('dsh');rd();
 }
 
-function sh(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
+function sh(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  const el=document.getElementById(id);
+  el.classList.add('active');
+  // Scroll to top of the newly shown screen smoothly
+  el.scrollIntoView({behavior:'smooth',block:'start'});
+  setTimeout(()=>window.scrollTo({top:0,behavior:'smooth'}),50);
+}
 function gh(){sE();sh('dsh');rd();}
 
 function rd(){
@@ -659,9 +676,12 @@ function bld(day,e){
   if(day.emotions)h+=`<div class="sc"><div class="sce">Welcher Satz resoniert?</div><div class="scq">Wähle den, der dich innerlich berührt.</div><div class="sch">Wähle intuitiv – den der sich am vertrautesten anfühlt, nicht den du dir wünschst.</div><div class="chips">${day.emotions.map(em=>`<span class="chip${e.emotion===em?' on':''}" onclick="sl(this)">${em}</span>`).join('')}</div></div>`;
   if(day.joyChips)h+=`<div class="sc"><div class="sce">Was macht mich lebendig</div><div class="scq">Was bringt dir echte Freude?</div><div class="sch">Wähle so viele du möchtest – alles was sich wirklich wahr anfühlt.</div><div class="chips">${day.joyChips.map(j=>`<span class="chip${(e.joy||[]).includes(j)?' on':''}" onclick="this.classList.toggle('on')">${j}</span>`).join('')}</div></div>`;
   if(day.before)h+=`<div class="sc"><div class="sce">Vor der Session</div><div class="scq">${day.before}</div><div class="irow"><span style="font-size:.67rem;color:var(--lt)">1</span><input type="range" class="rng" id="irb" min="1" max="10" value="${e.before||6}" oninput="ur(this,'irbv')" style="--p:${(((e.before||6)-1)/9*100).toFixed()}%"><span style="font-size:.67rem;color:var(--lt)">10</span><span class="inum" id="irbv">${e.before||6}</span></div></div>`;
-  h+=`<div class="sc"><div class="sce">Journaling</div><div class="scq">${day.q1}</div><div class="sch">${day.h1}</div><textarea class="jta" id="j1" placeholder="Schreibe, was wirklich kommt...">${e.j1||''}</textarea></div>`;
+  h+=`<div class="sc"><div class="sce">Frage 1</div><div class="scq">${day.q1}</div><div class="sch">${day.h1}</div><textarea class="jta" id="j1" placeholder="Schreibe, was wirklich kommt...">${e.j1||''}</textarea></div>`;
+  if(day.q3)h+=`<div class="sc"><div class="sce">Frage 2</div><div class="scq">${day.q3||day.q2}</div><div class="sch">${day.h3||day.h2}</div><textarea class="jta" id="j3" placeholder="Nimm dir Zeit...">${e.j3||''}</textarea></div>`;
   if(day.emdr){const inst=day.emdrType==='install';h+=`<div class="ep"><h4>${inst?'EMDR · Positive Verankerung':'EMDR · Sanfte Auflösung'}</h4><p class="esub">${inst?"Aktiviere gleichzeitig: dein inneres Bild, deine Emotion, dein Körpergefühl und deinen Kernsatz. Wenn du alles spürst – starte die Augenbewegung. Dein Kopf bleibt gerade, nur die Augen folgen dem goldenen Licht.":"Aktiviere das Muster, das du sanft loslassen möchtest – fühle es im Körper. Dann starte EMDR und beobachte nur. Kein Kämpfen – einfach da sein."}</p><div class="etrk"><div class="erail"></div><div id="eb"></div></div><div class="erow"><button class="bte" id="ebt" onclick="tE()">▶ Starten</button><div class="spd">Tempo <input type="range" id="sc" min="8" max="35" value="${eSpd}" oninput="eSpd=+this.value"> sanft</div></div><div class="ehint" id="eh">Bereit · Atme tief durch bevor du startest</div></div>`;}
-  h+=`<div class="sc"><div class="sce">${day.emdr?'Reflexion nach EMDR':'Reflexion'}</div><div class="scq">${day.q2}</div><div class="sch">${day.h2}</div><textarea class="jta" id="j2" placeholder="Schreibe was auftaucht...">${e.j2||''}</textarea></div>`;
+  h+=`<div class="sc"><div class="sce">${day.emdr?'Reflexion nach EMDR':day.q3?'Frage 3':'Reflexion'}</div><div class="scq">${day.q4||day.q2}</div><div class="sch">${day.h4||day.h2}</div><textarea class="jta" id="j2" placeholder="Schreibe was auftaucht...">${e.j2||''}</textarea></div>`;
+  if(!day.q3){}// q2 already shown above as main reflection
+  if(day.q3)h+=`<div class="sc"><div class="sce">Reflexion</div><div class="scq">${day.q2}</div><div class="sch">${day.h2}</div><textarea class="jta" id="j4" placeholder="Was nimmst du mit...">${e.j4||''}</textarea></div>`;
   if(day.after)h+=`<div class="sc"><div class="sce">Nach der Session</div><div class="scq">${day.after}</div><div class="irow"><span style="font-size:.67rem;color:var(--lt)">1</span><input type="range" class="rng" id="ira" min="1" max="10" value="${e.after||8}" oninput="ur(this,'irav')" style="--p:${(((e.after||8)-1)/9*100).toFixed()}%"><span style="font-size:.67rem;color:var(--lt)">10</span><span class="inum" id="irav">${e.after||8}</span></div></div>`;
   if(day.type==='fin')h+=`<div class="sc fsc"><div class="sce">Meine Wunscherklärung für Tag 31+</div><div class="scq">Ich entscheide mich täglich dafür, die Frau zu sein, die...</div><div class="sch">z.B. 'Ich entscheide mich täglich dafür, die Frau zu sein, die aus Liebe handelt, sich selbst vertraut und offen empfängt was das Leben bereit hält.'</div><textarea class="jta" id="jd" placeholder="Lass es fließen...">${e.decl||''}</textarea></div>`;
   h+=`<button class="savebtn${e.done?' sv':''}" onclick="sv(${day.d})">${e.done?'✓ Tag '+day.d+' abgeschlossen':'Tag '+day.d+' abschließen'}</button><div style="height:2rem"></div>`;
@@ -683,8 +703,8 @@ function sv(d){
   if(!S.entries[d])S.entries[d]={};const e=S.entries[d];
   const g=id=>{const el=document.getElementById(id);return el?el.value:null;};
   const gn=id=>{const el=document.getElementById(id);return el?+el.value:null;};
-  const j1=g('j1'),j2=g('j2'),jd=g('jd');
-  if(j1)e.j1=j1;if(j2)e.j2=j2;if(jd)e.decl=jd;
+  const j1=g('j1'),j2=g('j2'),jd=g('jd'),j3=g('j3'),j4=g('j4');
+  if(j1)e.j1=j1;if(j2)e.j2=j2;if(jd)e.decl=jd;if(j3)e.j3=j3;if(j4)e.j4=j4;
   const ib=gn('irb'),ia=gn('ira');if(ib)e.before=ib;if(ia)e.after=ia;
   const chip=document.querySelector('#dbody .chip.on');if(chip)e.emotion=chip.textContent;
   const joys=[...document.querySelectorAll('#dbody .chip.on')].map(c=>c.textContent);if(joys.length)e.joy=joys;
