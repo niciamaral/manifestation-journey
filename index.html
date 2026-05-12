@@ -837,7 +837,7 @@ const WC=["var(--w1)","var(--w2)","var(--w3)","var(--w4)"];
 const KEY='ws30v5';
 
 let S={name:"",wish:"",aff:"",area:"",day:1,entries:{}};
-let cW=1,eOn=false,eRaf=null,eT=null,eSpd=20;
+let cW=1,eOn=false,eRaf=null,eT=null,eSpd=20,emdrWindow=null;
 
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
 function load(){try{const d=localStorage.getItem(KEY);if(d){S=JSON.parse(d);return true;}}catch(e){}return false;}
@@ -1041,11 +1041,21 @@ function stE(){eOn=true;eT=null;
   const bt=document.getElementById('ebt'),eh=document.getElementById('eh');
   if(bt){bt.textContent='■ Stoppen';bt.classList.add('on');}
   if(eh)eh.textContent='Folge dem goldenen Licht · Kopf bleibt gerade';
+  oEW();
   eRaf=requestAnimationFrame(an);}
 function sE(){eOn=false;if(eRaf)cancelAnimationFrame(eRaf);
   const bt=document.getElementById('ebt'),eh=document.getElementById('eh');
   if(bt){bt.textContent='▶ Starten';bt.classList.remove('on');}
-  if(eh)eh.textContent='Schließe die Augen · atme tief durch · lass alles los';}
+  if(eh)eh.textContent='Schließe die Augen · atme tief durch · lass alles los';
+  cEW();}
+function oEW(){cEW();
+  const w=window.open('','emdr','width='+screen.width+',height='+screen.height+',left=0,top=0,fullscreen=yes');
+  if(!w)return;emdrWindow=w;
+  w.document.open();
+  w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>EMDR</title><style>*{margin:0;padding:0;box-sizing:border-box}html,body{width:100%;height:100%;background:#000;overflow:hidden;cursor:none}#ball{position:absolute;top:25%;left:0;width:44px;height:44px;margin-top:-22px;border-radius:50%;background:#e8c06a;box-shadow:0 0 36px rgba(232,192,106,.7),0 0 80px rgba(232,192,106,.35)}</style></head><body><div id="ball"></div><scr'+'ipt>(function(){var b=document.getElementById("ball"),t0=null;function eio(t){return t<.5?2*t*t:-1+(4-2*t)*t}function tick(ts){var op=window.opener;if(!op||op.closed||!op.eOn){window.close();return}if(!t0)t0=ts;var sp=op.eSpd||20,u=window.innerWidth-44,p=(42-sp)*130+1800,t=((ts-t0)%p)/p,f=t<.5?eio(t*2):1-eio((t-.5)*2);b.style.left=(f*u)+"px";requestAnimationFrame(tick)}requestAnimationFrame(tick);document.addEventListener("keydown",function(e){if(e.key==="Escape")window.close()});window.addEventListener("beforeunload",function(){try{var o=window.opener;if(o&&!o.closed&&o.eOn&&o.sE)o.sE()}catch(e){}})})();</scr'+'ipt></body></html>');
+  w.document.close();
+  try{w.focus();}catch(e){}}
+function cEW(){if(emdrWindow){try{emdrWindow.close();}catch(e){}emdrWindow=null;}}
 function an(ts){if(!eT)eT=ts;if(!eOn)return;
   const tr=document.querySelector('.etrk'),b=document.getElementById('eb');
   if(!tr||!b)return;
